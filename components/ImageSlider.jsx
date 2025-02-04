@@ -1,20 +1,25 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+// import { Link } from "react-router-dom";
+import flight1 from "../public/images/flight1.png";
+import explore from "../public/images/explore.png";
+import canada from "../public/images/canada.png";
+
 import "swiper/css";
 // import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const slides = [
   {
-    image: "/src/images/flight1.png",
+    image: flight1,
     span: "ADMISSION",
     title: "Enjoy a hassle free process with our study abroad packages.",
     buttonText: "Learn now",
     link: "/admission",
   },
   {
-    image: "/src/images/explore.png",
+    image: explore,
     span: "TOURIST VISA",
     title:
       "Explore the world when you apply for your visit visa with 85% success rate.",
@@ -22,7 +27,7 @@ const slides = [
     link: "/tourist-visa",
   },
   {
-    image: "/src/images/canada.png",
+    image: canada,
     span: "RELOCATION SERVICE",
     title: "Live and Work in Canada legally with your family",
     buttonText: "Start now",
