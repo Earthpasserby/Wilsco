@@ -59,7 +59,7 @@ const Header = () => {
               <div className="flex-shrink-0">
                 <img
                   className="h-16 w-auto"
-                  src="../src/assets/logo.png"
+                  src="/src/assets/logo.png"
                   alt="Willsco-logo"
                 />
               </div>
