@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import logo from "../assets/logo.png";
+import logo from "../public/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
@@ -58,11 +58,7 @@ const Header = () => {
             <div className="flex items-center justify-between w-full">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <img
-                  className="h-16 w-auto"
-                  src="../public/logo.png"
-                  alt="Willsco-logo"
-                />
+                <img className="h-16 w-auto" src={logo} alt="Willsco-logo" />
               </div>
 
               {/* Desktop Navigation Links */}
