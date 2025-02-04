@@ -5,6 +5,10 @@ import { Pagination, Autoplay } from "swiper/modules";
 import flight1 from "../public/images/flight1.png";
 import explore from "../public/images/explore.png";
 import canada from "../public/images/canada.png";
+import flight from "../public/images/flight.png";
+import adventure from "../public/images/adventure.png";
+import group from "../public/images/group.png";
+import care from "../public/images/care.png";
 
 import "swiper/css";
 // import "swiper/css/navigation";
@@ -34,14 +38,14 @@ const slides = [
     link: "/relocation-service",
   },
   {
-    image: "/src/images/flight.png",
+    image: flight,
     span: "FLIGHT SERVICE",
     title: "Enjoy the best deals on local and International flights",
     buttonText: "Plan Trip",
     link: "/flight-service",
   },
   {
-    image: "/src/images/adventure.png",
+    image: adventure,
     span: "TOUR SERVICE",
     title:
       "Take a break from the stress and let's treat you to an adventure to remember",
@@ -49,7 +53,7 @@ const slides = [
     link: "/tour-service",
   },
   {
-    image: "/src/images/group.png",
+    image: group,
     span: "TEAM BONDING PACKAGE",
     title:
       "Take a break from work and bond with colleagues locally or internationally",
@@ -57,7 +61,7 @@ const slides = [
     link: "/team-bonding-package",
   },
   {
-    image: "/src/images/care.png",
+    image: care,
     span: "MATERNITY SERVICE",
     title:
       "Birth abroad made easy with us. Get the best deals on medical bills and give your child the gift of dual citizenship.",
