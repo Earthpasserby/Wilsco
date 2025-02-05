@@ -76,7 +76,7 @@
 
 .Cont-text {
   position: absolute;
-  top: 30%;
+  top: 40%;
   /* left: 50px; */
   transform: translateY(-40%);
   z-index: 2; /* Ensures text is above overlay */

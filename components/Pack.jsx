@@ -13,13 +13,43 @@ const Pack = () => {
               </h2>
             </div>
 
-            <div className="pt-12">
+            <div className="pt-8">
               <a
                 href="#"
                 className="bg-transparent border border-white text-white px-4 py-2 rounded-4xl hover:bg-gray-100"
               >
                 Learn more
               </a>
+            </div>
+
+            <div className="pt-10">
+              <p className="font-medium text-[16px] text-[#B9B9B9]">
+                Our Impact in Numbers
+              </p>
+              <div className="grid grid-cols-2 sm:flex    gap-14 pt-14">
+                <div>
+                  <span className="font-bold text-[32px] leading-2">2000+</span>
+                  <p className="font-medium text-[16px]">Happy client</p>
+                </div>
+                <div>
+                  <span className="font-bold text-[32px] leading-2">97%</span>
+                  <p className="font-medium text-[16px] text-[#B9B9B9]">
+                    Happy client
+                  </p>
+                </div>
+                <div>
+                  <span className="font-bold text-[32px] leading-2">100+</span>
+                  <p className="font-medium text-[16px] text-[#B9B9B9]">
+                    Happy client
+                  </p>
+                </div>
+                <div>
+                  <span className="font-bold text-[32px] leading-2">1.8k</span>
+                  <p className="font-medium text-[16px] text-[#B9B9B9]">
+                    Happy client
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
