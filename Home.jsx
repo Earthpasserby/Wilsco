@@ -5,6 +5,7 @@ import CenteredLogo from "./components/CenteredLogo";
 import Testimony from "./components/Testimony";
 import Opportunities from "./components/Opportunities";
 import Pack from "./components/Pack";
+import Insight from "./components/Insight";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Testimony />
         <Opportunities />
         <Pack />
+        <Insight />
       </div>
     </>
   );
