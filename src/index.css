@@ -5,7 +5,9 @@
   /* padding: 0; */
   box-sizing: border-box;
 }
-
+.body {
+  background-color: #fbfbfb !important;
+}
 /* Default Pagination Style */
 .swiper-pagination {
   position: absolute;
@@ -81,4 +83,10 @@
   transform: translateY(-40%);
   z-index: 2; /* Ensures text is above overlay */
   color: white;
+}
+
+ul > li {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
 }

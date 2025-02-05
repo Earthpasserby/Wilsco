@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <>
       <nav className="bg-white w-full fixed top-0 left-0 right-0 z-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto px-4  sm:px-6 lg:px-14">
           <div className="relative flex h-16 items-center justify-between">
             {/* Mobile Menu Button */}
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -119,7 +119,7 @@ const Header = () => {
                   About Us
                 </a>
                 <a href="#" className="text-gray-500 hover:text-gray-700">
-                  FAQS
+                  FAQs
                 </a>
                 <a href="#" className="text-gray-500 hover:text-gray-700">
                   Blog
@@ -130,7 +130,7 @@ const Header = () => {
               <div className="hidden sm:block">
                 <a
                   href="#"
-                  className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-2xl hover:bg-gray-100"
+                  className="bg-transparent border border-gray-500 text-gray-500 px-8 py-3 rounded-4xl hover:bg-gray-100"
                 >
                   Contact Us
                 </a>

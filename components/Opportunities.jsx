@@ -8,7 +8,7 @@ import relocate from "../public/images/relocate.png";
 const Opportunities = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 sm:pt-24">
+      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid">
           <h1 className="text-[#1E1E1E] font-bold text-3xl">
             Your gateway to global opportunities
@@ -26,10 +26,10 @@ const Opportunities = () => {
           </p>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 sm:pt-24">
+      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 border border-[#CF0101]">
+          <div className="bg-white  rounded-2xl p-6  hover:border-1 hover:border-red-700">
             <img src={sch} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               School service
@@ -49,7 +49,7 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white shadow-lg p-6 rounded-2xl ">
+          <div className="bg-white  p-6 rounded-2xl hover:border-1 hover:border-red-700 ">
             <img src={visa} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Visa Service
@@ -69,7 +69,7 @@ const Opportunities = () => {
           </div>
 
           {/* Third Column (Larger One) */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 sm:col-span-2">
+          <div className="bg-white  rounded-2xl p-6  hover:border-1 hover:border-red-700 sm:col-span-2">
             <img src={ticket} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Flight Booking
@@ -89,10 +89,10 @@ const Opportunities = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 sm:pt-8">
-        <div className="grid sm:grid-cols-4 gap-6 pt-8">
+      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-8 bg-[#fbfbfb]">
+        <div className="grid sm:grid-cols-4 gap-4 pt-8">
           {/* First Column */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 border-0">
+          <div className="bg-white  rounded-2xl p-6  hover:border-1 hover:border-red-700">
             <img src={paris} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Holiday packages
@@ -110,7 +110,7 @@ const Opportunities = () => {
               </a>
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-2xl p-6 sm:col-span-2">
+          <div className="bg-white  rounded-2xl hover:border-1 hover:border-red-700 p-6 sm:col-span-2">
             <img src={birth} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Birth abroad service
@@ -131,7 +131,7 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white shadow-lg p-6 rounded-2xl">
+          <div className="bg-white  p-6 rounded-2xl hover:border-1 hover:border-red-700 ">
             <img src={relocate} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Relocation service

@@ -8,6 +8,7 @@ import Pack from "./components/Pack";
 import Insight from "./components/Insight";
 import Stories from "./components/Stories";
 import Footer from "./components/Footer";
+import Bfooter from "./components/Bfooter";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <Pack />
         <Insight />
         <Stories />
+        <Bfooter />
         <Footer />
       </div>
     </>

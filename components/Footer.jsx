@@ -12,45 +12,45 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-black">
-      <div className="max-w-7xl mx-auto px-2 py-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-2">
+      <div className="w-full mx-auto px-4 sm:px-14 py-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6">
         {/* Logo & Social Icons */}
         <div>
           <img
             src="/logo.png"
             alt="Willsco Travel and Tours"
-            className="w-40 mb-4"
+            className="w-40 "
           />
           <div className="flex space-x-1">
             <a
               href="#"
               className="text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2"
             >
-              <FaFacebookF size={20} />
+              <FaFacebookF size={15} />
             </a>
             <a
               href="#"
               className="text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2"
             >
-              <FaInstagram size={20} />
+              <FaInstagram size={15} />
             </a>
             <a
               href="#"
               className="text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2"
             >
-              <FaLinkedinIn size={20} />
+              <FaLinkedinIn size={15} />
             </a>
             <a
               href="#"
               className="text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2"
             >
-              <FaTiktok size={20} />
+              <FaTiktok size={15} />
             </a>
           </div>
         </div>
 
         {/* Company Links */}
         <div>
-          <h4 className="font-bold mb-3">COMPANY</h4>
+          <h4 className="font-medium text-[12px] mb-3">COMPANY</h4>
           <ul className="space-y-2">
             <li>
               <a href="#" className="hover:text-red-500">
@@ -82,7 +82,7 @@ const Footer = () => {
 
         {/* Services Links */}
         <div>
-          <h4 className="font-bold mb-3">SERVICES</h4>
+          <h4 className="font-medium text-[12px] mb-3">SERVICES</h4>
           <ul className="space-y-2">
             <li>
               <a href="#" className="hover:text-red-500">
@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-bold mb-3">FAQs</h4>
+          <h4 className="font-medium text-[12px] mb-3">FAQs</h4>
           <ul className="space-y-2">
             {[
               "United Kingdom",
@@ -148,8 +148,8 @@ const Footer = () => {
         </div>
 
         {/* Contact Information */}
-        <div>
-          <h4 className="font-bold mb-3">CONTACT US</h4>
+        <div className="space-x-8">
+          <h4 className="font-medium text-[12px] mb-3">CONTACT US</h4>
           <ul className="space-y-2">
             <li className="flex items-center space-x-2">
               <FaPhone className="text-red-500" />
@@ -168,7 +168,9 @@ const Footer = () => {
 
         {/* Newsletter Subscription */}
         <div>
-          <h4 className="font-bold mb-3">SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <h4 className="font-medium text-[12px] mb-3">
+            SUBSCRIBE TO OUR NEWSLETTER
+          </h4>
           <input
             type="email"
             placeholder="Email address"

@@ -3,10 +3,10 @@ import DQLogo from "../public/images/DQLogo 4.png";
 const CenteredLogo = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="pt-12">
-          <h1 className="text-xl font-medium flex justify-center text-[#686868]">
-            Trusted By
+      <div className="mx-auto w-full px-4 sm:px-28 lg:px-28 bg-[#fbfbfb]">
+        <div className="pt-14">
+          <h1 className="text-[16px] font-normal flex justify-center mb-4 text-[#686868]">
+            TRUSTED BY
           </h1>
           <div className="grid grid-cols-3 sm:flex gap-4 sr">
             <img
