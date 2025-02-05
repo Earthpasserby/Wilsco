@@ -1,3 +1,10 @@
+import sch from "../public/images/sch.png";
+import visa from "../public/images/visa.png";
+import ticket from "../public/images/ticket.png";
+import paris from "../public/images/paris.png";
+import birth from "../public/images/birth.png";
+import relocate from "../public/images/relocate.png";
+
 const Opportunities = () => {
   return (
     <>
@@ -23,7 +30,7 @@ const Opportunities = () => {
         <div className="grid sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
           <div className="bg-white shadow-lg rounded-2xl p-6 border border-[#CF0101]">
-            <img src="/src/images/sch.png" alt="group" />
+            <img src={sch} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               School service
             </h2>
@@ -43,7 +50,7 @@ const Opportunities = () => {
 
           {/* Second Column */}
           <div className="bg-white shadow-lg p-6 rounded-2xl ">
-            <img src="/src/images/visa.png" alt="group" />
+            <img src={visa} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Visa Service
             </h2>
@@ -63,7 +70,7 @@ const Opportunities = () => {
 
           {/* Third Column (Larger One) */}
           <div className="bg-white shadow-lg rounded-2xl p-6 sm:col-span-2">
-            <img src="/src/images/ticket.png" alt="group" />
+            <img src={ticket} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Flight Booking
             </h2>
@@ -86,7 +93,7 @@ const Opportunities = () => {
         <div className="grid sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
           <div className="bg-white shadow-lg rounded-2xl p-6 border-0">
-            <img src="/src/images/paris.png" alt="group" />
+            <img src={paris} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Holiday packages
             </h2>
@@ -104,7 +111,7 @@ const Opportunities = () => {
             </div>
           </div>
           <div className="bg-white shadow-lg rounded-2xl p-6 sm:col-span-2">
-            <img src="/src/images/birth.png" alt="group" />
+            <img src={birth} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Birth abroad service
             </h2>
@@ -125,7 +132,7 @@ const Opportunities = () => {
 
           {/* Second Column */}
           <div className="bg-white shadow-lg p-6 rounded-2xl">
-            <img src="/src/images/relocate.png" alt="group" />
+            <img src={relocate} alt="group" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Relocation service
             </h2>

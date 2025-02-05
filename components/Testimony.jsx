@@ -1,3 +1,9 @@
+import React from "react";
+import like from "../public/images/like.png";
+import star from "../public/images/star.png";
+import profile from "../public/images/profile.png";
+import firm from "../public/images/firm.png";
+
 const Testimony = () => {
   return (
     <>
@@ -23,11 +29,7 @@ const Testimony = () => {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-[#FAE6E6] border-1 border-[#CF0101] px-4 py-8 rounded-2xl">
-              <img
-                src="/src/images/like.png"
-                alt="group"
-                className="w-[24px]"
-              />
+              <img src={like} alt="group" className="w-[24px]" />
               <h1 className="text-[#1E1E1E] font-bold text-sm pt-2">
                 Excellent client service{" "}
               </h1>
@@ -38,11 +40,7 @@ const Testimony = () => {
               </p>
             </div>
             <div className="bg-[#E9F9E8] border-0 px-4 py-8 rounded-2xl">
-              <img
-                src="/src/images/star.png"
-                alt="group"
-                className="w-[24px]"
-              />
+              <img src={star} alt="group" className="w-[24px]" />
               <h1 className="text-[#1E1E1E] font-bold text-sm pt-2">
                 High success rate
               </h1>
@@ -53,11 +51,7 @@ const Testimony = () => {
               </p>
             </div>
             <div className="bg-[#F9F4E8] border-0 px-4 py-8 rounded-2xl ">
-              <img
-                src="/src/images/profile.png"
-                alt="group"
-                className="w-[24px]"
-              />
+              <img src={profile} alt="group" className="w-[24px]" />
               <h1 className="text-[#1E1E1E] font-bold text-sm pt-2">
                 Professionalism
               </h1>
@@ -68,11 +62,7 @@ const Testimony = () => {
               </p>
             </div>
             <div className="bg-[#E9E9E9] border-0 px-4 py-8 rounded-2xl ">
-              <img
-                src="/src/images/firm.png"
-                alt="group"
-                className="w-[24px]"
-              />
+              <img src={firm} alt="group" className="w-[24px]" />
               <h1 className="text-[#1E1E1E] font-bold text-sm pt-2">
                 International partnerships
               </h1>

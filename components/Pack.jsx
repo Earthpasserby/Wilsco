@@ -2,7 +2,7 @@ const Pack = () => {
   return (
     <>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sm:pt-24  pt-24">
-        <div className="h-[582px] relative bg-[url('/src/images/acada.png')] bg-cover bg-center rounded-4xl px-8 ">
+        <div className="h-[582px] relative bg-[url('/public/images/acada.png')] bg-cover bg-center rounded-4xl px-8 ">
           <div className="Cont-overlay absolute inset-0 bg-black opacity-50"></div>
           <div className="Cont-text">
             <div className="sm:w-[54%] w-full px-2">
