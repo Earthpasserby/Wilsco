@@ -4,7 +4,7 @@ const Bfooter = () => {
   return (
     <>
       <div className="bg-[#fbfbfb] pb-14">
-        <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 sm:pt-24  ">
+        <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 sm:pt-24 pt-12 ">
           <div className="sm:h-[585px] h-[923px] relative bg-[url('/public/images/shapes.png')]   bg-cover bg-center bg-red-500 rounded-4xl sm:px-24 ">
             <div className="Cont-overlay absolute"></div>
             <div className="Cont-text grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-12 ">

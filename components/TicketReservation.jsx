@@ -1,9 +1,20 @@
+import { useState } from "react";
+
 import { FaExclamationCircle, FaSearch } from "react-icons/fa";
 import airplane from "/images/airplane.png";
 
 export default function TicketReservation() {
+  const [selected, setSelected] = useState("Choose flight class");
+  const [open, setOpen] = useState(false);
+  const options = [
+    "Economy",
+    "Premium Economy",
+    "Business Class",
+    "First Class",
+  ];
+
   return (
-    <div className="relative">
+    <div className="relative  bg-[#fbfbfb]">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-b from-blue-600 to-white text-white text-center py-16">
         <h2 className="text-[32px] font-bold pt-14">
@@ -23,7 +34,7 @@ export default function TicketReservation() {
       </div>
 
       {/* Booking Form Container */}
-      <div className="relative max-w-4xl mx-auto -mt-42 bg-gray-50  rounded-lg p-6 mb-12">
+      <div className="relative max-w-4xl mx-auto -mt-52 bg-gray-50  rounded-lg p-6 mb-12">
         {/* Tabs for One Way / Round Trip */}
         <div className="flex  pb-2 mb-4 gap-3">
           <button className="flex text-center hover:px-4  text-gray-500 hover:shadow-lg hover:bg-white py-2 font-medium ">
@@ -35,9 +46,9 @@ export default function TicketReservation() {
         </div>
 
         {/* Form */}
-        <form className="grid grid-cols-1 md:grid-cols-6 gap-5">
+        <form className="grid grid-cols-1 md:grid-cols-6 sm:grid-cols-2    gap-5">
           {/* Full Name */}
-          <div className="col-span-3">
+          <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Full Name
             </label>
@@ -49,7 +60,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Email Address */}
-          <div className="col-span-3">
+          <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Email Address
             </label>
@@ -61,7 +72,7 @@ export default function TicketReservation() {
           </div>
 
           {/* From */}
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">From</label>
             <input
               type="text"
@@ -71,7 +82,7 @@ export default function TicketReservation() {
           </div>
 
           {/* To */}
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">To</label>
             <input
               type="text"
@@ -81,7 +92,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Date of Departure */}
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
               Date of depature
             </label>
@@ -92,7 +103,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Return Date (Optional) */}
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
               Date of arrival
             </label>
@@ -104,17 +115,37 @@ export default function TicketReservation() {
           </div>
 
           {/* Cabin Class */}
-          <div className="col-span-2">
+          <div className="relative col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
               Flight class
             </label>
-            <select className="w-full border rounded-lg px-4 py-2">
-              <option>Economy</option>
-              <option>Business</option>
-              <option>First Class</option>
-            </select>
+            <div
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-700 cursor-pointer flex justify-between items-center"
+              onClick={() => setOpen(!open)}
+            >
+              {selected}
+              <span className="text-gray-500">&#9662;</span>
+            </div>
+            {/* Dropdown Options */}
+            {open && (
+              <ul className="absolute w-full  border border-gray-300 bg-white rounded ">
+                {options.map((option, index) => (
+                  <li
+                    key={index}
+                    className="p-2 hover:bg-red-50 text-[16px] text-[#686868] cursor-pointer"
+                    onClick={() => {
+                      setSelected(option);
+                      setOpen(false);
+                    }}
+                  >
+                    {option}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
-          <div className="col-span-2">
+
+          <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
               Number of adults(2+)
             </label>
@@ -126,7 +157,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Number of Adults */}
-          <div className="col-span-3">
+          <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Number of children(2y-12y)
             </label>
@@ -138,7 +169,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Number of Children */}
-          <div className="col-span-3">
+          <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Number of infants(Below 2y)
             </label>
@@ -150,7 +181,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Additional Information */}
-          <div className="col-span-4">
+          <div className="col-span-6 sm:col-span-6 md:col-span-4">
             <label className="block text-gray-700 font-medium mb-1">
               Additional information
             </label>
@@ -161,7 +192,7 @@ export default function TicketReservation() {
           </div>
 
           {/* Submit Button */}
-          <div className="col-span-6 flex justify-end">
+          <div className="col-span-6 sm:col-span-6 md:col-span-6 flex justify-end">
             <button className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2">
               <span>Search</span>
               <FaSearch />
@@ -171,13 +202,16 @@ export default function TicketReservation() {
 
         {/* WhatsApp Contact Info */}
       </div>
-      <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 text-center lg:mb-42 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2">
-        <FaExclamationCircle />
-        <span>
-          Clicking on the search button takes you straight to our WhatsApp
-          contact or email: +2347058619281/ info@wilscotravels.com
-        </span>
-      </p>
+
+      <div className="lg:pb-24 pt-12 pb-12 px-4">
+        <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 text-center lg:mb-42 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2">
+          <FaExclamationCircle size={20} />
+          <span className="text-[10px] sm:text-[12px]">
+            Clicking on the search button takes you straight to our WhatsApp
+            contact or email: +2347058619281/ info@wilscotravels.com
+          </span>
+        </p>
+      </div>
     </div>
   );
 }
