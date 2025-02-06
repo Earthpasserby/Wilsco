@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../public/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
@@ -198,13 +199,13 @@ const Header = () => {
                 )}
               </div>
 
-              <a
-                href="#"
-                className="block text-gray-300 px-3 py-2 rounded-md text-base hover:bg-gray-700"
+              <NavLink
+                to="/about"
+                className="block text-gray-300 px-3 py-2 rounded-md text-base
+                hover:bg-gray-700"
                 onClick={() => setIsOpen(false)}
-              >
-                About Us
-              </a>
+              ></NavLink>
+
               <a
                 href="#"
                 className="block text-gray-300 px-3 py-2 rounded-md text-base hover:bg-gray-700"
