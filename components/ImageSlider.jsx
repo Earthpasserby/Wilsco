@@ -79,24 +79,25 @@ const ImageSlider = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 8000 }}
           loop={true}
-          className="w-full h-full sm:h-[600px] relative"
+          className="w-full h-full  relative"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="relative  w-full">
+              <div className="relative w-full">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-screen object-cover"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 top-[50vh] sm:top-[20vh] md:top-[50vh] lg:top-[40vh] flex flex-col justify-center items-start px-10 mx-auto max-w-7xl sm:px-6 lg:px-8 transform -translate-y-1/2">
-                  <p className="text-red-100 text-sm font-bold  uppercase tracking-wide">
+                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 top-[30vh] sm:top-[30vh] md:top-[50vh] lg:top-[70vh] flex flex-col justify-center items-start px-10 mx-auto w-full sm:px-14 lg:px-14 transform -translate-y-1/2">
+                  <p className="text-red-100 text-[16px] font-medium uppercase tracking-wide">
                     {slide.span}
                   </p>
-                  <h2 className="text-white text-3xl font-bold max-w-lg pt-4">
+                  <h3 className="text-white sm:text-[40px]  font-bold lg:w-[550px] pt-4">
                     {slide.title}
-                  </h2>
-                  <button className="mt-4 px-8 py-3  bg-red-500 text-white rounded-4xl hover:bg-red-500">
+                  </h3>
+                  <button className="mt-4 px-8 py-3 bg-red-500 text-white rounded-4xl hover:bg-red-500">
                     {slide.buttonText}
                   </button>
                 </div>

@@ -1,6 +1,6 @@
 import sch from "../public/images/sch.png";
 import visa from "../public/images/visa.png";
-import ticket from "../public/images/ticket.png";
+import tickett from "../public/images/tickett.png";
 import paris from "../public/images/paris.png";
 import birth from "../public/images/birth.png";
 import relocate from "../public/images/relocate.png";
@@ -29,16 +29,20 @@ const Opportunities = () => {
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
-          <div className="bg-white  rounded-2xl p-6  hover:border-1 hover:border-red-700">
-            <img src={sch} alt="group" />
+          <div className="bg-white  rounded-2xl p-6 h-full hover:border-1 hover:border-red-700">
+            <img
+              src={sch}
+              alt="group"
+              className="h-auto max-h-[300px] flex justify-center "
+            />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               School service
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] pt-2">
+            <p className="text-[#686868] font-normal text-[16px] pt-2 flex-grow ">
               Secure your spot in top institutions worldwide with our expert
               guidance and support for study abroad applications.
             </p>
-            <div className="pt-8">
+            <div className="pt-4 mt-auto">
               <a
                 href="#"
                 className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
@@ -49,16 +53,20 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white  p-6 rounded-2xl hover:border-1 hover:border-red-700 ">
-            <img src={visa} alt="group" />
+          <div className="bg-white  p-6 rounded-2xl hover:border-1 h-full hover:border-red-700 ">
+            <img
+              src={visa}
+              alt="group"
+              className="h-auto max-h-[300px] flex justify-center   "
+            />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Visa Service
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] pt-2">
+            <p className="text-[#686868] font-normal text-[16px] pt-2 flex-grow">
               Get expert assistance for a smooth visa application process and
               increase your approval chances.
             </p>
-            <div className="pt-8">
+            <div className="pt-4 mt-auto">
               <a
                 href="#"
                 className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
@@ -69,16 +77,20 @@ const Opportunities = () => {
           </div>
 
           {/* Third Column (Larger One) */}
-          <div className="bg-white  rounded-2xl p-6  hover:border-1 hover:border-red-700 sm:col-span-2">
-            <img src={ticket} alt="group" />
+          <div className="bg-white  rounded-2xl p-6  hover:border-1 h-full hover:border-red-700 sm:col-span-2 lg:col-span-2">
+            <img
+              src={tickett}
+              alt="group"
+              className="h-auto max-h-[270px] flex justify-center w-full "
+            />
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Flight Booking
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] ">
+            <p className="text-[#686868] font-normal text-[16px] flex-grow ">
               Enjoy the best deals on local and international flights with
               seamless booking services.
             </p>
-            <div className="pt-4">
+            <div className="pt-4 mt-auto">
               <a
                 href="#"
                 className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
