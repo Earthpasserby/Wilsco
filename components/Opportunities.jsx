@@ -78,11 +78,14 @@ const Opportunities = () => {
 
           {/* Third Column (Larger One) */}
           <div className="bg-white  rounded-2xl p-6  hover:border-1 h-full hover:border-red-700 sm:col-span-2 lg:col-span-2">
-            <img
-              src={tickett}
-              alt="group"
-              className="h-auto max-h-[270px] flex justify-center w-full "
-            />
+            <div className="h-[200px] w-full relative">
+              <img
+                src={tickett}
+                alt="group"
+                className=" w-full h-full absolute inset-0 object-cover object-center "
+              />
+            </div>
+
             <h2 className="text-[#1E1E1E] font-medium text-[20px]">
               Flight Booking
             </h2>
