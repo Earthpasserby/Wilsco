@@ -13,6 +13,8 @@ import RelocateServ from "../pages/RelocateServ";
 import { Blog } from "../pages/Blog";
 import { BlogDet } from "../pages/BlogDet";
 import { Faqs } from "../pages/Faqs";
+import { FaqsDetail } from "../pages/FaqsDetail";
+import { Contactus } from "../pages/Contactus";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -34,6 +36,8 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/BlogDet" element={<BlogDet />} />
           <Route path="/Faqs" element={<Faqs />} />
+          <Route path="/FaqsDetail" element={<FaqsDetail />} />
+          <Route path="/contactus" element={<Contactus />} />
         </Routes>
       </BrowserRouter>
     </>
