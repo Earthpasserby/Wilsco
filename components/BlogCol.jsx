@@ -1,5 +1,6 @@
 import paris1 from "../public/images/paris1.png";
 import calender from "../public/images/calender.png";
+import { Link, NavLink } from "react-router-dom";
 
 export const BlogCol = () => {
   return (
@@ -22,12 +23,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -46,12 +47,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -70,12 +71,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -94,12 +95,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -118,12 +119,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -142,37 +143,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
-            <img
-              src={paris1}
-              alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
-            />
-            <div className="flex items-center px-4 pt-4">
-              <img src={calender} alt="group" className="w-[14px] h-[14px]" />
-              <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
-              </span>
-            </div>
-            <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
-            </h3>
-            <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
-              >
-                Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -191,12 +167,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -215,12 +191,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -239,12 +215,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
@@ -263,36 +239,12 @@ export const BlogCol = () => {
               Top 5 Countries with the Easiest Visa Approval Process in 2024
             </h3>
             <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-700"
               >
                 Read
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
-            <img
-              src={paris1}
-              alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
-            />
-            <div className="flex items-center px-4 pt-4">
-              <img src={calender} alt="group" className="w-[14px] h-[14px]" />
-              <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
-              </span>
-            </div>
-            <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
-            </h3>
-            <div className="pt-8 px-4 mb-8">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
-              >
-                Read
-              </a>
+              </Link>
             </div>
           </div>
         </div>

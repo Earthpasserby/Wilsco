@@ -11,6 +11,7 @@ import HolidayPack from "../pages/HolidayPack";
 import BirthService from "../pages/BirthService";
 import RelocateServ from "../pages/RelocateServ";
 import { Blog } from "../pages/Blog";
+import { BlogDet } from "../pages/BlogDet";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/BirthService" element={<BirthService />} />
           <Route path="/RelocateServ" element={<RelocateServ />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/BlogDet" element={<BlogDet />} />
         </Routes>
       </BrowserRouter>
     </>
