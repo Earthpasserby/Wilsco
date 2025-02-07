@@ -29,12 +29,15 @@ const Opportunities = () => {
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
-          <div className="bg-white  rounded-2xl p-6 h-full hover:border-1 hover:border-red-700">
-            <img
-              src={sch}
-              alt="group"
-              className="h-auto max-h-[300px] flex justify-center "
-            />
+          <div className="bg-white  rounded-2xl p-6  min-h-[400px] flex flex-col h-full hover:border-1 hover:border-red-700">
+            <div className="relative h-[200px] w-full">
+              <img
+                src={sch}
+                alt="group"
+                className="w-full h-full absolute inset-0 object-cover rounded-4xl object-center "
+              />
+            </div>
+
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               School service
             </h2>
@@ -53,12 +56,15 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white  p-6 rounded-2xl hover:border-1 h-full hover:border-red-700 ">
-            <img
-              src={visa}
-              alt="group"
-              className="h-auto max-h-[300px] flex justify-center   "
-            />
+          <div className="bg-white  p-6 rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 ">
+            <div className="relative h-[200px] w-full">
+              <img
+                src={visa}
+                alt="group"
+                className="w-full h-full absolute inset-0 object-cover rounded-4xl object-center "
+              />
+            </div>
+
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Visa Service
             </h2>
@@ -77,21 +83,21 @@ const Opportunities = () => {
           </div>
 
           {/* Third Column (Larger One) */}
-          <div className="bg-white  rounded-2xl p-6  hover:border-1 h-full hover:border-red-700 sm:col-span-2 lg:col-span-2">
+          <div className="bg-white  rounded-2xl p-6  hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 sm:col-span-2 lg:col-span-2">
             <div className="h-[200px] w-full relative">
               <img
                 src={tickett}
                 alt="group"
-                className=" w-full h-full absolute inset-0 object-cover object-center "
+                className=" w-full h-full absolute inset-0 object-cover rounded-4xl object-center "
               />
             </div>
 
-            <h2 className="text-[#1E1E1E] font-medium text-[20px]">
-              Flight Booking
+            <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
+              Ticketing and Reservation
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] flex-grow ">
-              Enjoy the best deals on local and international flights with
-              seamless booking services.
+            <p className="text-[#686868] font-normal text-[16px] flex-grow  pt-2 ">
+              Book flights and accommodations effortlessly with our reliable and
+              cost-effective reservation services.
             </p>
             <div className="pt-4 mt-auto">
               <a
@@ -107,16 +113,23 @@ const Opportunities = () => {
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-8 bg-[#fbfbfb]">
         <div className="grid sm:grid-cols-4 gap-4 pt-8">
           {/* First Column */}
-          <div className="bg-white  rounded-2xl p-6  hover:border-1 hover:border-red-700">
-            <img src={paris} alt="group" />
-            <h2 className="text-[#1E1E1E] font-medium text-[20px]">
+          <div className="bg-white  rounded-2xl p-6  hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700">
+            <div className="relative h-[200px] w-full">
+              <img
+                src={paris}
+                alt="group"
+                className="w-full h-full absolute inset-0 object-cover rounded-4xl object-center "
+              />
+            </div>
+
+            <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Holiday packages
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] ">
+            <p className="text-[#686868] font-normal text-[16px] pt-2 ">
               Discover dream destinations with tailored holiday packages that
               suit your budget and preferences.
             </p>
-            <div className="pt-18">
+            <div className="pt-4 mt-auto">
               <a
                 href="#"
                 className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
@@ -125,17 +138,24 @@ const Opportunities = () => {
               </a>
             </div>
           </div>
-          <div className="bg-white  rounded-2xl hover:border-1 hover:border-red-700 p-6 sm:col-span-2">
-            <img src={birth} alt="group" />
-            <h2 className="text-[#1E1E1E] font-medium text-[20px]">
+          <div className="bg-white  rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 p-6 sm:col-span-2">
+            <div className="relative h-[200px] w-full">
+              <img
+                src={birth}
+                alt="group"
+                className="w-full h-full absolute inset-0 object-cover rounded-4xl object-center "
+              />
+            </div>
+
+            <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Birth abroad service
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] ">
+            <p className="text-[#686868] font-normal text-[16px] pt-2">
               Experience peace of mind with our comprehensive support for
               delivering your baby abroad, from planning to post-birth
               logistics.
             </p>
-            <div className="pt-4">
+            <div className="pt-4 mt-auto">
               <a
                 href="#"
                 className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
@@ -146,16 +166,23 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white  p-6 rounded-2xl hover:border-1 hover:border-red-700 ">
-            <img src={relocate} alt="group" />
-            <h2 className="text-[#1E1E1E] font-medium text-[20px]">
+          <div className="bg-white  p-6 rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 ">
+            <div className="relative h-[200px] w-full">
+              <img
+                src={relocate}
+                alt="group"
+                className="w-full h-full absolute inset-0 object-cover rounded-4xl object-center "
+              />
+            </div>
+
+            <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Relocation service
             </h2>
-            <p className="text-[#686868] font-normal text-[16px]">
+            <p className="text-[#686868] font-normal text-[16px] pt-2">
               Make your move stress-free with our professional relocation
               services, ensuring a smooth transition to your new destination.
             </p>
-            <div className="pt-4">
+            <div className="pt-4 mt-auto">
               <a
                 href="#"
                 className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"

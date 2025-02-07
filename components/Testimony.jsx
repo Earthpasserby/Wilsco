@@ -3,13 +3,14 @@ import like from "../public/images/like.png";
 import star from "../public/images/star.png";
 import profile from "../public/images/profile.png";
 import firm from "../public/images/firm.png";
+import { Link } from "react-router-dom";
 
 const Testimony = () => {
   return (
     <>
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid grid-cols-1 sm:grid-cols-2">
-          <div className="w-[423px] h-[191px]">
+          <div className="w-[423px] h-[191px] mb-24">
             <h1 className=" font-bold  text-[#1E1E1E] text-[32px]">
               Why Wilsco Travels?
             </h1>
@@ -18,16 +19,16 @@ const Testimony = () => {
               exceptional study abroad, travel, and relocation services backed
               by a global network and dedicated team.
             </p>
-            <div className="pt-14">
-              <a
-                href="#"
+            <div className="pt-14 ">
+              <Link
+                to="/contactus"
                 className="bg-transparent border border-gray-500 text-gray-500 px-8 py-3 rounded-4xl hover:bg-gray-100"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 mb-24">
             <div className="bg-[#FAE6E6]  hover:border-1 hover:border-red-700 px-4 py-8 rounded-2xl">
               <img src={like} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
