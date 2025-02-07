@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
 import logo from "../public/logo.png";
+import book from "/images/book.png";
+import baby from "/images/baby.png";
+import mob from "/images/mob.png";
+import bag from "/images/bag.png";
+import plane from "/images/plane.png";
+import t from "/images/t.png";
+
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -89,47 +96,77 @@ const Header = () => {
                   </button>
                   {/* Dropdown Menu */}
                   {dropdownOpen && (
-                    <div className="absolute left-0 mt-2 w-[589px] px-8 py-4 bg-white border-0 rounded-md shadow-lg z-50 grid grid-cols-2 gap-2 p-2">
+                    <div className="absolute left-0 mt-2 w-[500px] px-4 py-2 bg-white border-1 border-red-100 rounded-md shadow-lg z-50 grid grid-cols-2 gap-4 p-2 mb-4">
                       <Link
                         to="/service"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
                         onClick={() => setDropdownOpen(false)}
                       >
+                        <img
+                          src={book}
+                          alt="Service Icon"
+                          className="inline-block w-4 h-4 mr-2 "
+                        />
                         School service
                       </Link>
                       <Link
                         to="/visaservice"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
                         onClick={() => setDropdownOpen(false)}
                       >
+                        <img
+                          src={t}
+                          alt="Service Icon"
+                          className="inline-block w-4 h-4 mr-2 "
+                        />
                         Visa service
                       </Link>
                       <Link
                         to="/ticket"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
                         onClick={() => setDropdownOpen(false)}
                       >
+                        <img
+                          src={plane}
+                          alt="Service Icon"
+                          className="inline-block w-4 h-4 mr-2 "
+                        />
                         Ticketing & Reservation
                       </Link>
                       <Link
                         to="/birthservice"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
                         onClick={() => setDropdownOpen(false)}
                       >
+                        <img
+                          src={baby}
+                          alt="Service Icon"
+                          className="inline-block w-4 h-4 mr-2 "
+                        />
                         Birth abroad service
                       </Link>
                       <Link
                         to="/holidaypack"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
                         onClick={() => setDropdownOpen(false)}
                       >
+                        <img
+                          src={bag}
+                          alt="Service Icon"
+                          className="inline-block w-4 h-4 mr-2 "
+                        />
                         Holiday packages
                       </Link>
                       <Link
                         to="/relocateserv"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
                         onClick={() => setDropdownOpen(false)}
                       >
+                        <img
+                          src={mob}
+                          alt="Service Icon"
+                          className="inline-block w-4 h-4 mr-2 "
+                        />
                         Relocation service
                       </Link>
                     </div>
