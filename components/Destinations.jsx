@@ -88,7 +88,7 @@ export default function Destinations() {
       name: "HONG KONG",
       flag: "/flags/hongkong.png",
       description:
-        "A financial powerhouse with excellent education institutions, career prospects, and visa options.",
+        "A financial powerhouse with excellent education institutions, career prospects, and visa options making it a great destination for work and travel.",
     },
     {
       name: "THAILAND (E-VISA)",
