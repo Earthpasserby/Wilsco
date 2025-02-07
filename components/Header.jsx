@@ -96,7 +96,7 @@ const Header = () => {
                   </button>
                   {/* Dropdown Menu */}
                   {dropdownOpen && (
-                    <div className="absolute left-0 mt-2 w-[500px] px-4 py-2 bg-white border-1 border-red-100 rounded-md shadow-lg z-50 grid grid-cols-2 gap-4 p-2 mb-4">
+                    <div className="absolute left-0 mt-2 w-[500px] text-[14px] px-4 py-2 bg-white border-1 border-red-100 rounded-md shadow-lg z-50 grid grid-cols-2 gap-4 p-2 mb-4">
                       <Link
                         to="/service"
                         className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
@@ -129,7 +129,7 @@ const Header = () => {
                         <img
                           src={plane}
                           alt="Service Icon"
-                          className="inline-block w-4 h-4 mr-2 "
+                          className="inline-block w-6 h-6 mr-2 "
                         />
                         Ticketing & Reservation
                       </Link>
@@ -141,7 +141,7 @@ const Header = () => {
                         <img
                           src={baby}
                           alt="Service Icon"
-                          className="inline-block w-4 h-4 mr-2 "
+                          className="inline-block w-6 h-6 mr-2 "
                         />
                         Birth abroad service
                       </Link>
@@ -153,7 +153,7 @@ const Header = () => {
                         <img
                           src={bag}
                           alt="Service Icon"
-                          className="inline-block w-4 h-4 mr-2 "
+                          className="inline-block w-5 h-5 mr-2 "
                         />
                         Holiday packages
                       </Link>
@@ -165,7 +165,7 @@ const Header = () => {
                         <img
                           src={mob}
                           alt="Service Icon"
-                          className="inline-block w-4 h-4 mr-2 "
+                          className="inline-block w-6 h-6 mr-2 "
                         />
                         Relocation service
                       </Link>
