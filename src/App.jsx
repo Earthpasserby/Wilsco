@@ -10,6 +10,7 @@ import Ticket from "../pages/Ticket";
 import HolidayPack from "../pages/HolidayPack";
 import BirthService from "../pages/BirthService";
 import RelocateServ from "../pages/RelocateServ";
+import { Blog } from "../pages/Blog";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ function App() {
           <Route path="/HolidayPack" element={<HolidayPack />} />
           <Route path="/BirthService" element={<BirthService />} />
           <Route path="/RelocateServ" element={<RelocateServ />} />
+          <Route path="/Blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </>

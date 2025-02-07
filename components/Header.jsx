@@ -64,7 +64,7 @@ const Header = () => {
 
               {/* Desktop Navigation Links */}
               <div className="hidden sm:flex sm:space-x-12 mx-auto">
-                <a href="#" className="text-gray-500 hover:text-gray-700">
+                <a href="/" className="text-gray-500 hover:text-gray-700">
                   Home
                 </a>
 
@@ -87,44 +87,64 @@ const Header = () => {
                       <path d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-
                   {/* Dropdown Menu */}
                   {dropdownOpen && (
-                    <div className="absolute left-0 mt-2 w-48 bg-white border rounded-md shadow-lg z-50">
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                    <div className="absolute left-0 mt-2 w-[589px] px-8 py-4 bg-white border-0 rounded-md shadow-lg z-50 grid grid-cols-2 gap-2 p-2">
+                      <Link
+                        to="/service"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
                         onClick={() => setDropdownOpen(false)}
                       >
-                        Web Development
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                        School service
+                      </Link>
+                      <Link
+                        to="/visaservice"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
                         onClick={() => setDropdownOpen(false)}
                       >
-                        SEO Optimization
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                        Visa service
+                      </Link>
+                      <Link
+                        to="/ticket"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
                         onClick={() => setDropdownOpen(false)}
                       >
-                        Digital Marketing
-                      </a>
+                        Ticketing & Reservation
+                      </Link>
+                      <Link
+                        to="/birthservice"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        Birth abroad service
+                      </Link>
+                      <Link
+                        to="/holidaypack"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        Holiday packages
+                      </Link>
+                      <Link
+                        to="/relocateserv"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-200"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        Relocation service
+                      </Link>
                     </div>
                   )}
                 </div>
 
-                <a href="#" className="text-gray-500 hover:text-gray-700">
+                <Link to="/About" className="text-gray-500 hover:text-gray-700">
                   About Us
-                </a>
-                <a href="#" className="text-gray-500 hover:text-gray-700">
+                </Link>
+                <Link to="#" className="text-gray-500 hover:text-gray-700">
                   FAQs
-                </a>
-                <a href="#" className="text-gray-500 hover:text-gray-700">
+                </Link>
+                <Link to="/blog" className="text-gray-500 hover:text-gray-700">
                   Blog
-                </a>
+                </Link>
               </div>
 
               {/* Contact Us Button */}
