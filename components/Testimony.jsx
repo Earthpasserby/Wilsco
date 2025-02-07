@@ -10,7 +10,7 @@ const Testimony = () => {
     <>
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid grid-cols-1 sm:grid-cols-2">
-          <div className="w-[423px] h-[191px] mb-24">
+          <div className="sm:w-[423px] sm:h-[191px] mb-24">
             <h1 className=" font-bold  text-[#1E1E1E] text-[32px]">
               Why Wilsco Travels?
             </h1>

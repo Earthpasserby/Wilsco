@@ -7,7 +7,7 @@ const Insight = () => {
     <>
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid grid-cols-1 sm:grid-cols-2 ">
-          <div className="w-[444px] h-[191px] mb-11">
+          <div className="sm:w-[444px] sm:h-[191px] mb-11">
             <h1 className="text-[32px] font-bold  text-[#1E1E1E]">
               Insights & Travel Tips
             </h1>

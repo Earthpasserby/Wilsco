@@ -2,11 +2,11 @@ const Pack = () => {
   return (
     <>
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 sm:pt-24  pt-24 bg-[#fbfbfb]">
-        <div className="h-[600px] relative bg-[url('/public/images/acada.png')] bg-cover bg-center rounded-4xl px-8 ">
+        <div className="h-[600px] relative bg-[url('/public/images/acada.png')] bg-cover bg-center rounded-4xl px-2 ">
           <div className="Cont-overlay absolute inset-0 bg-black opacity-100"></div>
-          <div className="Cont-text">
+          <div className="Cont-text px-4">
             <div className="lg:w-[46%] px-2">
-              <h2 className="text-white text-[20px] lg:text-[32px] font-bold  pt-12">
+              <h2 className="text-white sm:text-[20px] lg:text-[32px] font-bold  pt-12">
                 Wilsco Travels is known for it’s successes in assisting with
                 study abroad, travel packages to several countries, relocation
                 services and lots more.
@@ -22,7 +22,7 @@ const Pack = () => {
               </a>
             </div>
 
-            <div className="pt-20">
+            <div className="pt-20  ">
               <p className="font-medium text-[16px] text-[#B9B9B9]">
                 Our Impact in Numbers
               </p>

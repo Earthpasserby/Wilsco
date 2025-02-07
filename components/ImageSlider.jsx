@@ -72,7 +72,7 @@ const slides = [
 
 const ImageSlider = () => {
   return (
-    <div className="relative w-full z-10">
+    <div className="">
       <div className="">
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -83,14 +83,17 @@ const ImageSlider = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="relative h-[1000px] w-full">
-                <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="w-full h-full object-cover object-center absolute inset-0"
-                />
+              <div className="relative h-[100vh] w-full">
+                <div className="">
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="w-full h-[100vh]  object-center object-cover absolute inset-0"
+                  />
+                </div>
+
                 <div className="absolute inset-0 bg-black opacity-80"></div>
-                <div className="absolute inset-0 top-[70vh] sm:top-[70vh] md:top-[70vh] lg:top-[65vh] flex flex-col justify-center items-start px-10 mx-auto sm:px-14 lg:px-14 transform -translate-y-1/2">
+                <div className="absolute inset-0 top-[70vh] sm:top-[60vh] md:top-[65vh] lg:top-[65vh] flex flex-col justify-center items-start px-10 mx-auto sm:px-14 lg:px-14 transform -translate-y-1/2">
                   <p className="text-red-100 text-[16px] font-medium uppercase tracking-wide">
                     {slide.span}
                   </p>

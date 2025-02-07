@@ -186,12 +186,12 @@ const Header = () => {
 
               {/* Contact Us Button */}
               <div className="hidden sm:block">
-                <a
-                  href="#"
+                <Link
+                  to="/contactus"
                   className="bg-transparent border border-gray-500 text-gray-500 px-8 py-3 rounded-4xl hover:bg-gray-100"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -199,77 +199,130 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="sm:hidden absolute top-16 left-0 w-full bg-gray-800">
+          <div className="sm:hidden absolute top-16 left-0 w-full bg-red-50">
             <div className="px-2 pt-2 pb-3 space-y-2">
-              <a
-                href="#"
-                className="block text-gray-300 px-3 py-2 rounded-md text-base hover:bg-gray-700"
+              <Link
+                to="/"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base  hover:bg-red-100"
                 onClick={() => setIsOpen(false)}
               >
                 Home
-              </a>
+              </Link>
 
-              {/* Mobile Dropdown for Our Services */}
+              {/* Dropdown for Our Services */}
               <div className="relative dropdown-menu">
                 <button
                   onClick={(e) => {
-                    e.stopPropagation();
+                    e.stopPropagation(); // Prevent closing when clicking the button
                     setDropdownOpen(!dropdownOpen);
                   }}
-                  className="block text-gray-300 px-3 py-2 rounded-md text-base hover:bg-gray-700 w-full text-left"
+                  className="text-gray-300  px-3 py-2 focus:outline-none flex items-center gap-1 hover:bg-red-100"
                 >
                   Our Services
+                  <svg
+                    className="w-4 h-4 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19 9l-7 7-7-7" />
+                  </svg>
                 </button>
+                {/* Dropdown Menu */}
                 {dropdownOpen && (
-                  <div className="bg-gray-700 px-3 py-2 space-y-1 rounded-md">
-                    <a
-                      href="#"
-                      className="block text-gray-300 hover:bg-gray-600 px-3 py-1 rounded-md"
-                      onClick={() => {
-                        setDropdownOpen(false);
-                        setIsOpen(false);
-                      }}
+                  <div className="absolute left-0 mt-2  text-[12px] px-4 py-2 bg-white border-1 border-red-100 rounded-md shadow-lg z-50 grid grid-cols-2 gap-4 p-2 mb-4">
+                    <Link
+                      to="/service"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      onClick={() => setDropdownOpen(false)}
                     >
-                      Web Development
-                    </a>
-                    <a
-                      href="#"
-                      className="block text-gray-300 hover:bg-gray-600 px-3 py-1 rounded-md"
-                      onClick={() => {
-                        setDropdownOpen(false);
-                        setIsOpen(false);
-                      }}
+                      <img
+                        src={book}
+                        alt="Service Icon"
+                        className="inline-block w-4 h-4 mr-2 "
+                      />
+                      School service
+                    </Link>
+                    <Link
+                      to="/visaservice"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      onClick={() => setDropdownOpen(false)}
                     >
-                      SEO Optimization
-                    </a>
-                    <a
-                      href="#"
-                      className="block text-gray-300 hover:bg-gray-600 px-3 py-1 rounded-md"
-                      onClick={() => {
-                        setDropdownOpen(false);
-                        setIsOpen(false);
-                      }}
+                      <img
+                        src={t}
+                        alt="Service Icon"
+                        className="inline-block w-4 h-4 mr-2 "
+                      />
+                      Visa service
+                    </Link>
+                    <Link
+                      to="/ticket"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      onClick={() => setDropdownOpen(false)}
                     >
-                      Digital Marketing
-                    </a>
+                      <img
+                        src={plane}
+                        alt="Service Icon"
+                        className="inline-block w-6 h-6 mr-2 "
+                      />
+                      Ticketing & Reservation
+                    </Link>
+                    <Link
+                      to="/birthservice"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      <img
+                        src={baby}
+                        alt="Service Icon"
+                        className="inline-block w-6 h-6 mr-2 "
+                      />
+                      Birth abroad service
+                    </Link>
+                    <Link
+                      to="/holidaypack"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      <img
+                        src={bag}
+                        alt="Service Icon"
+                        className="inline-block w-5 h-5 mr-2 "
+                      />
+                      Holiday packages
+                    </Link>
+                    <Link
+                      to="/relocateserv"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      <img
+                        src={mob}
+                        alt="Service Icon"
+                        className="inline-block w-6 h-6 mr-2 "
+                      />
+                      Relocation service
+                    </Link>
                   </div>
                 )}
               </div>
 
-              <NavLink
+              <Link
                 to="/about"
-                className="block text-gray-300 px-3 py-2 rounded-md text-base
-                hover:bg-gray-700"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base
+                 hover:bg-red-100"
                 onClick={() => setIsOpen(false)}
-              ></NavLink>
+              >
+                About Us
+              </Link>
 
-              <a
-                href="#"
-                className="block text-gray-300 px-3 py-2 rounded-md text-base hover:bg-gray-700"
+              <Link
+                to="contactus"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base hover:bg-red-100"
                 onClick={() => setIsOpen(false)}
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         )}
