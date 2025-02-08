@@ -93,7 +93,7 @@ export default function Faqsdet() {
     <div className="bg-[#fbfbfb]">
       <div className="max-w-4xl mx-auto p-6">
         {/* FAQ Category Buttons */}
-        <div className="w-full flex gap-4 bg-white rounded-2xl py-4 px-4">
+        <div className="w-full flex gap-4  rounded-2xl py-4 px-4">
           {["visa", "travel", "study"].map((type) => (
             <button
               key={type}
@@ -145,7 +145,7 @@ export default function Faqsdet() {
             className={`px-3 py-2 rounded-md ${
               currentPage === 1
                 ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                : "bg-red-500 text-white"
+                : "bg-gray-500 text-white"
             }`}
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
@@ -169,7 +169,7 @@ export default function Faqsdet() {
             className={`px-3 py-2 rounded-md ${
               currentPage === totalPages
                 ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                : "bg-red-500 text-white"
+                : "bg-gray-500 text-white"
             }`}
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))

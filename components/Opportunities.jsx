@@ -4,6 +4,7 @@ import tickett from "../public/images/tickett.png";
 import paris from "../public/images/paris.png";
 import birth from "../public/images/birth.png";
 import relocate from "../public/images/relocate.png";
+import { Link } from "react-router-dom";
 
 const Opportunities = () => {
   return (
@@ -46,12 +47,12 @@ const Opportunities = () => {
               guidance and support for study abroad applications.
             </p>
             <div className="pt-4 mt-auto">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/service"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -73,12 +74,12 @@ const Opportunities = () => {
               increase your approval chances.
             </p>
             <div className="pt-4 mt-auto">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/visaservice"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -100,12 +101,12 @@ const Opportunities = () => {
               cost-effective reservation services.
             </p>
             <div className="pt-4 mt-auto">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/ticket"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -130,12 +131,12 @@ const Opportunities = () => {
               suit your budget and preferences.
             </p>
             <div className="pt-4 mt-auto">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="holidaypack"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white  rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 p-6 sm:col-span-2">
@@ -156,12 +157,12 @@ const Opportunities = () => {
               logistics.
             </p>
             <div className="pt-4 mt-auto">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/birthservice"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -183,12 +184,12 @@ const Opportunities = () => {
               services, ensuring a smooth transition to your new destination.
             </p>
             <div className="pt-4 mt-auto">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/relocateserv"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           {/* Third Column (Larger One) */}

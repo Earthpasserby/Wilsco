@@ -1,6 +1,7 @@
 import React from "react";
 import paris1 from "../public/images/paris1.png";
 import calender from "../public/images/calender.png";
+import { Link } from "react-router-dom";
 
 const Insight = () => {
   return (
@@ -16,12 +17,12 @@ const Insight = () => {
               success stories to help you navigate your journey with confidence.
             </p>
             <div className="pt-8 ">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-6 py-3 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blog"
+                className="bg-transparent border border-gray-200 text-gray-500 px-6 py-3 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Explore more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
@@ -41,12 +42,12 @@ const Insight = () => {
                 Top 5 Countries with the Easiest Visa Approval Process in 2024
               </h3>
               <div className="pt-8 px-4 mb-8">
-                <a
-                  href="#"
-                  className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+                <Link
+                  to="/blog"
+                  className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
                 >
                   Read
-                </a>
+                </Link>
               </div>
             </div>
             <div className="bg-white rounded-bl-2xl rounded-br-2xl  ">
@@ -70,12 +71,12 @@ const Insight = () => {
                   Top 5 Countries with the Easiest Visa Approval Process in 2025
                 </h3>
                 <div className="pt-8 px-4 mb-8 ">
-                  <a
-                    href="#"
-                    className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+                  <Link
+                    to="/blog"
+                    className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
                   >
                     Read
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

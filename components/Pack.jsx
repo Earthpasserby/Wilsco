@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Pack = () => {
   return (
     <>
@@ -14,12 +16,12 @@ const Pack = () => {
             </div>
 
             <div className="pt-8">
-              <a
-                href="#"
-                className="bg-transparent border border-white text-white px-7 py-3 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/blogdet"
+                className="bg-transparent border border-white text-white px-7 py-3 rounded-4xl hover:bg-red-500 hover:border-0"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
 
             <div className="pt-20  ">

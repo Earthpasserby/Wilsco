@@ -23,7 +23,7 @@ const Bfooter = () => {
 
               <div className="pt-8 sm:pt-12">
                 <Link
-                  href="/contactus"
+                  to="/contactus"
                   className="text-red-500 px-8 sm:px-10 py-3 sm:py-4 rounded-4xl bg-white"
                 >
                   Contact us

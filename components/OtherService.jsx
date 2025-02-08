@@ -1,6 +1,7 @@
 import paris from "/images/paris.png";
 import visa from "/images/visa.png";
 import tickett from "/images/tickett.png";
+import { Link } from "react-router-dom";
 
 const OtherService = () => {
   return (
@@ -23,12 +24,12 @@ const OtherService = () => {
               and personalized assistance.
             </p>
             <div className="pt-10">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/visaservice"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white  rounded-2xl p-6 h-full hover:border-1 hover:border-red-700 ">
@@ -41,12 +42,12 @@ const OtherService = () => {
               cost-effective reservation services.
             </p>
             <div className="pt-10">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/ticket"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-white  rounded-2xl p-6 h-full  hover:border-1 hover:border-red-700">
@@ -59,12 +60,12 @@ const OtherService = () => {
               suit your budget and preferences.
             </p>
             <div className="pt-10">
-              <a
-                href="#"
-                className="bg-transparent border border-gray-500 text-gray-500 px-4 py-2 rounded-4xl hover:bg-gray-100"
+              <Link
+                to="/holidaypack"
+                className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
