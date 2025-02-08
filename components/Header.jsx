@@ -188,7 +188,7 @@ const Header = () => {
               <div className="hidden sm:block">
                 <Link
                   to="/contactus"
-                  className="bg-transparent border border-gray-500 text-gray-500 px-8 py-3 rounded-4xl hover:bg-gray-100"
+                  className="bg-transparent border border-gray-200 text-gray-500 px-8 py-3 rounded-4xl hover:text-white hover:border-0 hover:bg-red-500"
                 >
                   Contact Us
                 </Link>
