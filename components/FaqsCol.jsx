@@ -138,7 +138,7 @@ export default function FaqsCol() {
 
             {/* Buttons */}
             <div className="mt-4">
-              <Link to="/faqsdet">
+              <Link to="/faqsdetail">
                 <button className="w-full text-[16px] font-normal border-red-500 hover:bg-red-500 text-red-500 border-1 py-4 rounded-4xl  hover:text-white transition">
                   View FAQs
                 </button>
