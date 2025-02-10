@@ -9,7 +9,7 @@ const Testimony = () => {
   return (
     <>
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="sm:w-[423px] sm:h-[191px] mb-24">
             <h1 className=" font-bold  text-[#1E1E1E] text-[32px]">
               Why Wilsco Travels?
@@ -28,7 +28,7 @@ const Testimony = () => {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-24">
             <div className="bg-[#FAE6E6]  hover:border-1 hover:border-red-700 px-4 py-8 rounded-2xl">
               <img src={like} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">

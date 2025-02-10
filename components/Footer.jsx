@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-black">
-      <div className="w-full mx-auto px-4 sm:px-14 py-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6">
+      <div className="w-full mx-auto px-4 sm:px-14 py-10 grid grid-cols-2 md:grid-cols-2 sm:flex sm:flex-wrap gap-26">
         {/* Logo & Social Icons */}
         <div>
           <img
@@ -161,7 +161,10 @@ const Footer = () => {
             </li>
             <li className="flex items-center space-x-2">
               <FaMapMarkerAlt className="text-red-500" />
-              <span>172 Hunter Road, London, UKRM10 8HU</span>
+              <span>
+                172 Hunter Road, London, <br />
+                UKRM10 8HU
+              </span>
             </li>
           </ul>
         </div>

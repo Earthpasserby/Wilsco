@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import logo from "../public/logo.png";
-import book from "/images/book.png";
+import bok from "/images/bok.png";
 import baby from "/images/baby.png";
 import mob from "/images/mob.png";
-import bag from "/images/bag.png";
+import bag1 from "/images/bag1.png";
 import plane from "/images/plane.png";
-import t from "/images/t.png";
+import hol from "/images/hol.png";
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -103,9 +103,9 @@ const Header = () => {
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
-                          src={book}
+                          src={bok}
                           alt="Service Icon"
-                          className="inline-block w-4 h-4 mr-2 "
+                          className="inline-block w-6 h-6 mr-2 "
                         />
                         School service
                       </Link>
@@ -115,9 +115,9 @@ const Header = () => {
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
-                          src={t}
+                          src={bag1}
                           alt="Service Icon"
-                          className="inline-block w-4 h-4 mr-2 "
+                          className="inline-block w-6 h-6 mr-2"
                         />
                         Visa service
                       </Link>
@@ -151,9 +151,9 @@ const Header = () => {
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
-                          src={bag}
+                          src={hol}
                           alt="Service Icon"
-                          className="inline-block w-5 h-5 mr-2 "
+                          className="inline-block w-6 h-6 mr-2 "
                         />
                         Holiday packages
                       </Link>

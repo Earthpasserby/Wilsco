@@ -36,19 +36,19 @@ const Pack = () => {
                 <div>
                   <span className="font-bold text-[32px] leading-2">97%</span>
                   <p className="font-medium text-[16px] text-[#B9B9B9]">
-                    Happy client
+                    Client satisfaction
                   </p>
                 </div>
                 <div>
                   <span className="font-bold text-[32px] leading-2">100+</span>
                   <p className="font-medium text-[16px] text-[#B9B9B9]">
-                    Happy client
+                    Transit visa
                   </p>
                 </div>
                 <div>
                   <span className="font-bold text-[32px] leading-2">1.8k</span>
                   <p className="font-medium text-[16px] text-[#B9B9B9]">
-                    Happy client
+                    Flight tickets
                   </p>
                 </div>
               </div>

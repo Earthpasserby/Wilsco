@@ -56,10 +56,10 @@ const Stories = () => {
   return (
     <div className="w-full mx-auto px-4 lg:px-48 py-10 pt-32 bg-[#fbfbfb]">
       <div>
-        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl">
+        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] ">
           Success Stories:
         </h1>
-        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl">
+        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] ">
           Real People, Real Results
         </h1>
       </div>
@@ -69,7 +69,7 @@ const Stories = () => {
             key={index}
             className={`bg-white p-6 rounded-2xl  border border-gray-100 ${testimonial.size}`}
           >
-            <p className="text-gray-300 text-[16px]  font-medium">
+            <p className="text-[#686868] text-[16px]  font-medium">
               {testimonial.text}
             </p>
             <div className="flex items-center mt-4">

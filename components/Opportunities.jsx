@@ -27,8 +27,8 @@ const Opportunities = () => {
           </p>
         </div>
       </div>
-      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
-        <div className="grid sm:grid-cols-4 gap-6 pt-8">
+      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14  bg-[#fbfbfb]">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
           <div className="bg-white  rounded-2xl p-6  min-h-[400px] flex flex-col h-full hover:border-1 hover:border-red-700">
             <div className="relative h-[200px] w-full">
