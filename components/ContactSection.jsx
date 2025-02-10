@@ -12,7 +12,7 @@ export default function ContactSection() {
     <>
       {/* <div className="absolute inset-0 bg-gray-50 opacity-80"></div> */}
 
-      <div className="bg-[url('/public/images/map.png')] min-h-screen object-cover object-center  flex justify-center items-center ">
+      <div className="bg-[url('/images/mapbase.png')] min-h-screen  object-cover object-center  flex justify-center items-center ">
         <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10  p-8 sm:pt-28 ">
           {/* Left Section - Contact Info */}
           <div className="pt-20 sm:pt-0 p-6">
