@@ -23,6 +23,13 @@ import { Egypt } from "../pages/Egypt";
 import { East } from "../pages/East";
 import { South } from "../pages/South";
 import { Aus } from "../pages/Aus";
+import { Irs } from "../pages/Irs";
+import { Sey } from "../pages/Sey";
+import { Turkey } from "../pages/Turkey";
+import { Qatar } from "../pages/Qatar";
+import { Brazil } from "../pages/Brazil";
+import { Kong } from "../pages/Kong";
+import { Thai } from "../pages/THai";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -53,6 +60,13 @@ function App() {
           <Route path="/East" element={<East />} />
           <Route path="/South" element={<South />} />
           <Route path="/Aus" element={<Aus />} />
+          <Route path="/Irs" element={<Irs />} />
+          <Route path="/Sey" element={<Sey />} />
+          <Route path="/Turkey" element={<Turkey />} />
+          <Route path="/Qatar" element={<Qatar />} />
+          <Route path="/Brazil" element={<Brazil />} />
+          <Route path="/Kong" element={<Kong />} />
+          <Route path="/Thai" element={<Thai />} />
         </Routes>
       </BrowserRouter>
     </>

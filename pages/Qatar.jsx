@@ -1,15 +1,15 @@
 import Bfooter from "../components/Bfooter";
-import Brazildet from "../components/FaqsQandA/Brazildet";
-import BrazilImg from "../components/FaqsQandA/BrazilImg";
+import Qatardet from "../components/FaqsQandA/Qatardet";
+import QatarImg from "../components/FaqsQandA/QatarImg";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export const Brazil = () => {
+export const Qatar = () => {
   return (
     <>
       <Header />
-      <BrazilImg />
-      <Brazildet />
+      <QatarImg />
+      <Qatardet />
       <Bfooter />
       <Footer />
     </>

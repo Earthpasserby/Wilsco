@@ -1,15 +1,15 @@
 import Bfooter from "../components/Bfooter";
-import Brazildet from "../components/FaqsQandA/Brazildet";
-import BrazilImg from "../components/FaqsQandA/BrazilImg";
+import Kongdet from "../components/FaqsQandA/Kongdet";
+import KongImg from "../components/FaqsQandA/KongImg";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export const Brazil = () => {
+export const Kong = () => {
   return (
     <>
       <Header />
-      <BrazilImg />
-      <Brazildet />
+      <KongImg />
+      <Kongdet />
       <Bfooter />
       <Footer />
     </>

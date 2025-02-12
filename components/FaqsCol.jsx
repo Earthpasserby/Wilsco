@@ -124,7 +124,7 @@ export default function FaqsCol() {
         <h2 className="sm:text-3xl font-bold text-gray-800">
           Frequently asked questions
         </h2>
-        <p className="text-gray-200 mt-2 text-[16px] text-normal">
+        <p className="text-[#686868] mt-2 text-[16px] text-normal">
           List of FAQs by countries
         </p>
       </div>
