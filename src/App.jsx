@@ -29,7 +29,7 @@ import { Turkey } from "../pages/Turkey";
 import { Qatar } from "../pages/Qatar";
 import { Brazil } from "../pages/Brazil";
 import { Kong } from "../pages/Kong";
-import { Thai } from "../pages/THai";
+import { Thai } from "../pages/Thai";
 
 function App() {
   // const [count, setCount] = useState(0);
