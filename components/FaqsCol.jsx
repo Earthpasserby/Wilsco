@@ -154,7 +154,7 @@ export default function FaqsCol() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-8">
+            <div className="mt-10">
               <Link
                 to={`/${destination.country
                   .toLowerCase()
