@@ -8,7 +8,7 @@ const Pack = () => {
           <div className="Cont-overlay absolute inset-0 bg-black opacity-100"></div>
           <div className="Cont-text px-4">
             <div className="lg:w-[46%] px-2">
-              <h2 className="text-white sm:text-[20px] lg:text-[32px] font-bold  pt-12">
+              <h2 className="text-white sm:text-[20px] lg:text-[32px] font-bold leading-9  pt-12">
                 Wilsco Travels is known for it’s successes in assisting with
                 study abroad, travel packages to several countries, relocation
                 services and lots more.
@@ -18,7 +18,7 @@ const Pack = () => {
             <div className="pt-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border border-white text-white px-7 py-3 rounded-4xl hover:bg-red-500 hover:border-0"
+                className="bg-transparent border border-white text-white px-6 py-3 rounded-4xl hover:bg-red-500 hover:border-0"
               >
                 Learn more
               </Link>
@@ -31,7 +31,9 @@ const Pack = () => {
               <div className="grid grid-cols-2 sm:flex    gap-24 pt-10">
                 <div>
                   <span className="font-bold text-[32px] leading-2">2000+</span>
-                  <p className="font-medium text-[16px]">Happy client</p>
+                  <p className="font-medium text-[16px] text-[#B9B9B9]">
+                    Happy client
+                  </p>
                 </div>
                 <div>
                   <span className="font-bold text-[32px] leading-2">97%</span>

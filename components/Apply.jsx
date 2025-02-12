@@ -9,11 +9,11 @@ const Apply = () => {
             <img src={DP} alt="visa-img" className="" />
           </div>
           <div>
-            <h4 className="text-[32px] font-bold text-[#1E1E1E]">
+            <h4 className="text-[32px] font-bold text-[#1E1E1E] leading-10">
               Applying for a visa can be tricky, that is why you need
               professional guidance to avoid visa refusal.
             </h4>
-            <p className="text-[16px] font-normal text-gray-200">
+            <p className="text-[16px] font-normal text-[#1e1e1e}">
               This is where we come in to guide and assist you with the form
               filling, review of documents, travel itinerary that meet the
               specific embassy requirements and standards.

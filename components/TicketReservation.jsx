@@ -16,7 +16,7 @@ export default function TicketReservation() {
   return (
     <div className="relative  bg-[#fbfbfb]">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-b from-blue-600 to-white text-white text-center py-16">
+      <div className="relative bg-gradient-to-b from-blue-950 to-white text-white text-center py-16">
         <h2 className="text-[32px] font-bold pt-14">
           TICKETING AND RESERVATION
         </h2>
@@ -203,8 +203,8 @@ export default function TicketReservation() {
         {/* WhatsApp Contact Info */}
       </div>
 
-      <div className="lg:pb-24 pt-12 pb-12 px-4">
-        <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 text-center lg:mb-42 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2">
+      <div className="lg:pb-24 pt-2 pb-12 px-4">
+        <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 text-center lg:mb-32 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2">
           <FaExclamationCircle size={20} />
           <span className="text-[10px] sm:text-[12px]">
             Clicking on the search button takes you straight to our WhatsApp

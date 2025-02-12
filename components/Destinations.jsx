@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Destinations() {
   const destinations = [
     {
@@ -105,7 +107,7 @@ export default function Destinations() {
         <h2 className="text-3xl font-bold text-gray-800">
           Explore your next destination
         </h2>
-        <p className="text-gray-200 mt-2 text-[16px] text-normal">
+        <p className="text-[#1e1e1e] mt-2 text-[16px] text-normal">
           From top study hubs to dream travel locations, we connect you to the
           <br /> destinations worldwide for education, relocation, and
           adventure.
@@ -115,10 +117,7 @@ export default function Destinations() {
       {/* Grid Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {destinations.map((destination, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-4xl hover:border-1  hover:border-red-500 p-4 transition"
-          >
+          <div key={index} className="bg-white rounded-4xl p-4 transition">
             {/* Flag Image */}
             <img
               src={destination.flag}
@@ -127,28 +126,28 @@ export default function Destinations() {
             />
 
             {/* Country Name */}
-            <h3 className="text-xl font-semibold text-gray-800 mt-4">
+            <h3 className="text-xl font-semibold text-gray-800 mt-4 h-12">
               {destination.name}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm mt-2">
+            <p className="text-gray-600 text-sm mt-2 h-16">
               {destination.description}
             </p>
 
             {/* Buttons */}
-            <div className="mt-4">
-              <a href="#">
-                <button className="w-full text-[16px] font-normal bg-red-500 text-white py-4 rounded-4xl hover:bg-red-700 transition">
+            <div className="mt-8">
+              <Link to="/can">
+                <button className="w-full text-[16px] font-normal bg-red-700 text-white py-4 rounded-4xl hover:bg-red-700 transition">
                   Apply now
                 </button>
-              </a>
+              </Link>
 
-              <a href="#">
+              <Link to="/faqs">
                 <button className="w-full mt-2  py-2 text-[12px] font-normal text-gray-400 transition">
                   View FAQs
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

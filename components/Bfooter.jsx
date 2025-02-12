@@ -7,7 +7,7 @@ const Bfooter = () => {
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 sm:pt-24 pt-12">
         <div className="relative">
           {/* Overlay for better readability */}
-          <div className="absolute inset-0 bg-[url('/public/images/shapes.png')] bg-red-500 bg-opacity-50 object-center object-cover rounded-4xl "></div>
+          <div className="absolute inset-0 bg-[url('/public/images/shapes.png')] bg-red-700 bg-opacity-50 object-center object-cover rounded-4xl "></div>
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 px-6 sm:px-12 lg:px-24 min-h-[400px] sm:min-h-[550px] lg:min-h-[500px] items-center">
             {/* Left Content */}

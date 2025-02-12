@@ -8,7 +8,7 @@ const ServiceImg = () => {
             <div className="absolute inset-0 top-[50vh] sm:top-[30vh] md:top-[50vh] lg:top-[70vh]  sm:px-14 lg:px-14 px-4">
               <div>
                 <span className="font-medium text-[32px] text-white">
-                  School Service
+                  SCHOOL SERVICE
                 </span>
                 <p className="sm-w-[567px] lg:w-[567px] text-[16px] font-normal text-white">
                   We can assist you with reducing the stress associated with

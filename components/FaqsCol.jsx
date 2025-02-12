@@ -42,7 +42,7 @@ export default function FaqsCol() {
       name: "EAST AFRICA",
       flag: "/flags/east-africa.png",
       description:
-        "Visit breathtaking landscapes and booming economies across East African nations, including Kenya, Tanzania, and Uganda.",
+        "Visit breathtaking landscapes and booming economies across East African nations, including Kenya, Tanzania, etc.",
       country: "east",
     },
     {
@@ -63,7 +63,7 @@ export default function FaqsCol() {
       name: "KENYA",
       flag: "/flags/kenya.png",
       description:
-        "From wildlife safaris to thriving business hubs, Kenya offers great opportunities for tourism, education, and investment.",
+        "From wildlife safaris to thriving business hubs, Kenya offers great opportunities for tourism, education, etc, making it a place to visit.",
       country: "ken",
     },
     {
@@ -134,7 +134,7 @@ export default function FaqsCol() {
         {destinations.map((destination, index) => (
           <div
             key={index}
-            className="bg-white rounded-4xl hover:border-1  hover:border-red-500 p-4 transition"
+            className="bg-white rounded-lg h-full p-4 transition"
           >
             {/* Flag Image */}
             <img
@@ -161,7 +161,7 @@ export default function FaqsCol() {
                   .replace(/ /g, "")
                   .replace(/[^a-zA-Z0-9]/g, "")}`}
               >
-                <button className="w-full text-[16px] font-normal border-red-500 hover:bg-red-500 text-red-500 border-1 py-4 rounded-4xl  hover:text-white transition">
+                <button className="w-full text-[16px] font-normal border-red-700 hover:bg-red-700 text-red-500 border-1 py-4 rounded-4xl  hover:text-white transition">
                   View FAQs
                 </button>
               </Link>

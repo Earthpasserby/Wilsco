@@ -7,7 +7,7 @@ const VisaImg = () => {
           <div className="absolute inset-0 top-[60vh] sm:top-[30vh] md:top-[50vh] lg:top-[70vh]  sm:px-14 lg:px-14 px-4">
             <div>
               <span className="font-medium text-[32px] text-white">
-                Visa Service
+                VISA SERVICES
               </span>
               <p className="sm-w-[567px] lg:w-[567px] text-[16px] font-normal text-white">
                 We boast of 85% success rate bearing in mind that the visa

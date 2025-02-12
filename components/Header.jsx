@@ -68,12 +68,18 @@ const Header = () => {
               <div className="flex-shrink-0">
                 <img className="h-16 w-auto" src={logo} alt="Willsco-logo" />
               </div>
-
               {/* Desktop Navigation Links */}
               <div className="hidden sm:flex sm:space-x-12 mx-auto">
-                <a href="/" className="text-gray-500 hover:text-gray-700">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#000000]"
+                      : "text-gray-500 hover:text-gray-700"
+                  }
+                >
                   Home
-                </a>
+                </NavLink>
 
                 {/* Dropdown for Our Services */}
                 <div className="relative dropdown-menu">
@@ -173,17 +179,37 @@ const Header = () => {
                   )}
                 </div>
 
-                <Link to="/About" className="text-gray-500 hover:text-gray-700">
+                <NavLink
+                  to="/About"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#000000]"
+                      : "text-gray-500 hover:text-gray-700"
+                  }
+                >
                   About Us
-                </Link>
-                <Link to="/faqs" className="text-gray-500 hover:text-gray-700">
+                </NavLink>
+                <NavLink
+                  to="/faqs"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#000000]"
+                      : "text-gray-500 hover:text-gray-700"
+                  }
+                >
                   FAQs
-                </Link>
-                <Link to="/blog" className="text-gray-500 hover:text-gray-700">
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#000000]"
+                      : "text-gray-500 hover:text-gray-700"
+                  }
+                >
                   Blog
-                </Link>
+                </NavLink>
               </div>
-
               {/* Contact Us Button */}
               <div className="hidden sm:block">
                 <Link
@@ -201,13 +227,15 @@ const Header = () => {
         {isOpen && (
           <div className="sm:hidden absolute top-16 left-0 w-full bg-red-50">
             <div className="px-2 pt-2 pb-3 space-y-2">
-              <Link
+              <NavLink
+                exact
                 to="/"
                 className="block text-gray-600 px-3 py-2 rounded-md text-base  hover:bg-red-100"
+                activeClassName="text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 Home
-              </Link>
+              </NavLink>
 
               {/* Dropdown for Our Services */}
               <div className="relative dropdown-menu">
@@ -307,22 +335,24 @@ const Header = () => {
                 )}
               </div>
 
-              <Link
+              <NavLink
                 to="/about"
                 className="block text-gray-600 px-3 py-2 rounded-md text-base
                  hover:bg-red-100"
+                activeClassName="text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 About Us
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 to="contactus"
                 className="block text-gray-600 px-3 py-2 rounded-md text-base hover:bg-red-100"
+                activeClassName="text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 Contact Us
-              </Link>
+              </NavLink>
             </div>
           </div>
         )}
