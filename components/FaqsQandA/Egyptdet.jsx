@@ -11,28 +11,33 @@ const faqSets = {
         "1. International passport (must be valid for at least 6 months)\n2. 5X5 white background passport photograph\n3. Work details i.e., introduction letter, Work ID card, etc\n4. CAC registration certificate if business is registered.\n5. 6 months bank statement",
     },
     {
-      question: "What is the cost of applying for a UK visa?",
-      answer:
-        "Processing Fee - N200,000 per adult\nN160,000 per child\n\n6 Months Visa Fee\nIkeja or Abuja: $170\nVI Centre: $170 + £55 (Location Fee)\n\n2 Years Visa Fee\nIkeja or Abuja: $600\nVI Centre: $600 + £55 (Location Fee)\n\n5 Years Visa Fee\nIkeja or Abuja: $1000\nVI Centre: $1000 + £55 (Location Fee)\n\n10 Years Visa Fee\nIkeja or Abuja: $1250\nVI Centre: $1250 + £55 (Location Fee)\n\nApplication fee (Visiting Academic: 6-12 months):\nIkeja or Abuja: $309\nVI Centre: $309 + £55 (Location Fee)\n\nApplication fee (Medical Treatment: 11 months)\nIkeja or Abuja: $300\nVI Centre: $300 + £55 (Location Fee)\n\nApplication fee (Marriage Visitor: 6 months):\nIkeja or Abuja: $200\nVI Centre: $200 + £55 (Location Fee)\n\nAdded Services (Optional):\nFasTrack Service at our office (2 days): N20,000\nExpress courier: N8,000\nKeep my passport: N70,000\nPremium lounge (payment on-site): £89\nPrime time appointment (Payment on-site): N90,000\nFlexi Appointment (Payment on-site): £89\nFast track service (5 days): £220\nFast track service (1 day): £956\n\nWhat is a location fee: this is an extra service charge paid to the visa application centre if you want to submit in VI centre. Every other submission centre does not require this location fee.",
+      question: "What is the cost of applying for an Egypt visa?",
+      answer: "it cost of  N450,000",
+    },
+    {
+      question: "What is the duration of the visa?",
+      answer: "3-6months (at the discretion of the immigration officer)",
     },
     {
       question: "How long is the visa processing timeline?",
-      answer:
-        "It could take 30 to 60 working days after submission at the embassy.",
+      answer: "14-21 working days after submission",
     },
     {
-      question: "What does the visa processing fee include?",
+      question:
+        "What is the difference between Egypt visa and Egypt visa on arrival ?   ",
       answer:
-        "Filling of client’s application form\nFlight reservation and Hotel/accommodation reservation\nAdvisory services based on our experience\nDocuments review\nGuiding client through the application process\nFurther assistance where needed\nPreparing client for interview through a pre-interview stage where necessary",
+        "Egypt tourist visa requires proof of fund, work details etc, submission is in Abuja, interview might be required, its a sticker visa affixed to your passport before you travel. Egypt tourist visa-on-arrival requires doesn’t require proof of fund, work details etc, submission is online, interview is not required, its a sticker visa affixed to your passport once you arrive in Egypt.   ",
     },
     {
-      question: "Can I apply if I’m not employed?",
-      answer: "Yes, you can. You can make use of a sponsor.",
+      question: " What other information do I need to note?  ",
+      answer:
+        " Once the visa is processed, an Okay to Board document will be issued and printed with your flight tickets. Please provide us with the reference number to include it. A $25 visa fee will be payable upon arrival.",
     },
     {
-      question: "Is the submission online or physical?",
+      question:
+        " What are the terms and conditions for Nigerian Passport holders? ",
       answer:
-        "It's an online submission, however, you will be required to go for biometrics at either the Ikeja, VI or Abuja centre.",
+        " Once submitted, the entry permit cannot be canceled, and the visa fee is non-refundable.\nApplications will be rejected, and fees are non-refundable for individuals with a history of rejection, illegal entry, or violations in Egypt.\nEntry permit processing takes 14 working days.\n processing begins after the entry permit is approved and requires 7 working days.\nA soft copy of the entry permit will be sent 2–3 days before departure.\nThe entry permit is valid for 60 days from the approval date.\nTravel must be on a round-trip EgyptAir ticket.\nIf you hold a valid UK, USA, or Canada visa that has been used, you do not need an entry permit.",
     },
     {
       question: "Is the application interview based?",

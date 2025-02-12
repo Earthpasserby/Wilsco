@@ -6,19 +6,19 @@ const faqSets = {
   visa: [
     {
       question:
-        "What are the requirements documents needed to apply for a UK visa?",
+        "What are the requirements documents needed to apply for a SOUTH AFRICA visa?",
       answer:
         "1. International passport (must be valid for at least 6 months)\n2. 5X5 white background passport photograph\n3. Work details i.e., introduction letter, Work ID card, etc\n4. CAC registration certificate if business is registered.\n5. 6 months bank statement",
     },
     {
-      question: "What is the cost of applying for a UK visa?",
+      question: "What is the cost of applying for a SOUTH AFRICA visa?",
       answer:
-        "Processing Fee - N200,000 per adult\nN160,000 per child\n\n6 Months Visa Fee\nIkeja or Abuja: $170\nVI Centre: $170 + £55 (Location Fee)\n\n2 Years Visa Fee\nIkeja or Abuja: $600\nVI Centre: $600 + £55 (Location Fee)\n\n5 Years Visa Fee\nIkeja or Abuja: $1000\nVI Centre: $1000 + £55 (Location Fee)\n\n10 Years Visa Fee\nIkeja or Abuja: $1250\nVI Centre: $1250 + £55 (Location Fee)\n\nApplication fee (Visiting Academic: 6-12 months):\nIkeja or Abuja: $309\nVI Centre: $309 + £55 (Location Fee)\n\nApplication fee (Medical Treatment: 11 months)\nIkeja or Abuja: $300\nVI Centre: $300 + £55 (Location Fee)\n\nApplication fee (Marriage Visitor: 6 months):\nIkeja or Abuja: $200\nVI Centre: $200 + £55 (Location Fee)\n\nAdded Services (Optional):\nFasTrack Service at our office (2 days): N20,000\nExpress courier: N8,000\nKeep my passport: N70,000\nPremium lounge (payment on-site): £89\nPrime time appointment (Payment on-site): N90,000\nFlexi Appointment (Payment on-site): £89\nFast track service (5 days): £220\nFast track service (1 day): £956\n\nWhat is a location fee: this is an extra service charge paid to the visa application centre if you want to submit in VI centre. Every other submission centre does not require this location fee.",
+        " Processing Fee - N200,000 per adult N160,000 per child\nSouth Africa Sticker Visa Fees:\nVFS service fee: NGN25,400 (mandatory).\nSMS fee: NGN400 (mandatory).\nCourier services: NGN8,500 – NGN11,000 (optional).\nPremium lounge: NGN12,500 (optional).\nVisa application fee: NGN7,100 (mandatory).\nSouth Africa E-visa Fees:E-visa fee: $87\nSouth Africa Express e visa N1,300,000",
     },
     {
       question: "How long is the visa processing timeline?",
       answer:
-        "It could take 30 to 60 working days after submission at the embassy.",
+        " Sticker Visa: 3-4 weeks after submission\nE-visa (online only): 3-8 weeks after submission\nE-visa (VFS submission): 15-20 business days after submission\nExpress e visa (Online) : 5 to 7 working days   ",
     },
     {
       question: "What does the visa processing fee include?",
@@ -32,7 +32,7 @@ const faqSets = {
     {
       question: "Is the submission online or physical?",
       answer:
-        "It's an online submission, however, you will be required to go for biometrics at either the Ikeja, VI or Abuja centre.",
+        "For sticker visa, It’s paper submission but you must have your appointment booked and confirmed before you can go and submit at the VFS centre.For E-visa, there are two types: the one you will go for submission at the VFS and the other that is online submission only.",
     },
     {
       question: "Is the application interview based?",
@@ -45,9 +45,8 @@ const faqSets = {
         "Submission is based on the available appointment date. Please note that the appointment date availability changes from time to time.",
     },
     {
-      question: "Is an invitation letter compulsory for the visa application?",
-      answer:
-        "No, an invitation letter is not compulsory but can be an added advantage. However, it does not guarantee visa issuance.",
+      question: "What type of South Africa visa do you process? ",
+      answer: "E-visa\nSticker visa\nExpress e visa",
     },
     {
       question: "How much should be in my account while applying for the visa?",
