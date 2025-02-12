@@ -21,6 +21,7 @@ import { Can } from "../pages/Can";
 import { Schengen } from "../pages/schengen";
 import { Egypt } from "../pages/Egypt";
 import { East } from "../pages/East";
+import { South } from "../pages/South";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -49,6 +50,7 @@ function App() {
           <Route path="/Schengen" element={<Schengen />} />
           <Route path="/Egypt" element={<Egypt />} />
           <Route path="/East" element={<East />} />
+          <Route path="/South" element={<South />} />
         </Routes>
       </BrowserRouter>
     </>
