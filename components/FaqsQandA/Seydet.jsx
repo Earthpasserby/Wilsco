@@ -107,28 +107,7 @@ Note: You will be required to have a $150/day worth of travel allowance (PTA) to
       answer: "Of course we can and at affordable rates too!!!",
     },
   ],
-  school: [
-    {
-      question: "What should I pack for international travel?",
-      answer: "Passport, visa, clothes, money, etc.",
-    },
-    {
-      question: "How to book cheap flights?",
-      answer: "Book early, use comparison sites, travel off-peak.",
-    },
-    {
-      question: "Do I need travel insurance?",
-      answer: "Highly recommended for emergencies.",
-    },
-    {
-      question: "What are the best travel destinations?",
-      answer: "Depends on interests, budget, and season.",
-    },
-    {
-      question: "How to avoid jet lag?",
-      answer: "Adjust sleep before departure, stay hydrated.",
-    },
-  ],
+  school: [],
   study: [
     {
       question: "What are the best countries to study abroad?",

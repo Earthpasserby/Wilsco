@@ -90,46 +90,179 @@ const faqSets = {
   ],
   school: [
     {
-      question: "What should I pack for international travel?",
-      answer: "Passport, visa, clothes, money, etc.",
+      question: "What are the requirements to apply for admission in Canada?",
+      answer:
+        "UNDERGRADUATE\nWaec result\nInternational Passport\nPassport photograph\nHigh school transcript\nReferences\n\nPOSTGRADUATE\nWaec result\nWaec scratch card\nInternational Passport\nPassport photograph\nTranscript\nBSc certificate\nLetter of intent\nCV",
     },
     {
-      question: "How to book cheap flights?",
-      answer: "Book early, use comparison sites, travel off-peak.",
+      question: "How much is the school services fee?",
+      answer: "It costs N300,000 and we would be applying to two schools.",
     },
     {
-      question: "Do I need travel insurance?",
-      answer: "Highly recommended for emergencies.",
+      question: "What does the school service cover?",
+      answer:
+        "Reviewing your documents\nAdvisory services based on our experience\nDoing a school search\nGetting a suitable school\nCreating your student profile\nApplying for your admission (at least 2 schools)\nAssistance to pay for your admission (at least 2 schools)\nAdmission processing\nGetting your offer letter\nAssisting with tuition fee deposit (if applicable)\nFurther assistance where needed.",
     },
     {
-      question: "What are the best travel destinations?",
-      answer: "Depends on interests, budget, and season.",
+      question: "What are the requirements needed to apply for a student visa?",
+      answer:
+        "UNDERGRADUATE\nAdmission letter\nAcceptance letter\nStatement of account showing sufficient proof of funds\nPassport Photograph\nEnglish Proficiency test results (If applicable)\nSecondary Certificate Examination Result\nInternational Passport\n\nPOSTGRADUATE\nAdmission letter\nAcceptance letter\nStatement of account showing sufficient proof of funds\nPassport Photograph\nEnglish Proficiency test results (If applicable)\nUndergraduate Result\nInternational Passport",
     },
     {
-      question: "How to avoid jet lag?",
-      answer: "Adjust sleep before departure, stay hydrated.",
+      question: "What does the visa processing fee cover?",
+      answer:
+        "The visa processing fee which costs N200,000 covers:\nFilling of client’s application form\nFlight reservation\nSchool details\nAdvisory services based on our experience\nDocumentation review\nGuiding client through the application process\nFurther assistance where needed\nThe visa processing fee is only paid when you have your admission and you are ready to proceed with your study visa.\n\nStudy visa application fee & biometric: US$207 (If you have done biometrics in the last 10 years, application fee is $125)",
+    },
+    {
+      question: "What is the visa processing timeline?",
+      answer: "60 working days or more after submission at the embassy.",
+    },
+    {
+      question: "What is the duration of the visa?",
+      answer:
+        "This depends on program and course of study, but it is at the discretion of the consular.\n\nUndergraduate Course(s): 3-5 years\n\nPostgraduate course(s): 1-4 years",
+    },
+    {
+      question: "Is English Proficiency Test compulsory?",
+      answer:
+        "No, it depends on the school you are applying to if it's a requirement for admission",
+    },
+    {
+      question: "How much is the tuition fee?",
+      answer:
+        "This depends on your course and program but it's between $8,000 – $25,000 CAD",
+    },
+    {
+      question: "How much is the tuition deposit?",
+      answer:
+        "It depends on your course and program, but it is between $4,000 – $10,000 CAD",
+    },
+    {
+      question: "Will I pay any fees before I travel?",
+      answer:
+        "Yes, as soon as you are given admission. You will be required to pay some amount of money which is part of your tuition fees",
+    },
+    {
+      question: "Can I work while studying?",
+      answer: "Yes you can.",
+    },
+    {
+      question: "If I'm refused the visa, will I get a refund?",
+      answer:
+        "No, you won't get a refund. You can reapply without paying the processing fees.",
+    },
+    {
+      question: "How much do I need to have in my account?",
+      answer:
+        "Enough to cover your expenses abroad including the school fees, further guidance will be given to you during the process.",
     },
   ],
-  study: [
+  birth: [
     {
-      question: "What are the best countries to study abroad?",
-      answer: "UK, USA, Canada, Germany, Australia.",
+      question: "When is the best time to start the process?",
+      answer:
+        "It is advisable to start early. It is better to start even before you get pregnant to enable you to prepare adequately.",
     },
     {
-      question: "How do I apply for a student visa?",
-      answer: "Admission letter, proof of funds, language tests.",
+      question: "How long does it take to process a Canada visa?",
+      answer:
+        "It could take from 3 months to a year. That's why it's advisable to start before you get pregnant.",
     },
     {
-      question: "Are scholarships available?",
-      answer: "Yes, many universities offer scholarships.",
+      question: "What is the duration of the visa?",
+      answer: "It depends on the validity of your passport.",
     },
     {
-      question: "What documents do I need for study visas?",
-      answer: "ID, transcripts, proof of funds, acceptance letter.",
+      question: "What is the breakdown for visa application fee?",
+      answer:
+        "Processing Fee: N200,000\nVisa Fee: $185\nBirth Package: N300,000.",
     },
     {
-      question: "How long does it take to get a student visa?",
-      answer: "Usually 4-8 weeks, depending on the country.",
+      question: "What documents do I need for the Visa Processing?",
+      answer: "Bank statement, work details and hospital details.",
+    },
+    {
+      question: "What does the Birth package cover for Canada application?",
+      answer:
+        "N300,000 covers:\n– Hospital/Doctor full details\n– Doctor’s appointment\n– Preparation for Poe\n– Accommodation recommendation if applicable (Apartment and Hotel).\n– Flight booking if applicable.\n– Guide to Baby documentation.",
+    },
+    {
+      question:
+        "Must I declare medical reasons if going for a Canada Visa application?",
+      answer:
+        "It is advisable to declare medical reasons to ensure smooth Port of Entry (POE) and renewal.",
+    },
+    {
+      question: "Will I go for an Interview?",
+      answer: "No.",
+    },
+    {
+      question: "When can I travel after my visa has been granted?",
+      answer:
+        "You can travel immediately if a visa is issued. This also depends on the stage of pregnancy you are.",
+    },
+    {
+      question: "How long can I stay in Canada?",
+      answer:
+        "It is recommended to stay for 8 weeks. You can however, stay longer with valid reason.",
+    },
+    {
+      question: "How much do I need to have in my account?",
+      answer:
+        "Enough to cover the trip including medical bills and living expenses. We would draw up a budget sheet for you.",
+    },
+    {
+      question: "What is the estimated cost of giving birth in the USA?",
+      answer:
+        "The estimated cost of giving birth is $7000 CAD for Vaginal Birth and $9000 CAD for CS Birth. It includes Doctor, Hospital and pediatrician bills. It is advisable to budget higher.",
+    },
+    {
+      question: "Can I apply with my family?",
+      answer: "Yes, you can.",
+    },
+    {
+      question: "Does the bill cover processing of my baby’s documentation?",
+      answer: "No, Baby’s documentation process costs an average of $700 CAD.",
+    },
+    {
+      question: "Can I know the name of the hospital you use?",
+      answer:
+        "We will disclose the hospital details when process payment is made.",
+    },
+    {
+      question: "Can I sponsor myself or must my husband sponsor me?",
+      answer:
+        "Either one of you can sponsor your trip. You can also get a third-party sponsor.",
+    },
+    {
+      question: "Do I need to pay the hospital and doctor’s bill from Nigeria?",
+      answer:
+        "No, you only pay directly to the hospital and doctor when you travel.",
+    },
+    {
+      question: "Is your visa guaranteed?",
+      answer:
+        "We do not guarantee visas as visa issuance is at the sole discretion of the consular. We offer an 85% success rate and based on our visa knowledge and expertise, we will guide you for a better chance.",
+    },
+    {
+      question: "If I am refused a visa will there be a refund?",
+      answer:
+        "No, but you can reapply without paying the processing fee. (You will be required to pay the Visa fee only). This is only valid for 3 months after denial.",
+    },
+    {
+      question: "Do I need to have a travel history before applying?",
+      answer:
+        "No, you do not need to have travel history, but it is an added advantage.",
+    },
+    {
+      question:
+        "If I already have a visa, can I still apply for the maternity package?",
+      answer: "Yes.",
+    },
+    {
+      question: "What are the benefits of giving birth in Canada?",
+      answer:
+        "Canada passport is ranked the 8th strongest passport in the world.\nYour child gets instant citizenship by birth and social security number.\nThe passport allows your child access to 176 visa free countries.\nThe child can file for second citizenship for family members when he's of age.",
     },
   ],
 };
@@ -157,7 +290,7 @@ export default function CanDet() {
       <div className="max-w-4xl mx-auto p-6">
         {/* FAQ Category Buttons */}
         <div className="w-full flex gap-4  rounded-2xl py-4 px-4">
-          {["visa", "school", "study"].map((type) => (
+          {["visa", "school", "birth"].map((type) => (
             <button
               key={type}
               className={`px-4 py-2 rounded-lg ${
@@ -173,7 +306,7 @@ export default function CanDet() {
                 ? "Visa Services"
                 : type === "school"
                 ? "School service"
-                : "Study Abroad"}
+                : "Birth Services"}
             </button>
           ))}
         </div>

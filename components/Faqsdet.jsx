@@ -90,48 +90,76 @@ const faqSets = {
   ],
   school: [
     {
-      question: "What should I pack for international travel?",
-      answer: "Passport, visa, clothes, money, etc.",
+      question:
+        "What are the requirements to apply for admission in United Kingdom?",
+      answer:
+        "UNDERGRADUATE\nWaec result\nInternational Passport\nPassport photograph\nHigh school transcript\nReferences\n\nPOSTGRADUATE\nWaec result\nWaec scratch card\nInternational Passport\nPassport photograph\nTranscript\nBSc certificate\nLetter of intent\nCV\nEnglish Proficiency (where applicable)",
     },
     {
-      question: "How to book cheap flights?",
-      answer: "Book early, use comparison sites, travel off-peak.",
+      question: "How much is the school services fee?",
+      answer: "It costs N300,000 and we would be applying to two schools.",
     },
     {
-      question: "Do I need travel insurance?",
-      answer: "Highly recommended for emergencies.",
+      question: "What does the school service cover?",
+      answer:
+        "Reviewing your documents\nAdvisory services based on our experience\nDoing a school search\nGetting a suitable school\nCreating your student profile\nApplying for your admisssion (at least 2 schools)\nAssistance to pay for your admission (at least 2 schools)\nAdmission processing\nGetting your offer letter\nAssisting with tuition fee deposit (if applicable)\nFurther assistance where needed.",
     },
     {
-      question: "What are the best travel destinations?",
-      answer: "Depends on interests, budget, and season.",
+      question: "What are the requirements needed to apply for a student visa?",
+      answer:
+        "UNDERGRADUATE\nAdmission letter\nAcceptance letter\nStatement of account showing sufficient proof of funds\nPassport Photograph\nEnglish Proficiency test results (If applicable)\nSecondary Certificate Examination Result\nInternational Passport\n\nPOSTGRADUATE\nAdmission letter\nAcceptance letter\nStatement of account showing sufficient proof of funds\nPassport Photograph\nEnglish Proficiency test results (If applicable)\nUndergraduate Degree Certificate\nInternational Passport\nTranscript\nDetailed CV",
     },
     {
-      question: "How to avoid jet lag?",
-      answer: "Adjust sleep before departure, stay hydrated.",
+      question: "What does the visa processing fee cover?",
+      answer:
+        "The visa processing fee which costs N200,000 covers:\nFilling of client’s application form\nFlight reservation\nSchool details\nAdvisory services based on our experience\nDocumentation review\nGuiding client through the application process\nFurther assistance where needed\nThe visa processing fee is only paid when you have your admission and you are ready to proceed with your study visa.\n\nStudy visa application fee & biometric: $508\n\nHealth Surcharge: £470-1000.",
+    },
+    {
+      question: "What is the visa processing timeline?",
+      answer: "60 working days or more after submission at the embassy.",
+    },
+    {
+      question: "What is the duration of the visa?",
+      answer:
+        "This depends on program and course of study, but it is at the discretion of the consular.\n\nUndergraduate Course(s): 3-5years\n\nPostgraduate course(s): 1-4years",
+    },
+    {
+      question: "Is English Proficiency Test compulsory?",
+      answer:
+        "No, it depends on the school you are applying to if its a requirement for admission",
+    },
+    {
+      question: "How much is the tuition fee?",
+      answer:
+        "This depends on your course and program but its between £8,000 – £20,000",
+    },
+    {
+      question: "How much is the tuition deposit?",
+      answer:
+        "It depends on your course and program, but it is between £3,000 – £10,000",
+    },
+    {
+      question: "Will I pay any fees before I travel?",
+      answer:
+        "Yes, as soon as you are given admission. You will be required to pay some amount of money which is part of your tuition fees",
+    },
+    {
+      question: "Can I work while studying?",
+      answer:
+        "Yes you can. But it is also dependent on the terms on your student visa",
+    },
+    {
+      question: "If I'm refused the visa, will I get a refund?",
+      answer:
+        "No , you won't get a refund. You can reapply without paying the processing fees.",
+    },
+    {
+      question: "How much do I need to have in my account?",
+      answer:
+        "Enough to cover your expenses abroad including the school fees, further guidance will be given to you during the process.",
     },
   ],
-  study: [
-    {
-      question: "What are the best countries to study abroad?",
-      answer: "UK, USA, Canada, Germany, Australia.",
-    },
-    {
-      question: "How do I apply for a student visa?",
-      answer: "Admission letter, proof of funds, language tests.",
-    },
-    {
-      question: "Are scholarships available?",
-      answer: "Yes, many universities offer scholarships.",
-    },
-    {
-      question: "What documents do I need for study visas?",
-      answer: "ID, transcripts, proof of funds, acceptance letter.",
-    },
-    {
-      question: "How long does it take to get a student visa?",
-      answer: "Usually 4-8 weeks, depending on the country.",
-    },
-  ],
+  birth: [],
 };
 
 export default function Faqsdet() {
@@ -157,7 +185,7 @@ export default function Faqsdet() {
       <div className="max-w-4xl mx-auto p-6">
         {/* FAQ Category Buttons */}
         <div className="w-full flex gap-4  rounded-2xl py-4 px-4">
-          {["visa", "school", "study"].map((type) => (
+          {["visa", "school", "birth"].map((type) => (
             <button
               key={type}
               className={`px-4 py-2 rounded-lg ${
@@ -173,7 +201,7 @@ export default function Faqsdet() {
                 ? "Visa Services"
                 : type === "school"
                 ? "School service"
-                : "Study Abroad"}
+                : "Birth Services"}
             </button>
           ))}
         </div>
