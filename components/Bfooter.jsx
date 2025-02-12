@@ -8,7 +8,7 @@ const Bfooter = () => {
         <div className="relative">
           {/* Overlay for better readability */}
           <div
-            className="absolute inset-0 bg-red-800 opacity-90 object-center object-cover rounded-4xl"
+            className="absolute inset-0 bg-red-700 opacity-500 object-center object-cover rounded-4xl"
             style={{
               backgroundImage: `url(${"/images/Shapes.png"})`,
             }}
