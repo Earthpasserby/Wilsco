@@ -21,7 +21,7 @@ export default function BlogDetail() {
         <span className="text-gray-600 ">Everything you need to know</span>
       </h1>
       <div className="flex item-center justify-center gap-4">
-        <p className="text-gray-300 text-center text-[12px] mt-2">
+        <p className="text-[#1e1e1e] text-center text-[12px] mt-2">
           <img
             src={calender}
             alt="Service Icon"
@@ -29,7 +29,7 @@ export default function BlogDetail() {
           />
           Published on February 7, 2025
         </p>
-        <p className="text-gray-300 text-center text-[12px] mt-2">
+        <p className="text-[#1e1e11e] text-center text-[12px] mt-2">
           <img
             src={calender}
             alt="Service Icon"

@@ -13,12 +13,12 @@ export const BlogImg = () => {
               Discover the step-by-step process of studying in top destinations,
               from choosing the right school to securing your visa.
             </p>
-            <div className="pt-4">
-              <button className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2">
-                <span>Read</span>
-                {/* <FaSearch /> */}
-              </button>
-            </div>
+            {/* <div className="pt-4"> */}
+            {/* <button className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2"> */}
+            {/* <span>Read</span> */}
+            {/* <FaSearch /> */}
+            {/* </button> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
