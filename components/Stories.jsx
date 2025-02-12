@@ -30,22 +30,16 @@ const testimonials = [
     text: "“I wrote my IELTS for the first time with WILSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course ”",
     name: "Karen Forsyth",
     location: "Ireland",
-    size: "row-span-0", // Taller card
+    size: "row-span-1", // Normal height
   },
   {
     text: "“We are your gateway to unforgettable destinations and remarkable experiences around the globe. Whether you crave a sun-soaked beach retreat, a thrilling mountain expedition, or a cultural immersion in bustling cities, we've got you covered. Take the first step towards your next extraordinary adventure and start exploring today.”",
     name: "Karen Forsyth",
     location: "Ireland",
-    size: "row-span-1", // Taller card
+    size: "row-span-2", // Taller card
   },
   {
     text: "“I wrote my IELTS for the first time with WILSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course ”",
-    name: "Chisom O.",
-    location: "Canada",
-    size: "row-span-1", // Taller card
-  },
-  {
-    text: "“I wrote my IELTS for the first time with WILSCO tutorials and I had a 7.5 score. They also assisted",
     name: "Chisom O.",
     location: "Canada",
     size: "row-span-1", // Taller card
@@ -82,7 +76,7 @@ const Stories = () => {
                 <p className="text-gray-900 font-semibold">
                   {testimonial.name}
                 </p>
-                <p className="text-gray-500 text-sm">{testimonial.location}</p>
+                <p className="text-gray-500  text-sm">{testimonial.location}</p>
               </div>
             </div>
           </div>
