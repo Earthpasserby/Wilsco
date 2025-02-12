@@ -18,7 +18,7 @@ import { Contactus } from "../pages/Contactus";
 import { UK } from "../pages/UK";
 import { US } from "../pages/US";
 import { Can } from "../pages/Can";
-import { Schengen } from "../pages/schengen";
+import { Schengen } from "../pages/Schengen";
 import { Egypt } from "../pages/Egypt";
 import { East } from "../pages/East";
 import { South } from "../pages/South";
