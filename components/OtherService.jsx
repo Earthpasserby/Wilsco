@@ -12,9 +12,9 @@ const OtherService = () => {
             Other services
           </h3>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
           {/* First Column */}
-          <div className="bg-white rounded-2xl p-6 h-full ">
+          <div className="bg-white rounded-2xl p-6 h-full flex flex-col justify-between">
             <img src={visa} alt="group" className="rounded-4xl w-full" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-4">
               Visa services
@@ -32,7 +32,7 @@ const OtherService = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-white rounded-2xl p-6 h-full ">
+          <div className="bg-white rounded-2xl p-6 h-full flex flex-col justify-between ">
             <img src={tickett} alt="group" className="rounded-4xl w-full" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-7">
               Ticketing and Reservation
@@ -50,7 +50,7 @@ const OtherService = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-white rounded-2xl p-6 h-full ">
+          <div className="bg-white rounded-2xl p-6 h-full flex flex-col justify-between">
             <img src={paris} alt="group" className="rounded-4xl w-full" />
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-4">
               Holiday packages

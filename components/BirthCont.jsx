@@ -66,24 +66,21 @@ export default function BirthCont() {
       {/* Grid Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {destinations.map((destination, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-4xl hover:border-1  hover:border-red-500 p-4 transition"
-          >
+          <div key={index} className="bg-white rounded-4xl  p-4 transition">
             {/* Flag Image */}
             <img
               src={destination.flag}
               alt={destination.name}
-              className="w-full h-40 object-cover rounded-t-lg"
+              className="w-full h-40 object-cover rounded-t-lg "
             />
 
             {/* Country Name */}
-            <h3 className="text-xl font-semibold text-gray-800 mt-4">
+            <h3 className="text-xl font-semibold text-gray-800 mt-4 h-12">
               {destination.name}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm mt-2">
+            <p className="text-gray-600 text-sm mt-2 h-16">
               {destination.description}
             </p>
 

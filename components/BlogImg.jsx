@@ -18,7 +18,6 @@ export const BlogImg = () => {
                 <span>Read</span>
                 {/* <FaSearch /> */}
               </button>
-              ttt
             </div>
           </div>
         </div>
