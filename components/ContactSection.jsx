@@ -19,7 +19,7 @@ export default function ContactSection() {
             <h2 className="sm:text-[30px] text-gray-900 font-bold">
               WE’D LOVE TO HEAR FROM YOU
             </h2>
-            <p className="text-gray-300 mt-2 sm:[16px] font-normal">
+            <p className="text-gray-600 mt-2 sm:[16px] font-normal">
               Have any inquiries? Our team is ready to provide expert guidance.
               Send us a message, and we’ll respond promptly.
             </p>
@@ -44,7 +44,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Details */}
-            <div className="bg-white rounded-2xl px-8 py-4 shadow hover:border hover:border-red-500">
+            <div className="bg-white rounded-2xl px-8 py-4 shadow ">
               <p className="text-gray-600 mt-4">
                 Have questions about studying abroad, travel packages, or
                 relocation services? Our team is here to assist you every step
@@ -64,8 +64,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right Section - Contact Form */}
-          <div className="bg-white p-6 rounded-lg shadow-md py-8 hover:border hover:border-red-500 ">
-            <h3 className="sm:text-[12px] font-semibold text-gray-200 mb-4 px-4">
+          <div className="bg-white p-6 rounded-lg shadow-md py-8 ">
+            <h3 className="sm:text-[12px] font-semibold text-gray-600 mb-4 px-4">
               SEND US A MESSAGE
             </h3>
 

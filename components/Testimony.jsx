@@ -29,7 +29,7 @@ const Testimony = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-24">
-            <div className="bg-[#FAE6E6]  hover:border-1 hover:border-red-700 px-4 py-8 rounded-2xl">
+            <div className="bg-[#FAE6E6]   px-4 py-8 rounded-2xl">
               <img src={like} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 Excellent client service{" "}
@@ -40,7 +40,7 @@ const Testimony = () => {
                 stress-free.
               </p>
             </div>
-            <div className="bg-[#E9F9E8]  hover:border-1 hover:border-green-700 px-4 py-8 rounded-2xl">
+            <div className="bg-[#E9F9E8]   px-4 py-8 rounded-2xl">
               <img src={star} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 High success rate
@@ -51,7 +51,7 @@ const Testimony = () => {
                 or traveling abroad.
               </p>
             </div>
-            <div className="bg-[#F9F4E8] hover:border-1 hover:border-yellow-500 px-4 py-8 rounded-2xl ">
+            <div className="bg-[#F9F4E8]  px-4 py-8 rounded-2xl ">
               <img src={profile} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 Professionalism
@@ -62,7 +62,7 @@ const Testimony = () => {
                 ensuring your peace of mind.
               </p>
             </div>
-            <div className="bg-[#E9E9E9]  hover:border-1 hover:border-gray-500 px-4 py-8 rounded-2xl ">
+            <div className="bg-[#E9E9E9]   px-4 py-8 rounded-2xl ">
               <img src={firm} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 International partnerships

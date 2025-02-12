@@ -30,7 +30,7 @@ const Opportunities = () => {
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14  bg-[#fbfbfb]">
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 pt-8">
           {/* First Column */}
-          <div className="bg-white  rounded-2xl p-6  min-h-[400px] flex flex-col h-full hover:border-1 hover:border-red-700">
+          <div className="bg-white  rounded-2xl p-6  min-h-[400px] flex flex-col h-full ">
             <div className="relative h-[200px] w-full">
               <img
                 src={sch}
@@ -57,7 +57,7 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white  p-6 rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 ">
+          <div className="bg-white  p-6 rounded-2xl  min-h-[400px] flex flex-col h-full  ">
             <div className="relative h-[200px] w-full">
               <img
                 src={visa}
@@ -84,7 +84,7 @@ const Opportunities = () => {
           </div>
 
           {/* Third Column (Larger One) */}
-          <div className="bg-white  rounded-2xl p-6  hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 sm:col-span-2 lg:col-span-2">
+          <div className="bg-white  rounded-2xl p-6   min-h-[400px] flex flex-col h-full sm:col-span-2 lg:col-span-2">
             <div className="h-[200px] w-full relative">
               <img
                 src={tickett}
@@ -114,7 +114,7 @@ const Opportunities = () => {
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-8 bg-[#fbfbfb]">
         <div className="grid sm:grid-cols-4 gap-4 pt-8">
           {/* First Column */}
-          <div className="bg-white  rounded-2xl p-6  hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700">
+          <div className="bg-white  rounded-2xl p-6   min-h-[400px] flex flex-col h-full ">
             <div className="relative h-[200px] w-full">
               <img
                 src={paris}
@@ -139,7 +139,7 @@ const Opportunities = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-white  rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 p-6 sm:col-span-2">
+          <div className="bg-white  rounded-2xl  min-h-[400px] flex flex-col h-full  p-6 sm:col-span-2">
             <div className="relative h-[200px] w-full">
               <img
                 src={birth}
@@ -167,7 +167,7 @@ const Opportunities = () => {
           </div>
 
           {/* Second Column */}
-          <div className="bg-white  p-6 rounded-2xl hover:border-1 min-h-[400px] flex flex-col h-full hover:border-red-700 ">
+          <div className="bg-white  p-6 rounded-2xl  min-h-[400px] flex flex-col h-full ">
             <div className="relative h-[200px] w-full">
               <img
                 src={relocate}
