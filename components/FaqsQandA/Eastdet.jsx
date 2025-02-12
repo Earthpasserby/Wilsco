@@ -5,20 +5,24 @@ import { FaChevronDown } from "react-icons/fa";
 const faqSets = {
   visa: [
     {
-      question:
-        "What are the requirements documents needed to apply for a UK visa?",
+      question: "What is an East Africa Visa?",
       answer:
-        "1. International passport (must be valid for at least 6 months)\n2. 5X5 white background passport photograph\n3. Work details i.e., introduction letter, Work ID card, etc\n4. CAC registration certificate if business is registered.\n5. 6 months bank statement",
+        "The East Africa Tourist Visa will allow travel between Kenya, Rwanda and Uganda with the same multiple entry visa.This visa is the result of a joint initiative made by the Heads of States of the respective partner countries to boost regional travel and create opportunities for tourists to explore the diversity of East Africa. Travelers from any country can obtain a multiple entry visa that will allow entry to the Republic of Kenya, the Republic of Rwanda, and the Republic of Uganda for tourism over a period of 90 days. ",
     },
     {
-      question: "What is the cost of applying for a UK visa?",
+      question:
+        "What are the requirements documents needed to apply for a East Africa visa?",
+      answer:
+        "1.International passport data page\n2. Clear passport photo \n3. Yellow fever vaccination card \n4. Travel itinerary \n5.  Hotel booking",
+    },
+    {
+      question: "What is the cost of applying for this visa?",
       answer:
         "Processing Fee - N200,000 per adult\nN160,000 per child\n\n6 Months Visa Fee\nIkeja or Abuja: $170\nVI Centre: $170 + £55 (Location Fee)\n\n2 Years Visa Fee\nIkeja or Abuja: $600\nVI Centre: $600 + £55 (Location Fee)\n\n5 Years Visa Fee\nIkeja or Abuja: $1000\nVI Centre: $1000 + £55 (Location Fee)\n\n10 Years Visa Fee\nIkeja or Abuja: $1250\nVI Centre: $1250 + £55 (Location Fee)\n\nApplication fee (Visiting Academic: 6-12 months):\nIkeja or Abuja: $309\nVI Centre: $309 + £55 (Location Fee)\n\nApplication fee (Medical Treatment: 11 months)\nIkeja or Abuja: $300\nVI Centre: $300 + £55 (Location Fee)\n\nApplication fee (Marriage Visitor: 6 months):\nIkeja or Abuja: $200\nVI Centre: $200 + £55 (Location Fee)\n\nAdded Services (Optional):\nFasTrack Service at our office (2 days): N20,000\nExpress courier: N8,000\nKeep my passport: N70,000\nPremium lounge (payment on-site): £89\nPrime time appointment (Payment on-site): N90,000\nFlexi Appointment (Payment on-site): £89\nFast track service (5 days): £220\nFast track service (1 day): £956\n\nWhat is a location fee: this is an extra service charge paid to the visa application centre if you want to submit in VI centre. Every other submission centre does not require this location fee.",
     },
     {
       question: "How long is the visa processing timeline?",
-      answer:
-        "It could take 30 to 60 working days after submission at the embassy.",
+      answer: "It could take 3 to 6 working days after submission.",
     },
     {
       question: "What does the visa processing fee include?",
@@ -26,8 +30,8 @@ const faqSets = {
         "Filling of client’s application form\nFlight reservation and Hotel/accommodation reservation\nAdvisory services based on our experience\nDocuments review\nGuiding client through the application process\nFurther assistance where needed\nPreparing client for interview through a pre-interview stage where necessary",
     },
     {
-      question: "Can I apply if I’m not employed?",
-      answer: "Yes, you can. You can make use of a sponsor.",
+      question: "What is the duration of the visa?",
+      answer: "90 days from date of approval ",
     },
     {
       question: "Is the submission online or physical?",
@@ -50,9 +54,9 @@ const faqSets = {
         "No, an invitation letter is not compulsory but can be an added advantage. However, it does not guarantee visa issuance.",
     },
     {
-      question: "How much should be in my account while applying for the visa?",
+      question: "Which country can I enter from?",
       answer:
-        "You should have enough to cover for your trip. Our expert agents will give you further guidance.",
+        "The holder of the East Africa Tourist Visa shall enter the region from the country that issued the visa and move within the two other countries without applying for another visa or paying another visa fee.The holder shall also be allowed to move out of the Republic of Kenya, the Republic of Rwanda, and the Republic of Uganda and return without having to pay for another visa. This will only be applicable for the validity period of the visa (90 days from visa approval).",
     },
     {
       question: "What is the best time to reapply for a visa after denial?",
