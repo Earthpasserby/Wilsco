@@ -7,96 +7,113 @@ export default function FaqsCol() {
       flag: "/flags/uk.png",
       description:
         "Study, work, or relocate to one of the world’s top education and business hubs, known for its prestigious universities and vibrant culture.",
+      country: "UK",
     },
     {
       name: "UNITED STATES AMERICA",
       flag: "/flags/usa.png",
       description:
         "Achieve your American dream with world-class education, career opportunities, and a dynamic lifestyle in the USA.",
+      country: "US",
     },
     {
       name: "CANADA",
       flag: "/flags/canada.png",
       description:
         "Experience quality education and a high standard of living with Canada’s welcoming immigration policies and top-ranked institutions",
+      country: "can",
     },
     {
       name: "SCHENGEN",
       flag: "/flags/switzerland.png",
       description:
         "Travel across multiple European countries with a single visa and explore rich history, culture, and business opportunities.",
+
+      country: "schengen",
     },
     {
       name: "EGYPT",
       flag: "/flags/egypt.png",
       description:
         "Discover ancient wonders and affordable travel options in Egypt, a gateway to both history and adventure",
+      country: "egypt",
     },
     {
       name: "EAST AFRICA",
       flag: "/flags/east-africa.png",
       description:
         "Visit breathtaking landscapes and booming economies across East African nations, including Kenya, Tanzania, and Uganda.",
+      country: "east",
     },
     {
       name: "SOUTH AFRICA",
       flag: "/flags/south-africa.png",
       description:
         "Whether for business, study, or leisure, enjoy South Africa’s diverse culture, thriving industries, and scenic beauty.",
+      country: "south",
     },
     {
       name: "AUSTRALIA",
       flag: "/flags/australia.png",
       description:
         "Study at world-renowned universities, explore career opportunities, and enjoy a high quality of life in Australia.",
+      country: "aus",
     },
     {
       name: "KENYA",
       flag: "/flags/kenya.png",
       description:
         "From wildlife safaris to thriving business hubs, Kenya offers great opportunities for tourism, education, and investment.",
+      country: "ken",
     },
     {
       name: "IRELAND",
       flag: "/flags/ireland.png",
       description:
         "A top destination for students and professionals, Ireland boasts high-quality education and a strong job market",
+      country: "irs",
     },
     {
       name: "SEYCHELLES",
       flag: "/flags/seychelles.png",
       description:
         "A bridge between Europe and Asia, Turkey offers rich cultural heritage, affordable education, and excellent tourism experiences.",
+      country: "sey",
     },
     {
       name: "TURKEY",
       flag: "/flags/turkey.png",
       description:
         "A bridge between Europe and Asia, Turkey offers rich cultural heritage, affordable education, and excellent tourism experiences.",
+      country: "turkey",
     },
     {
       name: "QATAR",
       flag: "/flags/qatar.png",
       description:
         "A growing business and tourism destination with world-class infrastructure and job opportunities in various sectors.",
+      country: "qatar",
     },
     {
       name: "BRAZIL",
       flag: "/flags/brazil.png",
       description:
         "Experience Brazil’s diverse culture, scenic landscapes, and thriving economy, making it a great destination for work and travel.",
+      country: "brazil",
     },
     {
       name: "HONG KONG",
       flag: "/flags/hongkong.png",
       description:
         "A financial powerhouse with excellent education institutions, career prospects, and visa options making it a great destination for work and travel.",
+      country: "kong",
     },
     {
       name: "THAILAND (E-VISA)",
       flag: "/flags/thailand.png",
       description:
         "Enjoy easy access to Thailand’s stunning beaches, vibrant nightlife, and cultural wonders with a hassle-free e-visa.",
+      country: "thai",
     },
   ];
 
@@ -138,7 +155,12 @@ export default function FaqsCol() {
 
             {/* Buttons */}
             <div className="mt-4">
-              <Link to="/faqsdetail">
+              <Link
+                to={`/${destination.country
+                  .toLowerCase()
+                  .replace(/ /g, "")
+                  .replace(/[^a-zA-Z0-9]/g, "")}`}
+              >
                 <button className="w-full text-[16px] font-normal border-red-500 hover:bg-red-500 text-red-500 border-1 py-4 rounded-4xl  hover:text-white transition">
                   View FAQs
                 </button>

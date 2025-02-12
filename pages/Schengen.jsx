@@ -1,16 +1,16 @@
 import Bfooter from "../components/Bfooter";
-import Faqsdet from "../components/Faqsdet";
+import Schegendet from "../components/Schengendet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Ukimg from "../components/Ukimg";
+import SchengenImg from "../components/SchenImg";
 
-export const FaqsDetail = () => {
+export const Schengen = () => {
   return (
     <>
       <div className="w-full h-full">
         <Header />
-        <Ukimg />
-        <Faqsdet />
+        <SchengenImg />
+        <Schegendet />
         <Bfooter />
         <Footer />
       </div>

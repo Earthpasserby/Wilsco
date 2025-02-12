@@ -1,3 +1,4 @@
+// import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Home";
 import Service from "../pages/Service";
@@ -13,8 +14,13 @@ import RelocateServ from "../pages/RelocateServ";
 import { Blog } from "../pages/Blog";
 import { BlogDet } from "../pages/BlogDet";
 import { Faqs } from "../pages/Faqs";
-import { FaqsDetail } from "../pages/FaqsDetail";
 import { Contactus } from "../pages/Contactus";
+import { UK } from "../pages/UK";
+import { US } from "../pages/US";
+import { Can } from "../pages/Can";
+import { Schengen } from "../pages/schengen";
+import { Egypt } from "../pages/Egypt";
+import { East } from "../pages/East";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -36,8 +42,13 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/BlogDet" element={<BlogDet />} />
           <Route path="/Faqs" element={<Faqs />} />
-          <Route path="/FaqsDetail" element={<FaqsDetail />} />
+          <Route path="/Uk" element={<UK />} />
+          <Route path="/US" element={<US />} />
           <Route path="/contactus" element={<Contactus />} />
+          <Route path="/Can" element={<Can />} />
+          <Route path="/Schengen" element={<Schengen />} />
+          <Route path="/Egypt" element={<Egypt />} />
+          <Route path="/East" element={<East />} />
         </Routes>
       </BrowserRouter>
     </>
