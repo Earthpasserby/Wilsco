@@ -130,11 +130,11 @@ export default function FaqsCol() {
       </div>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-stretch">
         {destinations.map((destination, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg h-full p-4 transition"
+            className="bg-white rounded-lg flex flex-col  p-4 transition"
           >
             {/* Flag Image */}
             <img
@@ -144,17 +144,17 @@ export default function FaqsCol() {
             />
 
             {/* Country Name */}
-            <h3 className="text-xl font-semibold text-gray-800 mt-4">
+            <h3 className="text-xl font-semibold text-gray-800 mt-4 h-12">
               {destination.name}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm mt-2">
+            <p className="text-gray-600 text-sm mt-2 h-16">
               {destination.description}
             </p>
 
             {/* Buttons */}
-            <div className="mt-4">
+            <div className="mt-8">
               <Link
                 to={`/${destination.country
                   .toLowerCase()
