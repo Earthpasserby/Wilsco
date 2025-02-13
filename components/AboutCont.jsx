@@ -4,7 +4,7 @@ const AboutCont = () => {
   return (
     <>
       <div className="bg-[#fbfbfb]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center min-h-screen sm:px-12 lg:px-32  px-8 sm:gap-14 lg:gap-34">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center sm:pt-20 pt-8 sm:px-12 lg:px-32 gap-20 px-4 sm:gap-14 lg:gap-34 ">
           <div>
             <p className=" sm:text-[24px] font-normal text-[#000000]">
               Wilsco Travels is known for our successes in assisting with study
