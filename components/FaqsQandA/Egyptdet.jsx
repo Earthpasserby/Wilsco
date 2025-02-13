@@ -6,7 +6,7 @@ const faqSets = {
   visa: [
     {
       question:
-        "What are the requirements documents needed to apply for a UK visa?",
+        "What are the requirements documents needed to apply for a EGYPT visa?",
       answer:
         "1. International passport (must be valid for at least 6 months)\n2. 5X5 white background passport photograph\n3. Work details i.e., introduction letter, Work ID card, etc\n4. CAC registration certificate if business is registered.\n5. 6 months bank statement",
     },

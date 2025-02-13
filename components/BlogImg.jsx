@@ -4,7 +4,7 @@ export const BlogImg = () => {
       <div className="relative h-[50vh] sm:h-[40vh] md:h-[50vh] lg:h-[100vh] ">
         <div className="bg-[url('/images/student.png')] bg-cover  h-full">
           <div className="absolute inset-0 bg-black opacity-70"></div>
-          <div className="absolute inset-0 top-[20vh] sm:top-[30vh] md:top-[50vh] lg:top-[60vh]  sm:px-14 lg:px-14 px-4">
+          <div className="absolute inset-0 top-[20vh] sm:top-[30vh] md:top-[30vh] lg:top-[60vh]  sm:px-14 lg:px-14 px-4">
             <div>
               <span className="font-medium sm:text-[35px] text-white">
                 The ultimate guide to studying abroad:
