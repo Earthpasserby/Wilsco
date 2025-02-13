@@ -79,7 +79,7 @@ const ServiceGuide = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-red-600 text-white p-2 rounded-4xl  py-4 hover:bg-red-700"
+                className="w-full bg-red-700 text-white p-2 rounded-4xl  py-3 hover:bg-red-700"
               >
                 Submit
               </button>

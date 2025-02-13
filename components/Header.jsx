@@ -225,7 +225,7 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="sm:hidden absolute top-16 left-0 w-full bg-red-50 ">
+          <div className="sm:hidden absolute top-16 left-0 w-full bg-red-100 ">
             <div className="px-2 pt-2 pb-3 space-y-2">
               <NavLink
                 exact
