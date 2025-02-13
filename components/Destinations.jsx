@@ -104,10 +104,10 @@ export default function Destinations() {
     <div className="px-8 py-12 bg-[#fbfbfb]">
       {/* Section Heading */}
       <div className="px-4 mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">
+        <h2 className="sm:text-3xl  font-bold text-gray-800">
           Explore your next destination
         </h2>
-        <p className="text-[#1e1e1e] mt-2 text-[16px] text-normal">
+        <p className="text-[#1e1e1e] mt-2 sm:text-[16px] text-normal">
           From top study hubs to dream travel locations, we connect you to the
           <br /> destinations worldwide for education, relocation, and
           adventure.
@@ -136,9 +136,9 @@ export default function Destinations() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-8">
+            <div className="mt-12">
               <Link to="/can">
-                <button className="w-full text-[16px] font-normal bg-red-700 text-white py-4 rounded-4xl hover:bg-red-700 transition">
+                <button className="w-full text-[16px] font-normal bg-red-700 text-white py-3 rounded-4xl hover:bg-red-700 transition">
                   Apply now
                 </button>
               </Link>

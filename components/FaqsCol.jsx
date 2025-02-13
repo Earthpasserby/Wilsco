@@ -154,14 +154,14 @@ export default function FaqsCol() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-10">
+            <div className="mt-14">
               <Link
                 to={`/${destination.country
                   .toLowerCase()
                   .replace(/ /g, "")
                   .replace(/[^a-zA-Z0-9]/g, "")}`}
               >
-                <button className="w-full text-[16px] font-normal border-red-700 hover:bg-red-700 text-red-500 border-1 py-4 rounded-4xl  hover:text-white transition">
+                <button className="w-full text-[16px] font-normal border-red-700 hover:bg-red-700 text-red-500 border-1 py-3 rounded-4xl  hover:text-white transition">
                   View FAQs
                 </button>
               </Link>

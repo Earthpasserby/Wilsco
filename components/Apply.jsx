@@ -9,7 +9,7 @@ const Apply = () => {
             <img src={DP} alt="visa-img" className="" />
           </div>
           <div>
-            <h4 className="text-[32px] font-bold text-[#1E1E1E] leading-10">
+            <h4 className="sm:text-[32px] text-xl font-bold text-[#1E1E1E] sm:leading-10">
               Applying for a visa can be tricky, that is why you need
               professional guidance to avoid visa refusal.
             </h4>
