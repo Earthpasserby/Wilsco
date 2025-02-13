@@ -5,7 +5,7 @@ const ServiceImg = () => {
         <div className="relative h-[50vh] sm:h-[40vh] md:h-[50vh] lg:h-[100vh]   ">
           <div className="bg-[url('/images/fiend.png')] bg-cover bg-center h-full">
             <div className="absolute inset-0 bg-black opacity-70"></div>
-            <div className="absolute inset-0 top-[25vh] sm:top-[30vh] md:top-[50vh] lg:top-[70vh]  sm:px-14 lg:px-14 px-4 ">
+            <div className="absolute inset-0 top-[20vh] sm:top-[30vh] md:top-[50vh] lg:top-[70vh]  sm:px-14 lg:px-14 px-4 ">
               <div>
                 <span className="font-medium sm:text-[32px] text-white">
                   SCHOOL SERVICE
