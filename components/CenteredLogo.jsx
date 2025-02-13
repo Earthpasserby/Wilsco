@@ -8,7 +8,7 @@ const CenteredLogo = () => {
           <h1 className="text-[16px] font-normal flex justify-center mb-4 text-[#686868]">
             TRUSTED BY
           </h1>
-          <div className="grid grid-cols-3  sm:flex gap-1 sr">
+          <div className="grid grid-cols-3  lg:flex gap-1 sr">
             <img
               className="mx-auto w-[134px] h-[70.9px]"
               src={DQLogo}

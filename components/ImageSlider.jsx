@@ -83,7 +83,7 @@ const ImageSlider = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="relative h-[50vh] lg:h-[100vh] w-full">
+              <div className="relative h-[50vh] lg:h-[100vh] sm:max-h-[800px] w-full">
                 <div className="">
                   <img
                     src={slide.image}
@@ -93,17 +93,17 @@ const ImageSlider = () => {
                 </div>
 
                 <div className="absolute inset-0 bg-black opacity-80"></div>
-                <div className="absolute inset-0 top-[30vh] sm:top-[60vh] md:top-[65vh] lg:top-[65vh] flex flex-col justify-center items-start px-10 mx-auto sm:px-14 lg:px-14 transform -translate-y-1/2">
+                <div className="absolute inset-0 top-[30vh]  sm:top-[65%] flex flex-col justify-center items-start px-10 mx-auto lg:px-14 transform -translate-y-1/2">
                   <p className="text-red-100 text-[16px] font-medium uppercase tracking-wide">
                     {slide.span}
                   </p>
                   <div className="sm:w-[700px]">
-                    <h3 className="text-white sm:text-[40px] font-bold pt-4">
+                    <h3 className="text-white sm:text-4xl lg:text-[40px] font-bold pt-4">
                       {slide.title}
                     </h3>
                   </div>
 
-                  <button className="mt-2 sm:px-8 sm:py-4 px-8 py-2 bg-red-700 text-white rounded-4xl hover:bg-red-700">
+                  <button className="mt-2 sm:mt-7 sm:px-8 sm:py-4 px-8 py-2 bg-red-700 text-white rounded-4xl hover:bg-red-700">
                     {slide.buttonText}
                   </button>
                 </div>
