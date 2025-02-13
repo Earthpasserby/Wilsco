@@ -25,7 +25,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -49,7 +49,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -73,7 +73,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -97,7 +97,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -121,7 +121,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -145,7 +145,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -169,7 +169,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -193,7 +193,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -217,7 +217,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>
@@ -241,7 +241,7 @@ export const BlogCol = () => {
             <div className="pt-8 px-4 mb-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border-1 hover:text-white border-gray-100 text-gray-500 px-4 py-2 rounded-4xl  hover:border-0 hover:bg-red-500"
+                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
               </Link>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function BirthCont() {
   const destinations = [
     {
@@ -57,9 +59,13 @@ export default function BirthCont() {
         <h2 className="text-3xl font-bold text-gray-800">
           We give you the very best
         </h2>
-        <p className="text-gray-200 mt-2 text-[16px] text-normal">
+        <p className="text-[#1e1e1e] mt-2 text-[16px] text-normal">
           We partner with the best specialist hospitals and have agents in these
-          countries to offer you a seamless journey.
+          countries to{" "}
+          <span className="hidden sm:inline">
+            <br />
+          </span>
+          offer you a seamless journey.
         </p>
       </div>
 
@@ -85,18 +91,18 @@ export default function BirthCont() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-4">
-              <a href="#">
-                <button className="w-full text-[16px] font-normal bg-red-500 text-white py-4 rounded-4xl hover:bg-red-700 transition">
+            <div className="mt-10">
+              <Link to="/contactus">
+                <button className="w-full text-[16px] font-normal bg-red-700 text-white py-3 rounded-4xl hover:bg-red-700 transition">
                   Contact us
                 </button>
-              </a>
+              </Link>
 
-              <a href="#">
+              <Link to="/faqs">
                 <button className="w-full mt-2  py-2 text-[12px] font-normal text-gray-400 transition">
                   View FAQs
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

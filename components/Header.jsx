@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import logo from "../public/logo.png";
-import bok from "/images/bok.png";
-import baby from "/images/baby.png";
-import mob from "/images/mob.png";
-import bag1 from "/images/bag1.png";
-import plane from "/images/plane.png";
-import hol from "/images/hol.png";
+import bok from "../public/images/bok.png";
+import baby from "../public/images/baby.png";
+import mob from "../public/images/mob.png";
+import bag1 from "../public/images/bag1.png";
+import plane from "../public/images/plane.png";
+import hol from "../public/images/hol.png";
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -36,7 +36,7 @@ const Header = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none"
+                className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-red-700 hover:text-white focus:ring-1 focus:ring-white focus:outline-none"
                 aria-controls="mobile-menu"
                 aria-expanded={isOpen}
               >
@@ -105,7 +105,7 @@ const Header = () => {
                     <div className="absolute left-0 mt-2 w-[500px] text-[14px] px-4 py-2 bg-white border-1 border-red-100 rounded-md shadow-lg z-50 grid grid-cols-2 gap-4 p-2 mb-4">
                       <Link
                         to="/service"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
@@ -117,7 +117,7 @@ const Header = () => {
                       </Link>
                       <Link
                         to="/visaservice"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
@@ -129,7 +129,7 @@ const Header = () => {
                       </Link>
                       <Link
                         to="/ticket"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
@@ -141,7 +141,7 @@ const Header = () => {
                       </Link>
                       <Link
                         to="/birthservice"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
@@ -153,7 +153,7 @@ const Header = () => {
                       </Link>
                       <Link
                         to="/holidaypack"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
@@ -165,7 +165,7 @@ const Header = () => {
                       </Link>
                       <Link
                         to="/relocateserv"
-                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                         onClick={() => setDropdownOpen(false)}
                       >
                         <img
@@ -225,12 +225,12 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="sm:hidden absolute top-16 left-0 w-full bg-red-50">
+          <div className="sm:hidden absolute top-16 left-0 w-full bg-red-50 ">
             <div className="px-2 pt-2 pb-3 space-y-2">
               <NavLink
                 exact
                 to="/"
-                className="block text-gray-600 px-3 py-2 rounded-md text-base  hover:bg-red-100"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base  hover:bg-red-100  hover:text-red-700"
                 activeClassName="text-red-500"
                 onClick={() => setIsOpen(false)}
               >
@@ -244,7 +244,7 @@ const Header = () => {
                     e.stopPropagation(); // Prevent closing when clicking the button
                     setDropdownOpen(!dropdownOpen);
                   }}
-                  className="text-gray-300  px-3 py-2 focus:outline-none flex items-center gap-1 hover:bg-red-100"
+                  className="text-gray-700  px-3 py-2 focus:outline-none flex items-center gap-1 hover:bg-red-100  hover:text-red-700"
                 >
                   Our Services
                   <svg
@@ -261,11 +261,11 @@ const Header = () => {
                   <div className="absolute left-0 mt-2  text-[12px] px-4 py-2 bg-white border-1 border-red-100 rounded-md shadow-lg z-50 grid grid-cols-2 gap-4 p-2 mb-4">
                     <Link
                       to="/service"
-                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                       onClick={() => setDropdownOpen(false)}
                     >
                       <img
-                        src={book}
+                        src={bok}
                         alt="Service Icon"
                         className="inline-block w-4 h-4 mr-2 "
                       />
@@ -273,11 +273,11 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/visaservice"
-                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                       onClick={() => setDropdownOpen(false)}
                     >
                       <img
-                        src={t}
+                        src={bag1}
                         alt="Service Icon"
                         className="inline-block w-4 h-4 mr-2 "
                       />
@@ -285,7 +285,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/ticket"
-                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                       onClick={() => setDropdownOpen(false)}
                     >
                       <img
@@ -297,7 +297,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/birthservice"
-                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                       onClick={() => setDropdownOpen(false)}
                     >
                       <img
@@ -309,11 +309,11 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/holidaypack"
-                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                       onClick={() => setDropdownOpen(false)}
                     >
                       <img
-                        src={bag}
+                        src={hol}
                         alt="Service Icon"
                         className="inline-block w-5 h-5 mr-2 "
                       />
@@ -321,7 +321,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/relocateserv"
-                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-500"
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-700"
                       onClick={() => setDropdownOpen(false)}
                     >
                       <img
@@ -338,16 +338,34 @@ const Header = () => {
               <NavLink
                 to="/about"
                 className="block text-gray-600 px-3 py-2 rounded-md text-base
-                 hover:bg-red-100"
+                 hover:bg-red-100  hover:text-red-700"
                 activeClassName="text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 About Us
               </NavLink>
+              <NavLink
+                to="/faqs"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base
+    hover:bg-red-100  hover:text-red-700 "
+                activeClassName="text-red-500"
+                onClick={() => setIsOpen(false)}
+              >
+                FAQs
+              </NavLink>
+              <NavLink
+                to="/blog"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base
+    hover:bg-red-100  hover:text-red-700  "
+                activeClassName="text-red-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Blog
+              </NavLink>
 
               <NavLink
-                to="contactus"
-                className="block text-gray-600 px-3 py-2 rounded-md text-base hover:bg-red-100"
+                to="/contactus"
+                className="block text-gray-600 px-3 py-2 rounded-md text-base hover:bg-red-100  hover:text-red-700  "
                 activeClassName="text-red-500"
                 onClick={() => setIsOpen(false)}
               >
