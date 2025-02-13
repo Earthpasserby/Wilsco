@@ -28,7 +28,7 @@ export default function ContactSection() {
             <p className="pt-4 sm:pt-10 text-red-500 font-semibold ">
               Follow us on our social media platform
             </p>
-            <div className="flex gap-4 mt-2 sm:pb-10">
+            <div className="flex gap-4 mt-2 sm:pb-10 sm:mb-0 mb-10 ">
               <div className="w-8 h-8 flex items-center justify-center text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2">
                 <FaFacebookF />
               </div>
@@ -44,7 +44,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Details */}
-            <div className="bg-white rounded-2xl px-8 py-4 shadow sm:pt-0 pt-8">
+            <div className="bg-white rounded-2xl px-8 py-4 shadow ">
               <p className="text-gray-600 mt-4">
                 Have questions about studying abroad, travel packages, or
                 relocation services? Our team is here to assist you every step

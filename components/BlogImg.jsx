@@ -10,7 +10,7 @@ export const BlogImg = () => {
                 The ultimate guide to studying abroad:
                 <br /> Everything you need to know
               </span>
-              <p className="sm-w-[567px] lg:w-[567px] text-[16px] font-normal text-white">
+              <p className="sm-w-[567px] lg:w-[567px] sm:text-[16px] font-normal text-white">
                 Discover the step-by-step process of studying in top
                 destinations, from choosing the right school to securing your
                 visa.
