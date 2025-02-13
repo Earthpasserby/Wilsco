@@ -17,10 +17,10 @@ export default function TicketReservation() {
     <div className="relative  bg-[#fbfbfb]">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-b from-blue-950 to-white text-white text-center py-16">
-        <h2 className="text-[32px] font-bold pt-14">
+        <h2 className="sm:text-[32px] font-bold pt-14">
           TICKETING AND RESERVATION
         </h2>
-        <p className="mt-2 max-w-lg text-[16px]  font-normal mx-auto">
+        <p className="mt-2 max-w-lg sm:text-[16px] text-sm px-3  font-normal mx-auto">
           WIllsco offers top notch flight services on both local and
           international flights. No matter the cabin category, we have
           affordable deals for you.
