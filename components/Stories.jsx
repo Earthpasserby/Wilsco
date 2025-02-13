@@ -48,12 +48,12 @@ const testimonials = [
 
 const Stories = () => {
   return (
-    <div className="w-full mx-auto px-4 lg:px-48 py-10 pt-32 bg-[#fbfbfb]">
+    <div className="w-full mx-auto px-4 lg:px-48 py-10 sm:pt-32 bg-[#fbfbfb]">
       <div>
-        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] ">
+        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl ">
           Success Stories:
         </h1>
-        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] ">
+        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl">
           Real People, Real Results
         </h1>
       </div>

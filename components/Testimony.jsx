@@ -10,7 +10,7 @@ const Testimony = () => {
     <>
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="sm:w-[423px] sm:h-[191px] mb-24">
+          <div className="sm:w-[423px] sm:h-[191px] sm:mb-24 mb-8">
             <h1 className=" font-bold  text-[#1E1E1E] text-[32px]">
               Why Wilsco Travels?
             </h1>
@@ -22,14 +22,14 @@ const Testimony = () => {
             <div className="pt-14 ">
               <Link
                 to="/contactus"
-                className="bg-transparent border border-gray-200 text-gray-500 px-8 py-3 rounded-4xl hover:text-white hover:border-0 hover:bg-red-500"
+                className="bg-transparent border-1 border-[#1e1e1e] text-gray-500 px-8 py-4 rounded-4xl hover:text-white hover:border-0 hover:bg-red-700"
               >
                 Contact Us
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-24">
-            <div className="bg-[#FAE6E6]   px-4 py-8 rounded-2xl">
+            <div className="bg-[#FAE6E6]   px-6 py-12 rounded-2xl">
               <img src={like} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 Excellent client service{" "}
@@ -40,7 +40,7 @@ const Testimony = () => {
                 stress-free.
               </p>
             </div>
-            <div className="bg-[#E9F9E8]   px-4 py-8 rounded-2xl">
+            <div className="bg-[#E9F9E8]   px-6 py-12 rounded-2xl">
               <img src={star} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 High success rate
@@ -51,7 +51,7 @@ const Testimony = () => {
                 or traveling abroad.
               </p>
             </div>
-            <div className="bg-[#F9F4E8]  px-4 py-8 rounded-2xl ">
+            <div className="bg-[#F9F4E8]  px-6 py-12 rounded-2xl ">
               <img src={profile} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 Professionalism
@@ -62,7 +62,7 @@ const Testimony = () => {
                 ensuring your peace of mind.
               </p>
             </div>
-            <div className="bg-[#E9E9E9]   px-4 py-8 rounded-2xl ">
+            <div className="bg-[#E9E9E9]   px-6 py-12 rounded-2xl ">
               <img src={firm} alt="group" className="w-[42px]" />
               <h1 className="text-[#1E1E1E] font-medium text-[16px] text-sm pt-2">
                 International partnerships

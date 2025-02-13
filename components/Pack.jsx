@@ -18,13 +18,13 @@ const Pack = () => {
             <div className="pt-8">
               <Link
                 to="/blogdet"
-                className="bg-transparent border border-white text-white px-6 py-3 rounded-4xl hover:bg-red-500 hover:border-0"
+                className="bg-transparent border border-white text-white px-8 py-3 text-center rounded-4xl hover:bg-red-700 hover:border-0"
               >
                 Learn more
               </Link>
             </div>
 
-            <div className="pt-20  ">
+            <div className="sm:pt-20 pt-8">
               <p className="font-medium text-[16px] text-[#B9B9B9]">
                 Our Impact in Numbers
               </p>

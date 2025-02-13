@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Opportunities = () => {
   return (
     <>
-      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
+      <div className="mx-auto  w-full px-4 sm:px-14 lg:px-14 pt-0 sm:pt-10 bg-[#fbfbfb]">
         <div className="grid">
           <h1 className="text-[#1E1E1E] font-bold text-3xl">
             Your gateway to global opportunities

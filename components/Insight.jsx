@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Insight = () => {
   return (
     <>
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-14 pt-6 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid grid-cols-1 sm:grid-cols-2 ">
           <div className="sm:w-[444px] sm:h-[191px] mb-11">
             <h1 className="text-[32px] font-bold  text-[#1E1E1E]">
@@ -19,7 +19,7 @@ const Insight = () => {
             <div className="pt-8 ">
               <Link
                 to="/blog"
-                className="bg-transparent border border-gray-200 text-gray-500 px-6 py-3 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
+                className="bg-transparent border border-gray-200 text-gray-500 px-8 py-4 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
               >
                 Explore more
               </Link>
@@ -44,7 +44,7 @@ const Insight = () => {
               <div className="pt-8 px-4 mb-8">
                 <Link
                   to="/blog"
-                  className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
+                  className="bg-transparent border border-gray-200 text-gray-500 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
                 >
                   Read
                 </Link>
@@ -73,7 +73,7 @@ const Insight = () => {
                 <div className="pt-8 px-4 mb-8 ">
                   <Link
                     to="/blog"
-                    className="bg-transparent border border-gray-200 text-gray-500 px-4 py-2 rounded-4xl hover:bg-red-500 hover:border-0 hover:text-white"
+                    className="bg-transparent border border-gray-200 text-gray-500 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
                   >
                     Read
                   </Link>
