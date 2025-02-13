@@ -118,7 +118,7 @@ export default function FaqsCol() {
   ];
 
   return (
-    <div className="px-18 py-12 bg-[#fbfbfb] ">
+    <div className="sm:px-18 px-4 py-12 bg-[#fbfbfb] ">
       {/* Section Heading */}
       <div className="px-4 mb-8 justify-center text-center item-center pt-14">
         <h2 className="sm:text-3xl font-bold text-gray-800">
