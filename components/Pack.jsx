@@ -28,7 +28,7 @@ const Pack = () => {
               <p className="font-medium text-[16px] text-[#B9B9B9]">
                 Our Impact in Numbers
               </p>
-              <div className="grid grid-cols-2 sm:flex    gap-24 pt-10">
+              <div className="grid grid-cols-2 sm:flex sm:gap-24 gap-14 pt-10">
                 <div>
                   <span className="font-bold text-[32px] leading-2">2000+</span>
                   <p className="font-medium text-[16px] text-[#B9B9B9]">
