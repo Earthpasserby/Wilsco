@@ -44,7 +44,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Details */}
-            <div className="bg-white rounded-2xl px-8 py-4 shadow ">
+            <div className="bg-white rounded-2xl px-8 py-4 shadow sm:pt-0 pt-8">
               <p className="text-gray-600 mt-4">
                 Have questions about studying abroad, travel packages, or
                 relocation services? Our team is here to assist you every step
