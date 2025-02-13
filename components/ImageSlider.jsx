@@ -103,7 +103,7 @@ const ImageSlider = () => {
                     </h3>
                   </div>
 
-                  <button className="mt-2 px-8 py-4 bg-red-700 text-white rounded-4xl hover:bg-red-700">
+                  <button className="mt-2 sm:px-8 sm:py-4 px-8 py-2 bg-red-700 text-white rounded-4xl hover:bg-red-700">
                     {slide.buttonText}
                   </button>
                 </div>
