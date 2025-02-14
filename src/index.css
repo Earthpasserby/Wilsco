@@ -8,6 +8,38 @@
 .body {
   background-color: #fbfbfb !important;
 }
+.swiper-pagination {
+  right: 10px !important; /* Moves pagination to right */
+  top: 50% !important; /* Center it vertically */
+  transform: translateY(-50%) !important; /* Adjusts for perfect centering */
+  width: auto !important; /* Avoids taking full width */
+  display: flex !important;
+  flex-direction: row !important; /* Stack bullets vertically */
+
+  background: transparent !important;
+  padding: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ) !important; /* Semi-transparent bullets */
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff0000 !important; /* Active bullet color */
+  width: 14px !important;
+  height: 14px !important;
+  opacity: 1 !important;
+}
+
 /* Default Pagination Style */
 .custom-pagination {
   display: flex;

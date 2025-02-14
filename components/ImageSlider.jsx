@@ -76,13 +76,13 @@ const ImageSlider = () => {
       <div className="">
         <Swiper
           modules={[Pagination, Autoplay]}
-          pagination={{ clickable: true, el: ".custom-pagination" }}
+          pagination={{ clickable: true }}
           autoplay={{ delay: 8000 }}
           loop={true}
           className="w-full relative"
         >
           {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="relative">
               <div className="relative h-[50vh] lg:h-[100vh] sm:max-h-[800px] w-full">
                 <div className="">
                   <img
@@ -108,6 +108,7 @@ const ImageSlider = () => {
                   </button>
                 </div>
               </div>
+              <div className="custom-pagination"></div>
             </SwiperSlide>
           ))}
         </Swiper>
