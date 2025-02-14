@@ -1,91 +1,87 @@
 @import "tailwindcss";
 
 * {
-  /* margin: 0; */
-  /* padding: 0; */
   box-sizing: border-box;
 }
+
 .body {
   background-color: #fbfbfb !important;
 }
-.swiper-pagination {
-  right: 10px !important; /* Moves pagination to right */
-  top: 50% !important; /* Center it vertically */
-  transform: translateY(-50%) !important; /* Adjusts for perfect centering */
-  width: auto !important; /* Avoids taking full width */
-  display: flex !important;
-  flex-direction: row !important; /* Stack bullets vertically */
 
-  background: transparent !important;
-  padding: 10px;
+/* Custom pagination styles */
+.swiper-custom-pagination {
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  z-index: 50 !important;
 }
 
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.6
-  ) !important; /* Semi-transparent bullets */
-  opacity: 0.7;
-  transition: all 0.3s ease-in-out;
+  width: 12px !important;
+  height: 12px !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  opacity: 0.7 !important;
+  cursor: pointer !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  display: block !important;
+  margin: 0 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #ff0000 !important; /* Active bullet color */
+  background: #ff0000 !important;
+  opacity: 1 !important;
   width: 14px !important;
   height: 14px !important;
-  opacity: 1 !important;
 }
 
-/* Default Pagination Style */
-.custom-pagination {
-  display: flex;
-  flex-direction: column; /* Arrange bullets vertically */
-  gap: 10px; /* Space between bullets */
-  background: transparent; /* Transparent background */
-  padding: 10px;
+@media (max-width: 768px) {
+  .swiper-custom-pagination {
+    right: 10px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 12px !important;
+    height: 12px !important;
+  }
 }
 
-.custom-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.6); /* Semi-transparent bullets */
-  opacity: 0.7;
-  transition: all 0.3s ease-in-out;
+@media (max-width: 480px) {
+  .swiper-custom-pagination {
+    right: 5px !important;
+  }
 }
 
-.custom-pagination .swiper-pagination-bullet-active {
-  background: #ff0000; /* Active bullet color */
-  width: 14px;
-  height: 14px;
-  opacity: 1;
-}
-
+/* Keep your existing overlay and text styles */
 .Cont-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00000099; /* Dark overlay */
-  z-index: 1; /* Ensure it's behind text but over the image */
+  background: #00000099;
+  z-index: 1;
   border-radius: 35px;
 }
 
 .Cont-text {
   position: absolute;
   top: 40%;
-  /* left: 50px; */
   transform: translateY(-40%);
-  z-index: 2; /* Ensures text is above overlay */
+  z-index: 2;
   color: white;
 }
 
 ul > li {
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
 }

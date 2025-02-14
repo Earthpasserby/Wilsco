@@ -103,7 +103,7 @@ export default function Destinations() {
   return (
     <div className="px-8 py-12 bg-[#fbfbfb]">
       {/* Section Heading */}
-      <div className="px-4 mb-8 md:mt-0">
+      <div className="px-4 mb-8">
         <h2 className="sm:text-3xl  font-bold text-gray-800">
           Explore your next destination
         </h2>
