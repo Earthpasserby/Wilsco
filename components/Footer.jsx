@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           {/* FAQs */}
-          <div>
+          <div className="md:pt-4  lg:pt-0">
             <h4 className="font-medium text-[12px] mb-3">FAQs</h4>
             <ul className="space-y-2 text-sm">
               {[
@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div>
+          <div className="md:pt-4 lg:pt-0   ">
             <h4 className="font-medium text-[12px] mb-3">CONTACT US</h4>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center space-x-2">
@@ -128,7 +128,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Subscription */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-1">
+          <div className="col-span-1 md:col-span-1 lg:col-span-1 md:mt-4 lg:mt-0   ">
             <h4 className="font-medium text-[12px] mb-3">
               SUBSCRIBE TO OUR NEWSLETTER
             </h4>
