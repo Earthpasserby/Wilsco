@@ -59,7 +59,7 @@ export const BlogCol = () => {
             <img
               src={paris1}
               alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
+              className="rounded-tl-2xl rounded-tr-2xl   "
             />
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
