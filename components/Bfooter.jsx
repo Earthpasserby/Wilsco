@@ -3,7 +3,7 @@ import stu from "/images/stu.png";
 
 const Bfooter = () => {
   return (
-    <div className="bg-[#fbfbfb] pb-14">
+    <div className="bg-[#fbfbfb] pb-14 sm:pb-20">
       <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 sm:pt-24 pt-12">
         <div className="relative">
           {/* Overlay for better readability */}

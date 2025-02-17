@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 const Testimony = () => {
   return (
     <>
-      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-4 sm:pt-24 bg-[#fbfbfb]">
+      <div className="mx-auto w-full px-4 sm:px-14 lg:px-14 pt-8 sm:pt-24 bg-[#fbfbfb]">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-5 xl:gap-8">
           <div className=" grid sm:grid-cols-2 xl:grid-cols-1 gap-4 sm:gap-5 ">
             <div className="flex flex-col">
-              <h1 className=" font-bold  text-[#1E1E1E] text-[32px]">
+              <h1 className=" font-bold  text-[#1E1E1E] text-2xl sm:text-[32px]">
                 Why Wilsco Travels?
               </h1>
               <p className="text-[#989898] font-medium pt-2 max-w-xl">
@@ -23,7 +23,7 @@ const Testimony = () => {
 
               <Link
                 to="/contactus"
-                className="bg-transparent border-1 w-fit mt-4 border-[#1e1e1e] text-gray-500 px-8 py-4 rounded-4xl hover:text-white hover:border-0 hover:bg-red-700"
+                className="bg-transparent border-1 w-fit mt-4 border-[#1e1e1e] text-gray-500 px-8 py-3 sm:py-4 rounded-4xl hover:text-white hover:border-0 hover:bg-red-700"
               >
                 Contact Us
               </Link>

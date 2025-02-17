@@ -48,39 +48,44 @@ const testimonials = [
 
 const Stories = () => {
   return (
-    <div className="w-full mx-auto px-4 lg:px-48 py-10 sm:pt-32 bg-[#fbfbfb]">
-      <div>
-        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl ">
-          Success Stories:
-        </h1>
-        <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl">
-          Real People, Real Results
-        </h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-1fr  gap-4 pt-12">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className={`bg-white p-6 rounded-2xl  border border-gray-100 ${testimonial.size}`}
-          >
-            <p className="text-[#686868] text-[16px]  font-medium">
-              {testimonial.text}
-            </p>
-            <div className="flex items-center mt-4">
-              <img
-                src={avatar}
-                alt={testimonial.name}
-                className="w-10 h-10 rounded-full"
-              />
-              <div className="ml-3">
-                <p className="text-gray-900 font-semibold">
-                  {testimonial.name}
-                </p>
-                <p className="text-gray-500  text-sm">{testimonial.location}</p>
+    <div className="w-full  px-4 sm:px-14  py-10 sm:pt-32 bg-[#fbfbfb]">
+      <div className=" w-full max-w-[924px] mx-auto">
+        {" "}
+        <div>
+          <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl ">
+            Success Stories:
+          </h1>
+          <h1 className="flex justify-center text-[#1E1E1E] font-bold sm:text-[32px] text-2xl">
+            Real People, Real Results
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-1fr  gap-4 pt-12">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className={`bg-white p-6 rounded-2xl  border border-gray-100 ${testimonial.size}`}
+            >
+              <p className="text-[#686868] text-[16px]  font-medium">
+                {testimonial.text}
+              </p>
+              <div className="flex items-center mt-4">
+                <img
+                  src={avatar}
+                  alt={testimonial.name}
+                  className="w-10 h-10 rounded-full"
+                />
+                <div className="ml-3">
+                  <p className="text-gray-900 font-semibold">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-gray-500  text-sm">
+                    {testimonial.location}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

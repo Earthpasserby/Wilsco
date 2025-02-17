@@ -108,7 +108,7 @@ const ImageSlider = () => {
                   </button>
                 </div>
               </div>
-              <div className="custom-pagination"></div>
+              <div className="custom-pagination !absolute !bottom-0"></div>
             </SwiperSlide>
           ))}
         </Swiper>

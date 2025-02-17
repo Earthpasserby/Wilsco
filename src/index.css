@@ -9,35 +9,34 @@
   background-color: #fbfbfb !important;
 }
 .swiper-pagination {
-  right: 10px !important; /* Moves pagination to right */
-  top: 50% !important; /* Center it vertically */
-  transform: translateY(-50%) !important; /* Adjusts for perfect centering */
+  position: absolute !important;
+  left: auto !important;
+  right: 56px !important;
+  bottom: 60px !important;
+  height: fit-content !important;
   width: auto !important; /* Avoids taking full width */
   display: flex !important;
   flex-direction: row !important; /* Stack bullets vertically */
-
-  background: transparent !important;
-  padding: 10px;
+  background: #65656557 !important;
+  padding: 10px !important;
+  border-radius: 24px !important;
+  box-shadow: 0px 4px 15px 0px #1b20201f !important;
+  backdrop-filter: blur(4px) !important;
+  gap: 0px !important;
 }
 
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.6
-  ) !important; /* Semi-transparent bullets */
-  opacity: 0.7;
+  border-radius: 24px !important;
+  background: #989898 !important;
+  opacity: 1 !important;
   transition: all 0.3s ease-in-out;
 }
 
 .swiper-pagination-bullet-active {
   background: #ff0000 !important; /* Active bullet color */
-  width: 14px !important;
-  height: 14px !important;
-  opacity: 1 !important;
+  width: 24px !important;
 }
 
 /* Default Pagination Style */
