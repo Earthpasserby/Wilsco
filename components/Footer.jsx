@@ -25,16 +25,28 @@ const Footer = () => {
               />
             </Link>
             <div className="flex space-x-3">
-              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              <Link
+                to="/https://www.facebook.com/wilscotravelandtours/?_rdc=1&_rdr#"
+                className="bg-[#1E1E1E] text-white p-2 rounded-full"
+              >
                 <FaFacebookF size={15} />
               </Link>
-              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              <Link
+                to="/https://www.instagram.com/wilsco_travelandtours/"
+                className="bg-[#1E1E1E] text-white p-2 rounded-full"
+              >
                 <FaInstagram size={15} />
               </Link>
-              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              <Link
+                to="/https://www.linkedin.com/company/wilscotravelandtours/"
+                className="bg-[#1E1E1E] text-white p-2 rounded-full"
+              >
                 <FaLinkedinIn size={15} />
               </Link>
-              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              <Link
+                to="/https://www.tiktok.com/@wilscotravelandtours"
+                className="bg-[#1E1E1E] text-white p-2 rounded-full"
+              >
                 <FaTiktok size={15} />
               </Link>
             </div>
@@ -167,16 +179,28 @@ const Footer = () => {
             />
           </div>
           <div className="flex space-x-3 mb-4 py-10">
-            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            <Link
+              to="/https://www.facebook.com/wilscotravelandtours/?_rdc=1&_rdr#"
+              className="bg-[#1E1E1E] text-white p-2 rounded-full"
+            >
               <FaFacebookF size={15} />
             </Link>
-            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            <Link
+              to="https://www.instagram.com/wilsco_travelandtours/"
+              className="bg-[#1E1E1E] text-white p-2 rounded-full"
+            >
               <FaInstagram size={15} />
             </Link>
-            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            <Link
+              to="/https://www.linkedin.com/company/wilscotravelandtours/"
+              className="bg-[#1E1E1E] text-white p-2 rounded-full"
+            >
               <FaLinkedinIn size={15} />
             </Link>
-            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            <Link
+              to="/https://www.tiktok.com/@wilscotravelandtours"
+              className="bg-[#1E1E1E] text-white p-2 rounded-full"
+            >
               <FaTiktok size={15} />
             </Link>
           </div>
