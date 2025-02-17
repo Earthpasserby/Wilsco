@@ -76,7 +76,12 @@ const ImageSlider = () => {
       <div className="">
         <Swiper
           modules={[Pagination, Autoplay]}
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+            pegClass: "swiper-custom-pagination",
+            bulletClass: "swiper-pagination-bullet",
+            bulletActiveClass: "swiper-pagination-bullet-active",
+          }}
           autoplay={{ delay: 8000 }}
           loop={true}
           className="w-full relative"

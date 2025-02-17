@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
 * {
-  /* margin: 0; */
-  /* padding: 0; */
   box-sizing: border-box;
 }
+
 .body {
   background-color: #fbfbfb !important;
 }
@@ -69,22 +68,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00000099; /* Dark overlay */
-  z-index: 1; /* Ensure it's behind text but over the image */
+  background: #00000099;
+  z-index: 1;
   border-radius: 35px;
 }
 
 .Cont-text {
   position: absolute;
   top: 40%;
-  /* left: 50px; */
   transform: translateY(-40%);
-  z-index: 2; /* Ensures text is above overlay */
+  z-index: 2;
   color: white;
 }
 
 ul > li {
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
 }
