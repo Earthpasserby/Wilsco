@@ -3,45 +3,51 @@ import avatar from "../public/images/avatar.png";
 
 const testimonials = [
   {
-    text: "Willsco customer service is top notch. They are so friendly and efficient. When they say they’ll guide you through the process, they keep to their word.",
-    name: "Chisom O.",
-    location: "Canada",
+    text: "“Willsco customer service is top notch. They are so friendly and efficient. When they say they'll guide you through the process, they keep to their word.”",
+    name: "Mrs Blessing.",
+    location: "Egypt",
     size: "row-span-1", // Taller card
   },
   {
-    text: "I wrote my IELTS for the first time with WILLSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course.",
+    text: "“I wrote my IELTS for the first time with WILLSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course.”",
     name: "Chisom O.",
     location: "Canada",
     size: "row-span-1", // Normal height
   },
   {
-    text: "Willsco Travel and Tours handled my Canada visa process and it was so swift and efficient. I am glad I found them.",
-    name: "Chisom O.",
-    location: "Canada",
-    // Taller card
+    text: "“I had the best experience with Wilsco travels on my vacation everything I needed was ready, also they have the best customer care, I was always getting calls to make sure I am ready for my tours and reminders.”",
+    name: "Olaleye Omoyeni.",
+    location: "Qatar",
+    size: "row-span-1", // Taller card
   },
   {
-    text: "“ We are your gateway to unforgettable destinations and remarkable experiences around the globe. Whether you crave a sun-soaked beach retreat, a thrilling mountain expedition, or a cultural immersion in bustling cities, we've got you covered. We are more than just a travel services company. By harnessing the power of technology to untangle bureaucratic knots, we’re demonstrating how private enterprise can create a public benefit.Take the first step towards your next extraordinary adventure and start exploring today      ”",
-    name: "Chisom O.",
-    location: "Canada",
-    size: "row-span-2", // Normal height
-  },
-  {
-    text: "“I wrote my IELTS for the first time with WILSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course ”",
-    name: "Karen Forsyth",
-    location: "Ireland",
+    text: "“Special appreciation to Wilsco travel and tours. They helped me secure my Qatar tourist visa in less than a week. I totally recommend this travel agency for your visa and travel application.”",
+    name: "Ishola Rebecca.",
+    location: "Qatar",
     size: "row-span-1", // Normal height
   },
   {
-    text: "“We are your gateway to unforgettable destinations and remarkable experiences around the globe. Whether you crave a sun-soaked beach retreat, a thrilling mountain expedition, or a cultural immersion in bustling cities, we've got you covered. Take the first step towards your next extraordinary adventure and start exploring today.”",
-    name: "Karen Forsyth",
-    location: "Ireland",
+    text: "“Willsco Travel and Tours handled my Canada visa process and it was so swift and efficient. I am glad I found them.”",
+    name: "Mr Abiodun",
+    location: "Nigeria",
+    size: "row-span-1", // Normal height
+  },
+  {
+    text: "“Wilsco Travel and Tour is a professional agency. That’s what I will say, they are good at what they do, very supportive and knowledgeable. Customer service is top notch. I travelled solo and from visa processing to the whole activities, and till I got home, Sonia was always on the clock. It’s like she had zero closing time, she was available even in traffic, at midnight. I was so satisfied with my experience and trust me I am difficult to please when planning trips. As a perfectionist, I would definitely use them again.”",
+    name: "Seyi Adesanya.",
+    location: "Doha",
     size: "row-span-2", // Taller card
   },
   {
-    text: "“I wrote my IELTS for the first time with WILSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course ”",
-    name: "Chisom O.",
-    location: "Canada",
+    text: "“I wrote my IELTS for the first time with WILLSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course.”",
+    name: "Mrs Martha",
+    location: "Nigeria",
+    size: "row-span-1", // Taller card
+  },
+  {
+    text: "“Wilsco was the highlight of my friends and I trip to Doha last Christmas. The entire trip would not have been possible without their help in getting our Visas.”",
+    name: "Oluwakemi Adesola",
+    location: "Doha",
     size: "row-span-1", // Taller card
   },
 ];
