@@ -28,10 +28,9 @@ const Footer = () => {
               <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
                 <FaFacebookF size={15} />
               </Link>
-              <Link
-                to="#"
-                className="bg-[#1E1E1E] text-white p-2 rounded-full"
-              ></Link>
+              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+                <FaInstagram size={15} />
+              </Link>
               <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
                 <FaLinkedinIn size={15} />
               </Link>
