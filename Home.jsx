@@ -13,12 +13,13 @@ const Home = () => {
       {/* <Title title="Palynx | The People Pairing App" /> */}
       <div className="w-full h-full">
         <ImageSlider />
-        <CenteredLogo />
         <Testimony />
         <Opportunities />
         <Pack />
         <Insight />
         <Stories />
+        <CenteredLogo />
+
         <Bfooter />
       </div>
     </>

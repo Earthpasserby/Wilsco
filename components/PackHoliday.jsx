@@ -231,14 +231,14 @@ export default function PackHoliday() {
       </div>
 
       <div className="pb-12 lg:pb-24   px-4">
-        <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl  text-center  max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2">
-          <FaExclamationCircle size={20} />
-          <span className="text-[10px] sm:text-[12px]">
-            Clicking on the Customize your holiday package button takes you
-            straight to our WhatsApp contact or email: +2347058619281/
-            info@wilscotravels.com
-          </span>
-        </p>
+        {/* <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl  text-center  max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2"> */}
+        {/* <FaExclamationCircle size={20} /> */}
+        {/* <span className="text-[10px] sm:text-[12px]"> */}
+        {/* Clicking on the Customize your holiday package button takes you */}
+        {/* straight to our WhatsApp contact or email: +2347058619281/ */}
+        {/* info@wilscotravels.com */}
+        {/* </span> */}
+        {/* </p> */}
       </div>
     </div>
   );

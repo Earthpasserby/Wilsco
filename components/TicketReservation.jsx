@@ -204,13 +204,13 @@ export default function TicketReservation() {
       </div>
 
       <div className="lg:pb-24 pt-2 pb-12 px-4 md:pb-4">
-        <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 md:mb-0 text-center lg:mb-32 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2">
-          <FaExclamationCircle size={20} />
-          <span className="text-[10px] sm:text-[12px]">
-            Clicking on the search button takes you straight to our WhatsApp
-            contact or email: +2347058619281/ info@wilscotravels.com
-          </span>
-        </p>
+        {/* <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 md:mb-0 text-center lg:mb-32 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2"> */}
+        {/* <FaExclamationCircle size={20} /> */}
+        {/* <span className="text-[10px] sm:text-[12px]"> */}
+        {/* Clicking on the search button takes you straight to our WhatsApp */}
+        {/* contact or email: +2347058619281/ info@wilscotravels.com */}
+        {/* </span> */}
+        {/* </p> */}
       </div>
     </div>
   );

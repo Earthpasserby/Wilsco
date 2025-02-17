@@ -10,7 +10,7 @@ const VisaImg = () => {
                 VISA SERVICES
               </span>
               <p className="sm-w-[567px] lg:w-[567px] text-[16px] font-normal text-white">
-                We boast of 85% success rate bearing in mind that the visa
+                We boast of 95% success rate bearing in mind that the visa
                 issuance is decided by the embassy or consulate.
               </p>
             </div>

@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,64 +17,74 @@ const Footer = () => {
         <div className="w-full mx-auto px-4 sm:px-14 pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0">
           {/* Logo & Social Icons */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1 mb-2">
-            <img
-              src="/logo.png"
-              alt="Willsco Travel and Tours"
-              className="w-40 mb-4"
-            />
+            <Link to="/">
+              <img
+                src="/logo.png"
+                alt="Willsco Travel and Tours"
+                className="w-40 mb-4"
+              />
+            </Link>
             <div className="flex space-x-3">
-              <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
                 <FaFacebookF size={15} />
-              </a>
-              <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
-                <FaInstagram size={15} />
-              </a>
-              <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              </Link>
+              <Link
+                to="#"
+                className="bg-[#1E1E1E] text-white p-2 rounded-full"
+              ></Link>
+              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
                 <FaLinkedinIn size={15} />
-              </a>
-              <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+              </Link>
+              <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
                 <FaTiktok size={15} />
-              </a>
+              </Link>
             </div>
           </div>
-
           {/* Company Links */}
           <div>
             <h4 className="font-medium text-[12px] mb-3">COMPANY</h4>
             <ul className="space-y-2 text-sm">
-              {["Home", "Our services", "About us", "FAQs", "Blog"].map(
-                (item, index) => (
-                  <li key={index}>
-                    <a href="#" className="hover:text-red-500">
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                { name: "Home", link: "/" },
+                { name: "Our services", link: "/service" },
+                { name: "About us", link: "/about" },
+                { name: "FAQs", link: "/faqs" },
+                { name: "Blog", link: "/blog" },
+              ].map((item, index) => (
+                <li key={index}>
+                  <Link to={item.link} className="hover:text-red-500">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-
           {/* Services Links */}
           <div>
             <h4 className="font-medium text-[12px] mb-3">SERVICES</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "School services",
-                "Visa services",
-                "Ticketing & Reservation",
-                "Holiday packages",
-                "Relocation services",
-                "Birth abroad services",
+                { name: "School services", link: "/service" },
+                { name: "Visa services", link: "/visaservice" },
+                {
+                  name: "Ticketing & Reservation",
+                  link: "/ticket",
+                },
+                { name: "Holiday packages", link: "/holidaypack" },
+                { name: "Relocation services", link: "/relocateserv" },
+                {
+                  name: "Birth abroad services",
+                  link: "/birthservice",
+                },
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-red-500">
-                    {item}
-                  </a>
+                  <Link to={item.link} className="hover:text-red-500">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
-
           {/* FAQs */}
           <div className="md:pt-4  lg:pt-0">
             <h4 className="font-medium text-[12px] mb-3">FAQs</h4>
@@ -97,14 +108,13 @@ const Footer = () => {
                 "Hong Kong",
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-red-500">
+                  <Link to="/faqs" className="hover:text-red-500">
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
-
           {/* Contact Information */}
           <div className="md:pt-4 lg:pt-0   ">
             <h4 className="font-medium text-[12px] mb-3">CONTACT US</h4>
@@ -126,7 +136,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           {/* Newsletter Subscription */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1 md:mt-4 lg:mt-0   ">
             <h4 className="font-medium text-[12px] mb-3">
@@ -159,18 +168,18 @@ const Footer = () => {
             />
           </div>
           <div className="flex space-x-3 mb-4 py-10">
-            <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
               <FaFacebookF size={15} />
-            </a>
-            <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            </Link>
+            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
               <FaInstagram size={15} />
-            </a>
-            <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            </Link>
+            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
               <FaLinkedinIn size={15} />
-            </a>
-            <a href="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
+            </Link>
+            <Link to="#" className="bg-[#1E1E1E] text-white p-2 rounded-full">
               <FaTiktok size={15} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="text-center mb-4">
@@ -190,38 +199,51 @@ const Footer = () => {
           {/* Company Links */}
           <div>
             <h4 className="font-medium text-[14px] mb-3">COMPANY</h4>
-            <ul className="space-y-2 text-sm">
-              {["Home", "Our services", "About us", "FAQs", "Blog"].map(
-                (item, index) => (
-                  <li key={index}>
-                    <a href="#" className="hover:text-red-500">
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-          {/* Services Links */}
-          <div className="pt-4">
-            <h4 className="font-medium text-[14px] mb-3">SERVICES</h4>
+
             <ul className="space-y-2 text-sm">
               {[
-                "School services",
-                "Visa services",
-                "Ticketing & Reservation",
-                "Holiday packages",
-                "Relocation services",
-                "Birth abroad services",
+                { name: "Home", link: "/" },
+                { name: "Our services", link: "/service" },
+                { name: "About us", link: "/about" },
+                { name: "FAQs", link: "/faqs" },
+                { name: "Blog", link: "/blog" },
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-red-500">
-                    {item}
-                  </a>
+                  <Link to={item.link} className="hover:text-red-500">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+          {/* Services Links */}
+
+          <div>
+            <h4 className="font-medium text-[12px] mb-3">SERVICES</h4>
+            <ul className="space-y-2 text-sm">
+              {[
+                { name: "School services", link: "/service" },
+                { name: "Visa services", link: "/visaservice" },
+                {
+                  name: "Ticketing & Reservation",
+                  link: "/ticket",
+                },
+                { name: "Holiday packages", link: "/holidaypack" },
+                { name: "Relocation services", link: "/relocateserv" },
+                {
+                  name: "Birth abroad services",
+                  link: "/birthservice",
+                },
+              ].map((item, index) => (
+                <li key={index}>
+                  <Link to={item.link} className="hover:text-red-500">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/*Faqs*/}
           <div className="pt-4">
             <h4 className="font-medium mb-3 text-[14px] ">FAQs</h4>
@@ -245,9 +267,9 @@ const Footer = () => {
                 "Hong Kong",
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-red-500">
+                  <Link to="/faqs" className="hover:text-red-500">
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

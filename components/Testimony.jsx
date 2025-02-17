@@ -16,7 +16,7 @@ const Testimony = () => {
                 Why Wilsco Travels?
               </h1>
               <p className="text-[#989898] font-medium pt-2 max-w-xl">
-                With over 85% success in applications, Wilsco Travels offers
+                With over 95% success in applications, Wilsco Travels offers
                 exceptional study abroad, travel, and relocation services backed
                 by a global network and dedicated team.
               </p>
