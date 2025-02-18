@@ -59,13 +59,13 @@ export default function FaqsCol() {
         "Study at world-renowned universities, explore career opportunities, and enjoy a high quality of life in Australia.",
       country: "aus",
     },
-    {
-      name: "KENYA",
-      flag: "/flags/kenya.png",
-      description:
-        "From wildlife safaris to thriving business hubs, Kenya offers great opportunities for tourism, education, etc, making it a place to visit.",
-      country: "ken",
-    },
+    // {
+    // name: "KENYA",
+    // flag: "/flags/kenya.png",
+    // description:
+    // "From wildlife safaris to thriving business hubs, Kenya offers great opportunities for tourism, education, etc, making it a place to visit.",
+    // country: "ken",
+    // },
     {
       name: "IRELAND",
       flag: "/flags/ireland.png",

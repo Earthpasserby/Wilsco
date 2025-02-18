@@ -26,7 +26,7 @@ const slides = [
     image: explore,
     span: "TOURIST VISA",
     title:
-      "Explore the world when you apply for your visit visa with 85% success rate.",
+      "Explore the world when you apply for your visit visa with 95% success rate.",
     buttonText: "Apply Now",
     link: "/tourist-visa",
   },

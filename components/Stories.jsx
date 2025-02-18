@@ -75,11 +75,9 @@ const Stories = () => {
                 {testimonial.text}
               </p>
               <div className="flex items-center mt-4">
-                <img
-                  src={avatar}
-                  alt={testimonial.name}
-                  className="w-10 h-10 rounded-full"
-                />
+                <div className="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center text-white font-bold">
+                  {testimonial.name.charAt(0)}
+                </div>
                 <div className="ml-3">
                   <p className="text-gray-900 font-semibold">
                     {testimonial.name}

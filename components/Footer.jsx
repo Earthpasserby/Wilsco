@@ -109,26 +109,24 @@ const Footer = () => {
             <h4 className="font-medium text-[12px] mb-3">FAQs</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "United Kingdom",
-                "United States Africa",
-                "Canada",
-                "Schengen",
-                "Egypt",
-                "East Africa",
-                "South Africa",
-                "Australia",
-                "Kenya",
-                "Ireland",
-                "Singapore",
-                "Seychelles",
-                "Turkey",
-                "Qatar",
-                "Brazil",
-                "Hong Kong",
+                { name: "United Kingdom", link: "/uk" },
+                { name: "United States Africa", link: "/us" },
+                { name: "Canada", link: "/can" },
+                { name: "Schengen", link: "/sey" },
+                { name: "Egypt", link: "/egypt" },
+                { name: "East Africa", link: "/east" },
+                { name: "South Africa", link: "/south" },
+                { name: "Australia", link: "/aus" },
+                { name: "Ireland", link: "/irs" },
+                { name: "Seychelles", link: "/sey " },
+                { name: "Turkey", link: "/turkey" },
+                { name: "Qatar", link: "/qatar" },
+                { name: "Brazil", link: "/brazil" },
+                { name: "Hong Kong", link: "/kong" },
               ].map((item, index) => (
                 <li key={index}>
-                  <Link to="/faqs" className="hover:text-red-500">
-                    {item}
+                  <Link to={item.link} className="hover:text-red-500">
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -288,26 +286,24 @@ const Footer = () => {
             <h4 className="font-medium mb-3 text-[14px] ">FAQs</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "United Kingdom",
-                "United States Africa",
-                "Canada",
-                "Schengen",
-                "Egypt",
-                "East Africa",
-                "South Africa",
-                "Australia",
-                "Kenya",
-                "Ireland",
-                "Singapore",
-                "Seychelles",
-                "Turkey",
-                "Qatar",
-                "Brazil",
-                "Hong Kong",
+                { name: "United Kingdom", link: "/uk" },
+                { name: "United States Africa", link: "/us" },
+                { name: "Canada", link: "/can" },
+                { name: "Schengen", link: "/sey" },
+                { name: "Egypt", link: "/egypt" },
+                { name: "East Africa", link: "/east" },
+                { name: "South Africa", link: "/south" },
+                { name: "Australia", link: "/aus" },
+                { name: "Ireland", link: "/irs" },
+                { name: "Seychelles", link: "/sey " },
+                { name: "Turkey", link: "/turkey" },
+                { name: "Qatar", link: "/qatar" },
+                { name: "Brazil", link: "/brazil" },
+                { name: "Hong Kong", link: "/kong" },
               ].map((item, index) => (
                 <li key={index}>
-                  <Link to="/faqs" className="hover:text-red-500">
-                    {item}
+                  <Link to={item.link} className="hover:text-red-500">
+                    {item.name}
                   </Link>
                 </li>
               ))}

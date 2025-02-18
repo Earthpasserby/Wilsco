@@ -7,7 +7,7 @@ const TourGuide = () => {
   return (
     <>
       <div className="mx-auto w-full px-4 sm:px-14  lg:px-14 pt-6 sm:pt-24 bg-[#fbfbfb]">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-0">
           <div className="sm:max-w-[484px] sm:mx-auto xl:mx-0 mb-11 sm:text-center sm:flex flex-col sm:items-center xl:text-left xl:items-start">
             <h1 className="text-[32px] font-bold  text-[#1E1E1E]">
               Explore the world with our exclusive tour packages
@@ -26,7 +26,7 @@ const TourGuide = () => {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2 ">
             <div className=" rounded-bl-2xl rounded-br-2xl overflow-hidden">
               <img
                 src={kigali}
