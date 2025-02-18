@@ -1,9 +1,44 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
-import { FaExclamationCircle } from "react-icons/fa";
+// import { FaExclamationCircle } from "react-icons/fa";
 import maldavies from "/images/maldavies.png";
 
 export default function PackHoliday() {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const digitRef = useRef(null);
+  const dateRef = useRef(null);
+  const fromRef = useRef(null);
+  const toRef = useRef(null);
+  // const countryRef = useRef(null);
+  // const messageRef = useRef(null);
+  const sendToWhatsapp = () => {
+    let number = "+2347058619281";
+    // Get values and ensure they're not null
+    let name = nameRef.current?.value || "";
+    let phone = phoneRef.current?.value || "";
+    let country = ""; // Define country variable
+    let email = emailRef.current?.value || "";
+    let digit = digitRef.current?.value || "";
+    let message = ""; // Define message variable
+    // Properly encode each parameter
+    const encodedText = encodeURIComponent(
+      `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Country: ${country}\n` +
+        `Number of Adults: ${digit}\n` +
+        `From: ${fromRef.current?.value || ""}\n` +
+        `To: ${toRef.current?.value || ""}\n` +
+        `Date of Departure: ${dateRef.current?.value || ""}\n` +
+        `Service: ${selected}\n` +
+        `Message: ${message}`
+    );
+    const url = `https://wa.me/${number}?text=${encodedText}`;
+    window.open(url, "_blank").focus();
+  };
+
   const [selected, setSelected] = useState("Choose flight class");
   const [open, setOpen] = useState(false);
   const options = [
@@ -61,6 +96,7 @@ export default function PackHoliday() {
             <input
               type="text"
               placeholder="Full Name"
+              ref={nameRef}
               className="border-0 rounded-lg px-4 py-2 bg-white w-full"
             />
           </div>
@@ -73,6 +109,7 @@ export default function PackHoliday() {
             <input
               type="email"
               placeholder="Email Address"
+              ref={emailRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -83,6 +120,7 @@ export default function PackHoliday() {
             <input
               type="text"
               placeholder="Enter your phone number"
+              ref={phoneRef}
               className="border-0 rounded-lg px-4 py-2 bg-white w-full"
             />
           </div>
@@ -95,6 +133,7 @@ export default function PackHoliday() {
             <input
               type="text"
               placeholder="Enter departure"
+              ref={fromRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -107,6 +146,7 @@ export default function PackHoliday() {
             <input
               type="date"
               placeholder="Choose date"
+              ref={dateRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -119,6 +159,7 @@ export default function PackHoliday() {
             <input
               type="text"
               placeholder="e.g 2 days"
+              ref={toRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -131,6 +172,7 @@ export default function PackHoliday() {
             <input
               type="number"
               placeholder="Number of Adults"
+              ref={digitRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -141,6 +183,7 @@ export default function PackHoliday() {
             <input
               type="number"
               placeholder="Number of Children"
+              ref={digitRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -151,6 +194,7 @@ export default function PackHoliday() {
             <input
               type="number"
               placeholder="Number of Children"
+              ref={digitRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -220,7 +264,11 @@ export default function PackHoliday() {
 
           {/* Submit Button */}
           <div className="col-span-6 sm:col-span-6 md:col-span-6 flex justify-end">
-            <button className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2">
+            <button
+              className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2"
+              type="button"
+              onClick={sendToWhatsapp}
+            >
               <span>Customize your holiday package</span>
               {/* <FaSearch /> */}
             </button>
