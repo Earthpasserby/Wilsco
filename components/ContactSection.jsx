@@ -16,21 +16,22 @@ export default function ContactSection() {
   const countryRef = useRef(null);
   const messageRef = useRef(null);
 
-  const sendToWhatsapp = () => {
+  const sendToWhatsapp = (event) => {
+    event.preventDefault();
     let number = "+2347058619281";
 
     // Get values and ensure they're not null
     let name = nameRef.current?.value || "";
-    let phone = phoneRef.current?.value || "";
-    let country = countryRef.current?.value || "";
+    // let phone = phoneRef.current?.value || "";
+    // let country = countryRef.current?.value || "";
     let email = emailRef.current?.value || "";
     let message = messageRef.current?.value || "";
     // Properly encode each parameter
     const encodedText = encodeURIComponent(
       `Name: ${name}\n` +
         `Email: ${email}\n` +
-        `Phone: ${phone}\n` +
-        `Country: ${country}\n` +
+        // `Phone: ${phone}\n` +
+        // `Country: ${country}\n` +
         //  `Service: ${selected}\n` +
         `Message: ${message}`
     );
@@ -106,7 +107,8 @@ export default function ContactSection() {
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder="full name"
+                  ref={nameRef}
                   className="w-full mt-2 px-4 py-2 border border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
                 />
               </div>
@@ -117,7 +119,8 @@ export default function ContactSection() {
                 </label>
                 <input
                   type="email"
-                  placeholder="Enter your email address"
+                  placeholder="email address"
+                  ref={emailRef}
                   className="w-full mt-1 px-4 py-2 border  border-gray-100  rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
                 />
               </div>
@@ -127,7 +130,8 @@ export default function ContactSection() {
                   Message
                 </label>
                 <textarea
-                  placeholder="Write here..."
+                  placeholder="message"
+                  ref={messageRef}
                   className="w-full mt-1 px-4 py-2 border  border-gray-100  rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 h-48"
                 ></textarea>
               </div>
