@@ -12,7 +12,7 @@ const ServiceGuide = () => {
   const messageRef = useRef(null);
 
   const sendToWhatsapp = () => {
-    let number = "+2349098703770";
+    let number = "+2347056819261";
 
     // Get values and ensure they're not null
     let name = nameRef.current?.value || "";
