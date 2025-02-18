@@ -1,6 +1,11 @@
 import React from "react";
 import kigali from "../public/images/kigali.png";
 import zanzibar from "../public/images/zanzibar.png";
+import beriut from "../public/images/beriut.png";
+import nami from "../public/images/nami.png";
+import qatarf from "../public/images/qatarf.png";
+import singa from "../public/images/singa.png";
+
 import { Link } from "react-router-dom";
 
 const TourG = () => {
@@ -39,7 +44,7 @@ const TourG = () => {
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
-                  src={kigali}
+                  src={zanzibar}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />
@@ -56,7 +61,7 @@ const TourG = () => {
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
-                  src={kigali}
+                  src={beriut}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />
@@ -73,7 +78,7 @@ const TourG = () => {
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
-                  src={kigali}
+                  src={nami}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />
@@ -90,7 +95,7 @@ const TourG = () => {
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
-                  src={kigali}
+                  src={qatarf}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />
@@ -107,7 +112,7 @@ const TourG = () => {
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
-                  src={kigali}
+                  src={singa}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />
