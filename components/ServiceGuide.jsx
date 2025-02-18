@@ -1,9 +1,39 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const ServiceGuide = () => {
   const [selected, setSelected] = useState("Service required");
   const [open, setOpen] = useState(false);
   const options = ["Bachelors Degree", "Masters Degree", "Diploma", "Others"];
+
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const countryRef = useRef(null);
+  const messageRef = useRef(null);
+
+  const sendToWhatsapp = () => {
+    let number = "+2349098703770";
+
+    // Get values and ensure they're not null
+    let name = nameRef.current?.value || "";
+    let phone = phoneRef.current?.value || "";
+    let country = countryRef.current?.value || "";
+    let email = emailRef.current?.value || "";
+    let message = messageRef.current?.value || "";
+
+    // Properly encode each parameter
+    const encodedText = encodeURIComponent(
+      `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Country: ${country}\n` +
+        `Service: ${selected}\n` +
+        `Message: ${message}`
+    );
+
+    const url = `https://wa.me/${number}?text=${encodedText}`;
+    window.open(url, "_blank").focus();
+  };
 
   return (
     <>
@@ -26,24 +56,27 @@ const ServiceGuide = () => {
               <input
                 type="text"
                 placeholder="Full name"
+                ref={nameRef}
                 className="w-full border border-gray-300 rounded p-2 outline-red-50"
               />
               <input
                 type="email"
                 placeholder="Email address"
+                ref={emailRef}
                 className="w-full border border-gray-300 rounded p-2 outline-red-50"
               />
               <input
                 type="text"
                 placeholder="Phone number"
+                ref={phoneRef}
                 className="w-full border border-gray-300 rounded p-2 outline-red-50"
               />
               <input
                 type="text"
                 placeholder="Country"
+                ref={countryRef}
                 className="w-full border border-gray-300 rounded p-2 outline-red-50"
               />
-
               <div className="relative w-full">
                 {/* Dropdown Button */}
                 <div
@@ -72,13 +105,14 @@ const ServiceGuide = () => {
                   </ul>
                 )}
               </div>
-
               <textarea
                 placeholder="Message"
+                ref={messageRef}
                 className="w-full h-[150px] border border-gray-300 rounded p-2 outline-red-50"
               ></textarea>
               <button
-                type="submit"
+                type="button"
+                onClick={sendToWhatsapp}
                 className="w-full bg-red-700 text-white p-2 rounded-4xl  py-3 hover:bg-red-700"
               >
                 Submit
