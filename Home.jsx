@@ -6,6 +6,7 @@ import Pack from "./components/Pack";
 import Insight from "./components/Insight";
 import Stories from "./components/Stories";
 import Bfooter from "./components/Bfooter";
+import TourGuide from "./components/TourGuide";
 
 const Home = () => {
   return (
@@ -15,11 +16,11 @@ const Home = () => {
         <ImageSlider />
         <Testimony />
         <Opportunities />
+        <TourGuide />
         <Pack />
         <Insight />
         <Stories />
         <CenteredLogo />
-
         <Bfooter />
       </div>
     </>

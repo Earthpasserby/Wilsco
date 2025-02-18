@@ -1,6 +1,6 @@
 import React from "react";
-import kigali from "../public/images/kigali.png";
-import zanzibar from "../public/images/zanzibar.png";
+import paris1 from "../public/images/paris1.png";
+import calender from "../public/images/calender.png";
 import { Link } from "react-router-dom";
 
 const Insight = () => {
@@ -26,19 +26,63 @@ const Insight = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 ">
-            <div className=" rounded-bl-2xl rounded-br-2xl overflow-hidden">
-              <img
-                src={kigali}
-                alt="group"
-                className="rounded-tl-2xl rounded-tr-2xl abosolute w-full h-full inset-0 object-cover object-center"
-              />
+            <div className="bg-white rounded-bl-2xl rounded-br-2xl overflow-hidden">
+              <div className="relative max-h-[200px] md:max-h-[250px] overflow-hidden">
+                <img
+                  src={paris1}
+                  alt="group"
+                  className="rounded-tl-2xl rounded-tr-2xl abosolute w-full h-full inset-0 object-cover object-bottom "
+                />
+              </div>
+              <div className="flex items-center px-4 pt-4 md:px-5">
+                <img src={calender} alt="group" className="w-[14px] h-[14px]" />
+                <span className="font-normal text-[12px] text-[#686868] px-1">
+                  Published on: January 28, 2025
+                </span>
+              </div>
+              <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal pt-2">
+                Top 5 Countries with the Easiest Visa Approval Process in 2024
+              </h3>
+              <div className="pt-6 px-4 mb-6">
+                <Link
+                  to="/blog"
+                  className="bg-transparent border border-gray-200 text-gray-500 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
+                >
+                  Read
+                </Link>
+              </div>
             </div>
-            <div className="rounded-bl-2xl rounded-br-2xl  ">
-              <img
-                src={zanzibar}
-                alt="group"
-                className="rounded-tl-2xl rounded-tr-2xl abosolute w-full h-full inset-0 object-cover object-center "
-              />
+            <div className="bg-white rounded-bl-2xl rounded-br-2xl  ">
+              <div className="relative max-h-[200px] md:max-h-[250px] overflow-hidden">
+                <img
+                  src={paris1}
+                  alt="group"
+                  className="rounded-tl-2xl rounded-tr-2xl abosolute w-full h-full inset-0 object-cover object-bottom "
+                />
+              </div>
+              <div className="">
+                <div className="flex items-center px-4 pt-4 md:px-5">
+                  <img
+                    src={calender}
+                    alt="group"
+                    className="w-[14px] h-[14px]"
+                  />
+                  <span className="font-normal text-[12px] text-[#686868] px-1">
+                    Published on: January 28, 2025
+                  </span>
+                </div>
+                <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal pt-2">
+                  Top 5 Countries with the Easiest Visa Approval Process in 2025
+                </h3>
+                <div className="pt-6 px-4 mb-6 ">
+                  <Link
+                    to="/blog"
+                    className="bg-transparent border border-gray-200 text-gray-500 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
+                  >
+                    Read
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
