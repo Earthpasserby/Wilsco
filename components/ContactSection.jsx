@@ -12,8 +12,8 @@ import {
 export default function ContactSection() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
-  const phoneRef = useRef(null);
-  const countryRef = useRef(null);
+  // const phoneRef = useRef(null);
+  // const countryRef = useRef(null);
   const messageRef = useRef(null);
 
   const sendToWhatsapp = (event) => {

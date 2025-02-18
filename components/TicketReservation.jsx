@@ -1,9 +1,44 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
-import { FaExclamationCircle, FaSearch } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import airplane from "/images/airplane.png";
 
 export default function TicketReservation() {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const digitRef = useRef(null);
+  const dateRef = useRef(null);
+  const fromRef = useRef(null);
+  const toRef = useRef(null);
+  const countryRef = useRef(null);
+  const messageRef = useRef(null);
+  const sendToWhatsapp = () => {
+    let number = "+2347058619281";
+    // Get values and ensure they're not null
+    let name = nameRef.current?.value || "";
+    let phone = phoneRef.current?.value || "";
+    let country = countryRef.current?.value || "";
+    let email = emailRef.current?.value || "";
+    let digit = digitRef.current?.value || "";
+    let message = messageRef.current?.value || "";
+    // Properly encode each parameter
+    const encodedText = encodeURIComponent(
+      `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Country: ${country}\n` +
+        `Number of Adults: ${digit}\n` +
+        `From: ${fromRef.current?.value || ""}\n` +
+        `To: ${toRef.current?.value || ""}\n` +
+        `Date of Departure: ${dateRef.current?.value || ""}\n` +
+        `Service: ${selected}\n` +
+        `Message: ${message}`
+    );
+    const url = `https://wa.me/${number}?text=${encodedText}`;
+    window.open(url, "_blank").focus();
+  };
+
   const [selected, setSelected] = useState("Choose flight class");
   const [open, setOpen] = useState(false);
   const options = [
@@ -55,6 +90,7 @@ export default function TicketReservation() {
             <input
               type="text"
               placeholder="Full Name"
+              ref={nameRef}
               className="border-0 rounded-lg px-4 py-2 bg-white w-full"
             />
           </div>
@@ -67,6 +103,7 @@ export default function TicketReservation() {
             <input
               type="email"
               placeholder="Email Address"
+              ref={emailRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -77,6 +114,7 @@ export default function TicketReservation() {
             <input
               type="text"
               placeholder="From"
+              ref={fromRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -87,6 +125,7 @@ export default function TicketReservation() {
             <input
               type="text"
               placeholder="To"
+              ref={toRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -98,6 +137,7 @@ export default function TicketReservation() {
             </label>
             <input
               type="date"
+              ref={dateRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -110,6 +150,7 @@ export default function TicketReservation() {
             <input
               type="date"
               placeholder="Return Date"
+              ref={dateRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -152,6 +193,7 @@ export default function TicketReservation() {
             <input
               type="number"
               placeholder="Number of Adults"
+              ref={digitRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -164,6 +206,7 @@ export default function TicketReservation() {
             <input
               type="number"
               placeholder="Number of Children"
+              ref={digitRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -176,6 +219,7 @@ export default function TicketReservation() {
             <input
               type="number"
               placeholder="Number of Children"
+              ref={digitRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -187,13 +231,19 @@ export default function TicketReservation() {
             </label>
             <textarea
               placeholder="Additional Information"
+              ref={messageRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             ></textarea>
           </div>
 
           {/* Submit Button */}
           <div className="col-span-6 sm:col-span-6 md:col-span-6 flex justify-end">
-            <button className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2">
+            <button
+              className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2
+            "
+              type="button"
+              onClick={sendToWhatsapp}
+            >
               <span>Search</span>
               <FaSearch />
             </button>
