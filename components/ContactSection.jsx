@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -8,6 +10,34 @@ import {
 } from "react-icons/fa";
 
 export default function ContactSection() {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const countryRef = useRef(null);
+  const messageRef = useRef(null);
+
+  const sendToWhatsapp = () => {
+    let number = "+2347058619281";
+
+    // Get values and ensure they're not null
+    let name = nameRef.current?.value || "";
+    let phone = phoneRef.current?.value || "";
+    let country = countryRef.current?.value || "";
+    let email = emailRef.current?.value || "";
+    let message = messageRef.current?.value || "";
+    // Properly encode each parameter
+    const encodedText = encodeURIComponent(
+      `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Country: ${country}\n` +
+        //  `Service: ${selected}\n` +
+        `Message: ${message}`
+    );
+    const url = `https://wa.me/${number}?text=${encodedText}`;
+    window.open(url, "_blank").focus();
+  };
+
   return (
     <>
       {/* <div className="absolute inset-0 bg-gray-50 opacity-80"></div> */}
@@ -104,6 +134,7 @@ export default function ContactSection() {
 
               <button
                 type="submit"
+                onClick={sendToWhatsapp}
                 className="w-full bg-red-500 text-white py-3 rounded-4xl font-semibold hover:bg-red-600"
               >
                 Submit
