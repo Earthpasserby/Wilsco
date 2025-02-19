@@ -7,7 +7,9 @@ export default function PackHoliday() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const phoneRef = useRef(null);
-  const digitRef = useRef(null);
+  const adultRef = useRef(null);
+  const childRef = useRef(null);
+  const infantRef = useRef(null);
   const dateRef = useRef(null);
   const fromRef = useRef(null);
   const toRef = useRef(null);
@@ -18,24 +20,31 @@ export default function PackHoliday() {
     // Get values and ensure they're not null
     let name = nameRef.current?.value || "";
     let phone = phoneRef.current?.value || "";
-    let country = ""; // Define country variable
+    // let country = ""; // Define country variable
+    let adult = adultRef.current?.value || "";
+    let child = childRef.current?.value || "";
+    let infant = infantRef.current?.value || "";
     let email = emailRef.current?.value || "";
-    let digit = digitRef.current?.value || "";
     let message = ""; // Define message variable
     // Properly encode each parameter
     const encodedText = encodeURIComponent(
       `Name: ${name}\n` +
         `Email: ${email}\n` +
         `Phone: ${phone}\n` +
-        `Country: ${country}\n` +
-        `Number of Adults: ${digit}\n` +
+        // `Country: ${country}\n` +
+        `Number of Adults: ${adult}\n` +
+        `Number of Children: ${child}\n` +
+        `Number of Infants: ${infant}\n` +
         `From: ${fromRef.current?.value || ""}\n` +
         `To: ${toRef.current?.value || ""}\n` +
         `Date of Departure: ${dateRef.current?.value || ""}\n` +
         `Service: ${selected}\n` +
         `Message: ${message}`
     );
-    const url = `https://wa.me/${number}?text=${encodedText}`;
+
+    const url = `https://wa.me/${number}?text=${encodedText}/${
+      name && email && message ? "send" : ""
+    }`;
     window.open(url, "_blank").focus();
   };
 
@@ -172,7 +181,7 @@ export default function PackHoliday() {
             <input
               type="number"
               placeholder="Number of Adults"
-              ref={digitRef}
+              ref={adultRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -183,7 +192,7 @@ export default function PackHoliday() {
             <input
               type="number"
               placeholder="Number of Children"
-              ref={digitRef}
+              ref={childRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -194,7 +203,7 @@ export default function PackHoliday() {
             <input
               type="number"
               placeholder="Number of Children"
-              ref={digitRef}
+              ref={infantRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -266,7 +275,6 @@ export default function PackHoliday() {
           <div className="col-span-6 sm:col-span-6 md:col-span-6 flex justify-end">
             <button
               className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2"
-              type="button"
               onClick={sendToWhatsapp}
             >
               <span>Customize your holiday package</span>

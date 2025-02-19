@@ -35,7 +35,9 @@ export default function ContactSection() {
         //  `Service: ${selected}\n` +
         `Message: ${message}`
     );
-    const url = `https://wa.me/${number}?text=${encodedText}`;
+    const url = `https://wa.me/${number}?text=${encodedText}/${
+      name && email && message ? "send" : ""
+    }`;
     window.open(url, "_blank").focus();
   };
 
