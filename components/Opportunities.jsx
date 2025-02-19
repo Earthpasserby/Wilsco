@@ -42,7 +42,7 @@ const Opportunities = () => {
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               School service
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] pt-2 flex-grow ">
+            <p className="text-[#686868] font-normal text-[16px] pt-0 flex-grow ">
               Secure your spot in top institutions worldwide with our expert
               guidance and support for study abroad applications.
             </p>
@@ -68,7 +68,7 @@ const Opportunities = () => {
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Visa Service
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] pt-2 flex-grow">
+            <p className="text-[#686868] font-normal text-[16px] pt-1 flex-grow">
               Get expert assistance for a smooth visa application process and
               increase your approval chances.
             </p>
@@ -94,7 +94,7 @@ const Opportunities = () => {
             <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
               Ticketing and Reservation
             </h2>
-            <p className="text-[#686868] font-normal text-[16px] flex-grow  pt-2 ">
+            <p className="text-[#686868] font-normal text-[16px] flex-grow  pt-1">
               Book flights and accommodations effortlessly with our reliable and
               cost-effective reservation services.
             </p>
@@ -124,7 +124,7 @@ const Opportunities = () => {
               <h2 className="text-[#1E1E1E] font-medium text-[20px] pt-2">
                 Holiday packages
               </h2>
-              <p className="text-[#686868] font-normal text-[16px] pt-2 ">
+              <p className="text-[#686868] font-normal text-[16px] pt-1">
                 Discover dream destinations with tailored holiday packages that
                 suit your budget and preferences.
               </p>
