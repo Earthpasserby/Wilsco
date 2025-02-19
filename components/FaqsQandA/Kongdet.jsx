@@ -6,12 +6,12 @@ const faqSets = {
   visa: [
     {
       question:
-        "What are the requirements documents needed to apply for a UK visa?",
+        "What are the requirements documents needed to apply for a Hong-Kong visa?",
       answer:
         "1. International passport (must be valid for at least 6 months)\n2. 5X5 white background passport photograph\n3. Work details i.e., introduction letter, Work ID card, etc\n4. CAC registration certificate if business is registered.\n5. 6 months bank statement",
     },
     {
-      question: "What is the cost of applying for a UK visa?",
+      question: "What is the cost of applying for a Hong-Kong visa?",
       answer:
         "Processing Fee - N200,000 per adult\nN160,000 per child\n\n6 Months Visa Fee\nIkeja or Abuja: $170\nVI Centre: $170 + £55 (Location Fee)\n\n2 Years Visa Fee\nIkeja or Abuja: $600\nVI Centre: $600 + £55 (Location Fee)\n\n5 Years Visa Fee\nIkeja or Abuja: $1000\nVI Centre: $1000 + £55 (Location Fee)\n\n10 Years Visa Fee\nIkeja or Abuja: $1250\nVI Centre: $1250 + £55 (Location Fee)\n\nApplication fee (Visiting Academic: 6-12 months):\nIkeja or Abuja: $309\nVI Centre: $309 + £55 (Location Fee)\n\nApplication fee (Medical Treatment: 11 months)\nIkeja or Abuja: $300\nVI Centre: $300 + £55 (Location Fee)\n\nApplication fee (Marriage Visitor: 6 months):\nIkeja or Abuja: $200\nVI Centre: $200 + £55 (Location Fee)\n\nAdded Services (Optional):\nFasTrack Service at our office (2 days): N20,000\nExpress courier: N8,000\nKeep my passport: N70,000\nPremium lounge (payment on-site): £89\nPrime time appointment (Payment on-site): N90,000\nFlexi Appointment (Payment on-site): £89\nFast track service (5 days): £220\nFast track service (1 day): £956\n\nWhat is a location fee: this is an extra service charge paid to the visa application centre if you want to submit in VI centre. Every other submission centre does not require this location fee.",
     },
