@@ -11,12 +11,11 @@ export default function PackHoliday() {
   const childRef = useRef(null);
   const infantRef = useRef(null);
   const dateRef = useRef(null);
-  const fromRef = useRef(null);
-  const toRef = useRef(null);
+  const destinationRef = useRef(null);
+  const DurationRef = useRef(null);
   // const countryRef = useRef(null);
   // const messageRef = useRef(null);
   const sendToWhatsapp = () => {
-    let number = "+2347058619281";
     // Get values and ensure they're not null
     let name = nameRef.current?.value || "";
     let phone = phoneRef.current?.value || "";
@@ -24,28 +23,34 @@ export default function PackHoliday() {
     let adult = adultRef.current?.value || "";
     let child = childRef.current?.value || "";
     let infant = infantRef.current?.value || "";
+    let date = dateRef.current?.value || "";
     let email = emailRef.current?.value || "";
-    let message = ""; // Define message variable
+    let destination = destinationRef.current?.value || "";
+    let duration = DurationRef.current?.value || "";
+    // let message = ""; // Define message variable
     // Properly encode each parameter
-    const encodedText = encodeURIComponent(
-      `Name: ${name}\n` +
-        `Email: ${email}\n` +
-        `Phone: ${phone}\n` +
-        // `Country: ${country}\n` +
-        `Number of Adults: ${adult}\n` +
-        `Number of Children: ${child}\n` +
-        `Number of Infants: ${infant}\n` +
-        `From: ${fromRef.current?.value || ""}\n` +
-        `To: ${toRef.current?.value || ""}\n` +
-        `Date of Departure: ${dateRef.current?.value || ""}\n` +
-        `Service: ${selected}\n` +
-        `Message: ${message}`
-    );
 
-    const url = `https://wa.me/${number}?text=${encodedText}/${
-      name && email && message ? "send" : ""
-    }`;
-    window.open(url, "_blank").focus();
+    let phoneNumber = "2347058619281"; // removed the + sign
+    // Create a very simple message with minimal formatting
+    const simpleMessage = `Name: ${name} Email: ${email} Phone: ${phone} Adult: ${adult} Child: ${child} Infant: ${infant}  Date: ${dateRef.current?.value} Destination: ${destination} Duration: ${duration}`;
+    // Try direct WhatsApp Web URL format
+    const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      simpleMessage
+    )}`;
+    // Detect if mobile or desktop
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      // Use wa.me format for mobile
+      window.open(
+        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          simpleMessage
+        )}`,
+        "_blank"
+      );
+    } else {
+      // For desktop, try the web.whatsapp.com link
+      window.open(whatsappURL, "_blank");
+    }
   };
 
   const [selected, setSelected] = useState("Choose flight class");
@@ -124,7 +129,7 @@ export default function PackHoliday() {
           </div>
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
-              Phon number
+              Phone number
             </label>
             <input
               type="text"
@@ -142,7 +147,7 @@ export default function PackHoliday() {
             <input
               type="text"
               placeholder="Enter departure"
-              ref={fromRef}
+              ref={destinationRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
@@ -168,7 +173,7 @@ export default function PackHoliday() {
             <input
               type="text"
               placeholder="e.g 2 days"
-              ref={toRef}
+              ref={DurationRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>

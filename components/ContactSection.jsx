@@ -12,33 +12,42 @@ import {
 export default function ContactSection() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
-  // const phoneRef = useRef(null);
-  // const countryRef = useRef(null);
   const messageRef = useRef(null);
 
   const sendToWhatsapp = (event) => {
     event.preventDefault();
-    let number = "+2347058619281";
 
     // Get values and ensure they're not null
     let name = nameRef.current?.value || "";
-    // let phone = phoneRef.current?.value || "";
-    // let country = countryRef.current?.value || "";
     let email = emailRef.current?.value || "";
     let message = messageRef.current?.value || "";
     // Properly encode each parameter
-    const encodedText = encodeURIComponent(
-      `Name: ${name}\n` +
-        `Email: ${email}\n` +
-        // `Phone: ${phone}\n` +
-        // `Country: ${country}\n` +
-        //  `Service: ${selected}\n` +
-        `Message: ${message}`
-    );
-    const url = `https://wa.me/${number}?text=${encodedText}/${
-      name && email && message ? "send" : ""
-    }`;
-    window.open(url, "_blank").focus();
+
+    let phoneNumber = "2347058619281"; // removed the + sign
+
+    // Create a very simple message with minimal formatting
+    const simpleMessage = `Name: ${name} Email: ${email} Message: ${message}`;
+
+    // Try direct WhatsApp Web URL format
+    const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      simpleMessage
+    )}`;
+
+    // Detect if mobile or desktop
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Use wa.me format for mobile
+      window.open(
+        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          simpleMessage
+        )}`,
+        "_blank"
+      );
+    } else {
+      // For desktop, try the web.whatsapp.com link
+      window.open(whatsappURL, "_blank");
+    }
   };
 
   return (
