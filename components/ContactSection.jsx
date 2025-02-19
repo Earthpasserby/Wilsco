@@ -61,16 +61,44 @@ export default function ContactSection() {
             </p>
             <div className="flex gap-4 mt-2 sm:pb-10 sm:mb-0 mb-10 ">
               <div className="w-8 h-8 flex items-center justify-center text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2">
-                <FaFacebookF />
+                <a
+                  href="https://www.facebook.com/wilscotravelandtours/"
+                  className="bg-[#1E1E1E] text-white p-2 rounded-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF size={15} />
+                </a>
               </div>
               <div className="w-8 h-8 flex items-center justify-center text-white hover:text-white bg-[#1E1E1E] rounded-4xl p-2">
-                <FaInstagram />
+                <a
+                  href="https://www.instagram.com/wilsco_travelandtours/"
+                  className="bg-[#1E1E1E] text-white p-2 rounded-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={15} />
+                </a>
               </div>
               <div className="w-8 h-8 text-white hover:text-white bg-[#1E1E1E] p-2 flex items-center justify-center rounded-full">
-                <FaLinkedinIn />
+                <a
+                  href="https://www.linkedin.com/company/wilscotravelandtours/"
+                  className="bg-[#1E1E1E] text-white p-2 rounded-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn size={15} />
+                </a>
               </div>
               <div className="w-8 h-8 text-white hover:text-white bg-[#1E1E1E] p-2 flex items-center justify-center rounded-full">
-                <FaTiktok />
+                <a
+                  href="https://www.tiktok.com/@wilscotravelandtours"
+                  className="bg-[#1E1E1E] text-white p-2 rounded-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTiktok size={15} />
+                </a>
               </div>
             </div>
 

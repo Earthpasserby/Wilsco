@@ -7,12 +7,15 @@ export default function TicketReservation() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const phoneRef = useRef(null);
-  const digitRef = useRef(null);
+  const adultsRef = useRef(null);
+  const childrenRef = useRef(null);
+  const infantsRef = useRef(null);
   const dateRef = useRef(null);
   const fromRef = useRef(null);
   const toRef = useRef(null);
   const countryRef = useRef(null);
   const messageRef = useRef(null);
+
   const sendToWhatsapp = () => {
     let number = "+2347058619281";
     // Get values and ensure they're not null
@@ -20,15 +23,35 @@ export default function TicketReservation() {
     let phone = phoneRef.current?.value || "";
     let country = countryRef.current?.value || "";
     let email = emailRef.current?.value || "";
-    let digit = digitRef.current?.value || "";
+    let adults = adultsRef.current?.value || "";
+    let children = childrenRef.current?.value || "";
+    let infants = infantsRef.current?.value || "";
     let message = messageRef.current?.value || "";
+
+    // Validation
+    if (
+      !name ||
+      !phone ||
+      !email ||
+      !adults ||
+      !children ||
+      !infants ||
+      !country ||
+      !message
+    ) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
     // Properly encode each parameter
     const encodedText = encodeURIComponent(
       `Name: ${name}\n` +
         `Email: ${email}\n` +
         `Phone: ${phone}\n` +
         `Country: ${country}\n` +
-        `Number of Adults: ${digit}\n` +
+        `Number of Adults: ${adults}\n` +
+        `Number of Children: ${children}\n` +
+        `Number of Infants: ${infants}\n` +
         `From: ${fromRef.current?.value || ""}\n` +
         `To: ${toRef.current?.value || ""}\n` +
         `Date of Departure: ${dateRef.current?.value || ""}\n` +
@@ -49,13 +72,13 @@ export default function TicketReservation() {
   ];
 
   return (
-    <div className="relative  bg-[#fbfbfb]">
+    <div className="relative bg-[#fbfbfb]">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-b from-blue-950 to-white text-white text-center py-16">
         <h2 className="sm:text-[32px] font-bold pt-14">
           TICKETING AND RESERVATION
         </h2>
-        <p className="mt-2 max-w-lg sm:text-[16px] text-sm px-3  font-normal mx-auto">
+        <p className="mt-2 max-w-lg sm:text-[16px] text-sm px-3 font-normal mx-auto">
           WIllsco offers top notch flight services on both local and
           international flights. No matter the cabin category, we have
           affordable deals for you.
@@ -64,24 +87,33 @@ export default function TicketReservation() {
         <img
           src={airplane}
           alt="Airplane"
-          className="mx-auto items-center justify-center "
+          className="mx-auto items-center justify-center"
         />
       </div>
 
       {/* Booking Form Container */}
-      <div className="relative max-w-4xl mx-auto -mt-52 bg-gray-50  rounded-lg p-6 mb-12">
+      <div className="relative max-w-4xl mx-auto -mt-52 bg-gray-50 rounded-lg p-6 mb-12">
         {/* Tabs for One Way / Round Trip */}
-        <div className="flex  pb-2 mb-4 gap-3">
-          <button className="flex text-center hover:px-4  text-gray-500 hover:shadow-lg hover:bg-white py-2 font-medium ">
+        <div className="flex pb-2 mb-4 gap-3">
+          <button className="flex text-center hover:px-4 text-gray-500 hover:shadow-lg hover:bg-white py-2 font-medium">
             ONE WAY
           </button>
-          <button className="flex text-center hover:px-4  py-2 hover:shadow-lg hover:bg-white  font-medium text-gray-500">
+          <button className="flex text-center hover:px-4 py-2 hover:shadow-lg hover:bg-white font-medium text-gray-500">
             ROUND TRIP
           </button>
         </div>
 
         {/* Form */}
-        <form className="grid grid-cols-1 md:grid-cols-6 sm:grid-cols-2    gap-5">
+        <form
+          className="grid grid-cols-1 md:grid-cols-6 sm:grid-cols-2 gap-5"
+          onSubmit={(e) => {
+            if (!e.target.checkValidity()) {
+              return; // Stops submission if form is invalid
+            }
+            e.preventDefault(); // Only prevent default if the form is valid
+            sendToWhatsapp();
+          }}
+        >
           {/* Full Name */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
@@ -92,9 +124,9 @@ export default function TicketReservation() {
               placeholder="Full Name"
               ref={nameRef}
               className="border-0 rounded-lg px-4 py-2 bg-white w-full"
+              required
             />
           </div>
-
           {/* Email Address */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
@@ -105,9 +137,9 @@ export default function TicketReservation() {
               placeholder="Email Address"
               ref={emailRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
+              required
             />
           </div>
-
           {/* From */}
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">From</label>
@@ -115,10 +147,10 @@ export default function TicketReservation() {
               type="text"
               placeholder="From"
               ref={fromRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
           {/* To */}
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">To</label>
@@ -126,10 +158,10 @@ export default function TicketReservation() {
               type="text"
               placeholder="To"
               ref={toRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
           {/* Date of Departure */}
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
@@ -138,10 +170,10 @@ export default function TicketReservation() {
             <input
               type="date"
               ref={dateRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
           {/* Return Date (Optional) */}
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
@@ -151,10 +183,10 @@ export default function TicketReservation() {
               type="date"
               placeholder="Return Date"
               ref={dateRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
           {/* Cabin Class */}
           <div className="relative col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
@@ -169,7 +201,7 @@ export default function TicketReservation() {
             </div>
             {/* Dropdown Options */}
             {open && (
-              <ul className="absolute w-full  border border-gray-300 bg-white rounded ">
+              <ul className="absolute w-full border border-gray-300 bg-white rounded">
                 {options.map((option, index) => (
                   <li
                     key={index}
@@ -185,7 +217,7 @@ export default function TicketReservation() {
               </ul>
             )}
           </div>
-
+          {/* Number of Adults */}
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
               Number of adults(2+)
@@ -193,12 +225,12 @@ export default function TicketReservation() {
             <input
               type="number"
               placeholder="Number of Adults"
-              ref={digitRef}
+              ref={adultsRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
-          {/* Number of Adults */}
+          {/* Number of Children */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Number of children(2y-12y)
@@ -206,24 +238,24 @@ export default function TicketReservation() {
             <input
               type="number"
               placeholder="Number of Children"
-              ref={digitRef}
+              ref={childrenRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
-          {/* Number of Children */}
+          {/* Number of Infants */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Number of infants(Below 2y)
             </label>
             <input
               type="number"
-              placeholder="Number of Children"
-              ref={digitRef}
+              placeholder="Number of Infants"
+              ref={infantsRef}
+              required
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
             />
           </div>
-
           {/* Additional Information */}
           <div className="col-span-6 sm:col-span-6 md:col-span-4">
             <label className="block text-gray-700 font-medium mb-1">
@@ -233,15 +265,12 @@ export default function TicketReservation() {
               placeholder="Additional Information"
               ref={messageRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full"
-            ></textarea>
+            />
           </div>
-
-          {/* Submit Button */}
           <div className="col-span-6 sm:col-span-6 md:col-span-6 flex justify-end">
             <button
-              className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2
-            "
-              type="button"
+              className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2"
+              type="submit"
               onClick={sendToWhatsapp}
             >
               <span>Search</span>

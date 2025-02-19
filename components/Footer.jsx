@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
             <div className="flex space-x-3">
               <a
-                href="https://www.facebook.com/wilscotravelandtours/?_rdc=1&_rdr#"
+                href="https://www.facebook.com/wilscotravelandtours/"
                 className="bg-[#1E1E1E] text-white p-2 rounded-full"
                 target="_blank"
                 rel="noopener noreferrer"
