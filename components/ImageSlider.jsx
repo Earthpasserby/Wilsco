@@ -103,12 +103,12 @@ const ImageSlider = () => {
                     {slide.span}
                   </p>
                   <div className="sm:w-[700px]">
-                    <h3 className="text-white sm:text-4xl lg:text-[40px] font-bold pt-4">
+                    <h3 className="text-white sm:text-4xl lg:text-[40px] font-bold pt-2">
                       {slide.title}
                     </h3>
                   </div>
 
-                  <button className="mt-2 sm:mt-7 sm:px-8 sm:py-4 px-8 py-2 bg-red-700 text-white rounded-4xl hover:bg-red-700">
+                  <button className="mt-1 sm:mt-7 sm:px-8 sm:py-4 px-8 py-2 bg-red-700 text-white rounded-4xl hover:bg-red-700">
                     {slide.buttonText}
                   </button>
                 </div>
