@@ -4,6 +4,14 @@ import { FaSearch } from "react-icons/fa";
 import airplane from "/images/airplane.png";
 
 export default function TicketReservation() {
+  const [selected, setSelected] = useState("Choose flight class");
+  const [open, setOpen] = useState(false);
+  const options = [
+    "Economy",
+    "Premium Economy",
+    "Business Class",
+    "First Class",
+  ];
   const [errors, setErrors] = useState({});
 
   // Function to validate the form
@@ -54,7 +62,7 @@ export default function TicketReservation() {
 
     let phoneNumber = "2347058619281"; // removed the + sign
     // Create a very simple message with minimal formatting
-    const simpleMessage = `Name: ${name} Email: ${email} Message: ${message} From: ${from} To: ${to} Depature: ${depature} Return: ${returnDate}`;
+    const simpleMessage = `Name: ${name} Email: ${email} Message: ${message} From: ${from} To: ${to} Depature: ${depature} Return: ${returnDate} flight: ${selected}`;
     // Try direct WhatsApp Web URL format
     const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage
@@ -74,15 +82,6 @@ export default function TicketReservation() {
       window.open(whatsappURL, "_blank");
     }
   };
-
-  const [selected, setSelected] = useState("Choose flight class");
-  const [open, setOpen] = useState(false);
-  const options = [
-    "Economy",
-    "Premium Economy",
-    "Business Class",
-    "First Class",
-  ];
 
   return (
     <div className="relative  bg-[#fbfbfb]">
