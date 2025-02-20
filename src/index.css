@@ -11,7 +11,7 @@
   position: absolute !important;
   left: auto !important;
   right: 56px !important;
-  bottom: 60px !important;
+  bottom: 80px !important;
   height: fit-content !important;
   width: auto !important; /* Avoids taking full width */
   display: flex !important;
@@ -22,6 +22,15 @@
   box-shadow: 0px 4px 15px 0px #1b20201f !important;
   backdrop-filter: blur(4px) !important;
   gap: 0px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-pagination {
+    left: 35px !important;
+    right: 0 !important;
+    width: 150px !important;
+    bottom: 8px !important;
+  }
 }
 
 .swiper-pagination-bullet {

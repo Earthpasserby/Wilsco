@@ -58,7 +58,7 @@ const Testimony = () => {
                 High success rate
               </h1>
               <p className="text-[#4B4B4B] font-normal text-sm pt-2">
-                We pride ourselves on an impressive 85% success rate, helping
+                We pride ourselves on an impressive 95% success rate, helping
                 countless clients achieve their dreams of studying, relocating,
                 or traveling abroad.
               </p>
