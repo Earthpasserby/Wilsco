@@ -42,7 +42,7 @@ const slides = [
     span: "FLIGHT SERVICE",
     title: "Enjoy the best deals on local and International flights.",
     buttonText: "Plan Trip",
-    link: "/ticket",
+    link: "/visaservice",
   },
   {
     image: adventure,
