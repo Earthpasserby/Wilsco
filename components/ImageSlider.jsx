@@ -9,7 +9,7 @@ import flight from "../public/images/flight.png";
 import adventure from "../public/images/adventure.png";
 import group from "../public/images/group.png";
 import care from "../public/images/care.png";
-
+import { Link } from "react-router-dom";
 import "swiper/css";
 // import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -20,7 +20,7 @@ const slides = [
     span: "ADMISSION",
     title: "Enjoy a hassle free process with our study abroad packages.",
     buttonText: "Learn now",
-    link: "/admission",
+    link: "/faqs",
   },
   {
     image: explore,
@@ -28,21 +28,21 @@ const slides = [
     title:
       "Explore the world when you apply for your visit visa with 95% success rate.",
     buttonText: "Apply Now",
-    link: "/tourist-visa",
+    link: "/holidaypack",
   },
   {
     image: canada,
     span: "RELOCATION SERVICE",
     title: "Live and Work in Canada legally with your family.",
     buttonText: "Start now",
-    link: "/relocation-service",
+    link: "/relocateserv",
   },
   {
     image: flight,
     span: "FLIGHT SERVICE",
     title: "Enjoy the best deals on local and International flights.",
     buttonText: "Plan Trip",
-    link: "/flight-service",
+    link: "/ticket",
   },
   {
     image: adventure,
@@ -50,7 +50,7 @@ const slides = [
     title:
       "Take a break from the stress and let's treat you to an adventure to remember.",
     buttonText: "Plan Trip",
-    link: "/tour-service",
+    link: "/holidaypack",
   },
   {
     image: group,
@@ -58,7 +58,7 @@ const slides = [
     title:
       "Take a break from work and bond with colleagues locally or internationally.",
     buttonText: "Grab Deal",
-    link: "/team-bonding-package",
+    link: "/holidaypack",
   },
   {
     image: care,
@@ -66,7 +66,7 @@ const slides = [
     title:
       "Birth abroad made easy with us. Get the best deals on medical bills and give your child the gift of dual citizenship.",
     buttonText: "Check Offers",
-    link: "/maternity-service",
+    link: "/birthservice",
   },
 ];
 
@@ -109,7 +109,7 @@ const ImageSlider = () => {
                   </div>
 
                   <button className="mt-1 sm:mt-7 sm:px-8 sm:py-4 px-8 py-2 bg-red-700 text-white rounded-4xl hover:bg-red-700">
-                    {slide.buttonText}
+                    <Link to={slide.link}>{slide.buttonText}</Link>
                   </button>
                 </div>
               </div>
