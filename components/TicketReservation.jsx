@@ -62,7 +62,14 @@ export default function TicketReservation() {
 
     let phoneNumber = "2347058619281"; // removed the + sign
     // Create a very simple message with minimal formatting
-    const simpleMessage = `Name: ${name} Email: ${email} Message: ${message} From: ${from} To: ${to} Depature: ${depature} Return: ${returnDate} flight: ${selected}`;
+    const simpleMessage = `Name: ${name}
+     Email: ${email} 
+     Message: ${message} 
+     From: ${from} 
+     To: ${to} 
+     Depature: ${depature} 
+     Return: ${returnDate} 
+     flight: ${selected}`;
     // Try direct WhatsApp Web URL format
     const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage

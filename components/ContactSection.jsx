@@ -26,7 +26,9 @@ export default function ContactSection() {
     let phoneNumber = "2347058619281"; // removed the + sign
 
     // Create a very simple message with minimal formatting
-    const simpleMessage = `Name: ${name} Email: ${email} Message: ${message}`;
+    const simpleMessage = `Name: ${name} 
+    Email: ${email}
+    Message: ${message}`;
 
     // Try direct WhatsApp Web URL format
     const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(

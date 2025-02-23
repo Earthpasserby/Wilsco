@@ -32,7 +32,17 @@ export default function PackHoliday() {
 
     let phoneNumber = "2347058619281"; // removed the + sign
     // Create a very simple message with minimal formatting
-    const simpleMessage = `Name: ${name} Email: ${email} Phone: ${phone} Adult: ${adult} Child: ${child} Infant: ${infant}  Date: ${dateRef.current?.value} Destination: ${destination} Duration: ${duration} flight-class: ${selected} Hotel-rating ${selectedHotel}`;
+    const simpleMessage = `Name: ${name}
+     Email: ${email} 
+     Phone: ${phone} 
+     Adult: ${adult} 
+     Child: ${child} 
+     Infant: ${infant} 
+    Date: ${dateRef.current?.value} 
+    Destination: ${destination} 
+    Duration: ${duration} 
+    flight-class: ${selected} 
+    Hotel-rating ${selectedHotel}`;
     // Try direct WhatsApp Web URL format
     const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage
