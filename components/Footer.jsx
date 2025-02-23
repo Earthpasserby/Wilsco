@@ -163,9 +163,12 @@ const Footer = () => {
               placeholder="Email address"
               className="w-full p-2 border border-gray-300 rounded-md mb-3 outline-red-700"
             />
-            <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700">
-              Subscribe
-            </button>
+
+            <a href="mailto:info@wilscotravel.com">
+              <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700">
+                Subscribe
+              </button>
+            </a>
           </div>
         </div>
 
@@ -228,9 +231,11 @@ const Footer = () => {
             placeholder="Email address"
             className="w-full p-2 border border-gray-300 rounded-md mb-3 outline-red-700"
           />
-          <button className="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-700">
-            Subscribe
-          </button>
+          <a href="mailto:info@wilscotravel.com">
+            <button className="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-700">
+              Subscribe
+            </button>
+          </a>
         </div>
         <div className="grid grid-cols-2 items-center px-4">
           {/* Company Links */}
