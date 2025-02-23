@@ -38,13 +38,13 @@ export default function PackHoliday() {
      Adult: ${adult} 
      Child: ${child} 
      Infant: ${infant} 
-    Date: ${dateRef.current?.value} 
-    Destination: ${destination} 
-    Duration: ${duration} 
-    flight-class: ${selected} 
-    Hotel-rating ${selectedHotel}`;
+     Date: ${dateRef.current?.value} 
+     Destination: ${destination} 
+     Duration: ${duration} 
+     flight-class: ${selected} 
+     Hotel-rating ${selectedHotel}`;
     // Try direct WhatsApp Web URL format
-    const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage
     )}`;
     // Detect if mobile or desktop

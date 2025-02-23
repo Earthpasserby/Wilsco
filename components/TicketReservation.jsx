@@ -71,7 +71,7 @@ export default function TicketReservation() {
      Return: ${returnDate} 
      flight: ${selected}`;
     // Try direct WhatsApp Web URL format
-    const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage
     )}`;
     // Detect if mobile or desktop

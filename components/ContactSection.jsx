@@ -27,11 +27,11 @@ export default function ContactSection() {
 
     // Create a very simple message with minimal formatting
     const simpleMessage = `Name: ${name} 
-    Email: ${email}
-    Message: ${message}`;
+                           Email: ${email}
+                           Message: ${message}`;
 
     // Try direct WhatsApp Web URL format
-    const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage
     )}`;
 
