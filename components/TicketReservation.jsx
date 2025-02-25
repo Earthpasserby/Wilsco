@@ -4,6 +4,8 @@ import { FaSearch } from "react-icons/fa";
 import airplane from "/images/airplane.png";
 
 export default function TicketReservation() {
+  // Add state to track trip type
+  const [tripType, setTripType] = useState("ONE WAY");
   const [selected, setSelected] = useState("Choose flight class");
   const [open, setOpen] = useState(false);
   const options = [
@@ -27,6 +29,11 @@ export default function TicketReservation() {
     if (!depatureRef.current?.value)
       newErrors.depature = "Departure date is required";
 
+    // Only validate return date if trip type is "ROUND TRIP"
+    if (tripType === "ROUND TRIP" && !returnRef.current?.value) {
+      newErrors.return = "Return date is required";
+    }
+
     setErrors(newErrors);
 
     return Object.keys(newErrors).length === 0;
@@ -34,42 +41,51 @@ export default function TicketReservation() {
 
   const nameRef = useRef(null);
   const emailRef = useRef(null);
-  // const phoneRef = useRef(null);
-  // const countryRef = useRef(null);
-  // const dateRef = useRef(null);
   const fromRef = useRef(null);
   const adultRef = useRef(null);
   const childRef = useRef(null);
   const infantRef = useRef(null);
   const toRef = useRef(null);
   const depatureRef = useRef(null);
-  // const digitRef = useRef(null);
   const returnRef = useRef(null);
   const messageRef = useRef(null);
-  const sendToWhatsapp = () => {
+
+  const sendToWhatsapp = (e) => {
+    e.preventDefault();
+
+    // Validate form before sending
+    if (!validateForm()) {
+      return;
+    }
+
     // Get values and ensure they're not null
     let name = nameRef.current?.value || "";
-    // let phone = phoneRef.current?.value || "";
-    // let country = countryRef.current?.value || "";
     let email = emailRef.current?.value || "";
     let depature = depatureRef.current?.value || "";
-    // let digit = digitRef.current?.value || "";
     let from = fromRef.current?.value || "";
     let to = toRef.current?.value || "";
-    // let date = dateRef.current?.value || "";
     let returnDate = returnRef.current?.value || "";
     let message = messageRef.current?.value || "";
+    let adults = adultRef.current?.value || "0";
+    let children = childRef.current?.value || "0";
+    let infants = infantRef.current?.value || "0";
 
     let phoneNumber = "2347058619281"; // removed the + sign
     // Create a very simple message with minimal formatting
-    const simpleMessage = `Name: ${name}
+    const simpleMessage = `  
+     Trip Type: ${tripType}
+     Name: ${name}
      Email: ${email} 
-     Message: ${message} 
      From: ${from} 
      To: ${to} 
-     Depature: ${depature} 
-     Return: ${returnDate} 
-     flight: ${selected}`;
+     Depature: ${depature}
+     Flight Class: ${selected}
+     Adults: ${adults}
+     Children: ${children}
+     Message: ${message} 
+     ${tripType === "ROUND TRIP" ? `Return: ${returnDate}` : ""} 
+     Infants: ${infants}`;
+
     // Try direct WhatsApp Web URL format
     const whatsappURL = `https://wa.me/send?phone=${phoneNumber}&text=${encodeURIComponent(
       simpleMessage
@@ -91,13 +107,13 @@ export default function TicketReservation() {
   };
 
   return (
-    <div className="relative  bg-[#fbfbfb]">
+    <div className="relative bg-[#fbfbfb]">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-b from-blue-950 to-white text-white text-center py-16">
         <h2 className="sm:text-[32px] font-bold pt-14">
           TICKETING AND RESERVATION
         </h2>
-        <p className="mt-2 max-w-lg sm:text-[16px] text-sm px-3  font-normal mx-auto">
+        <p className="mt-2 max-w-lg sm:text-[16px] text-sm px-3 font-normal mx-auto">
           WIllsco offers top notch flight services on both local and
           international flights. No matter the cabin category, we have
           affordable deals for you.
@@ -106,26 +122,40 @@ export default function TicketReservation() {
         <img
           src={airplane}
           alt="Airplane"
-          className="mx-auto items-center justify-center "
+          className="mx-auto items-center justify-center"
         />
       </div>
 
       {/* Booking Form Container */}
-      <div className="relative max-w-4xl mx-auto -mt-52 bg-gray-50  rounded-lg p-6 mb-12">
+      <div className="relative max-w-4xl mx-auto -mt-52 bg-gray-50 rounded-lg p-6 mb-12">
         {/* Tabs for One Way / Round Trip */}
-        <div className="flex  pb-2 mb-4 gap-3">
-          <button className="flex text-center hover:px-4  text-gray-500 hover:shadow-lg hover:bg-white py-2 font-medium ">
+        <div className="flex pb-2 mb-4 gap-3">
+          <button
+            className={`flex text-center px-4 py-2 font-medium transition-all duration-200 ${
+              tripType === "ONE WAY"
+                ? "bg-white text-red-700 shadow-lg"
+                : "text-gray-500 hover:bg-white hover:shadow-lg"
+            }`}
+            onClick={() => setTripType("ONE WAY")}
+          >
             ONE WAY
           </button>
-          <button className="flex text-center hover:px-4  py-2 hover:shadow-lg hover:bg-white  font-medium text-gray-500">
+          <button
+            className={`flex text-center px-4 py-2 font-medium transition-all duration-200 ${
+              tripType === "ROUND TRIP"
+                ? "bg-white text-red-600 shadow-lg"
+                : "text-gray-500 hover:bg-white hover:shadow-lg"
+            }`}
+            onClick={() => setTripType("ROUND TRIP")}
+          >
             ROUND TRIP
           </button>
         </div>
 
         {/* Form */}
         <form
-          className="grid grid-cols-1 md:grid-cols-6 sm:grid-cols-2    gap-5"
-          required
+          className="grid grid-cols-1 md:grid-cols-6 sm:grid-cols-2 gap-5"
+          onSubmit={sendToWhatsapp}
         >
           {/* Full Name */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
@@ -138,8 +168,8 @@ export default function TicketReservation() {
               ref={nameRef}
               className="border-0 rounded-lg px-4 py-2 bg-white w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
-            {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email}</p>
+            {errors.name && (
+              <p className="text-red-500 text-sm">{errors.name}</p>
             )}
           </div>
 
@@ -154,8 +184,8 @@ export default function TicketReservation() {
               ref={emailRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
-            {errors.from && (
-              <p className="text-red-500 text-sm">{errors.from}</p>
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email}</p>
             )}
           </div>
 
@@ -168,6 +198,9 @@ export default function TicketReservation() {
               ref={fromRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
+            {errors.from && (
+              <p className="text-red-500 text-sm">{errors.from}</p>
+            )}
           </div>
 
           {/* To */}
@@ -179,12 +212,13 @@ export default function TicketReservation() {
               ref={toRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
+            {errors.to && <p className="text-red-500 text-sm">{errors.to}</p>}
           </div>
 
           {/* Date of Departure */}
           <div className="col-span-6 sm:col-span-6 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
-              Date of depature
+              Date of {tripType === "ONE WAY" ? "depature" : "depature"}
             </label>
             <input
               type="date"
@@ -196,10 +230,14 @@ export default function TicketReservation() {
             )}
           </div>
 
-          {/* Return Date (Optional) */}
-          <div className="col-span-6 sm:col-span-6 md:col-span-2">
+          {/* Return Date (Only shown for Round Trip) */}
+          <div
+            className={`col-span-6 sm:col-span-6 md:col-span-2 ${
+              tripType === "ONE WAY" ? "hidden" : ""
+            }`}
+          >
             <label className="block text-gray-700 font-medium mb-1">
-              Date of arrival
+              Date of return
             </label>
             <input
               type="date"
@@ -207,6 +245,9 @@ export default function TicketReservation() {
               ref={returnRef}
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
+            {errors.return && (
+              <p className="text-red-500 text-sm">{errors.return}</p>
+            )}
           </div>
 
           {/* Cabin Class */}
@@ -223,7 +264,7 @@ export default function TicketReservation() {
             </div>
             {/* Dropdown Options */}
             {open && (
-              <ul className="absolute w-full focus:ring-2 focus:ring-red-400 focus:outline-none  border border-gray-300 bg-white rounded ">
+              <ul className="absolute w-full focus:ring-2 focus:ring-red-400 focus:outline-none border border-gray-300 bg-white rounded z-10">
                 {options.map((option, index) => (
                   <li
                     key={index}
@@ -248,11 +289,13 @@ export default function TicketReservation() {
               type="number"
               placeholder="Number of Adults"
               ref={adultRef}
+              defaultValue="1"
+              min="1"
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
           </div>
 
-          {/* Number of Adults */}
+          {/* Number of Children */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Number of children(2y-12y)
@@ -261,19 +304,23 @@ export default function TicketReservation() {
               type="number"
               placeholder="Number of Children"
               ref={childRef}
+              defaultValue="0"
+              min="0"
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
           </div>
 
-          {/* Number of Children */}
+          {/* Number of Infants */}
           <div className="col-span-6 sm:col-span-6 md:col-span-3">
             <label className="block text-gray-700 font-medium mb-1">
               Number of infants(Below 2y)
             </label>
             <input
               type="number"
-              placeholder="Number of Children"
+              placeholder="Number of Infants"
               ref={infantRef}
+              defaultValue="0"
+              min="0"
               className="border-0 bg-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
             />
           </div>
@@ -293,8 +340,8 @@ export default function TicketReservation() {
           {/* Submit Button */}
           <div className="col-span-6 sm:col-span-6 md:col-span-6 flex justify-end">
             <button
+              type="submit"
               className="bg-red-600 text-white px-8 py-3 rounded-4xl hover:bg-red-700 flex items-center space-x-2"
-              onClick={sendToWhatsapp}
             >
               <span>Search</span>
               <FaSearch />
@@ -306,13 +353,7 @@ export default function TicketReservation() {
       </div>
 
       <div className="lg:pb-24 pt-2 pb-12 px-4 md:pb-4">
-        {/* <p className="text-[14px] text-yellow-500 bg-yellow-100 rounded-4xl mt-4 md:mb-0 text-center lg:mb-32 mb-10 max-w-4xl mx-auto px-8 py-2 flex items-center justify-center space-x-2"> */}
-        {/* <FaExclamationCircle size={20} /> */}
-        {/* <span className="text-[10px] sm:text-[12px]"> */}
-        {/* Clicking on the search button takes you straight to our WhatsApp */}
-        {/* contact or email: +2347058619281/ info@wilscotravels.com */}
-        {/* </span> */}
-        {/* </p> */}
+        {/* Contact info removed as per original code */}
       </div>
     </div>
   );

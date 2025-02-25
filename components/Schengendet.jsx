@@ -18,14 +18,12 @@ Biometrics Fee - N62,000
 Visa Fee - €90 (to be paid in cash at the submission center)
 Insurance fee - from N30,000
 
-- Visa fee 
-€90
- (payable to VFS @ submission)
+- Visa fee €90(payable to VFS @ submission)
 
 Courier fee
 N17,000
 
-Biometrics Fee by Country (in tabular form , country and cost)
+Biometrics Fee by Country 
 Belgium
 N30,000
 
