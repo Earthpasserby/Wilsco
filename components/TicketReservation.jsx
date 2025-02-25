@@ -151,6 +151,15 @@ export default function TicketReservation() {
             ROUND TRIP
           </button>
         </div>
+        {/* Form with clear trip type indication */}
+        <div className="bg-blue-50 rounded-lg p-3 mb-4 flex items-center w-96">
+          <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+          <p className="text-blue-700 text-sm font-medium">
+            {tripType === "ONE WAY"
+              ? "Booking a one-way ticket (no return)"
+              : "Booking a round-trip ticket (includes return)"}
+          </p>
+        </div>
 
         {/* Form */}
         <form
