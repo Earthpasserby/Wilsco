@@ -159,7 +159,113 @@ const faqSets = {
         "Enough to cover your expenses abroad including the school fees, further guidance will be given to you during the process.",
     },
   ],
-  birth: [],
+  birth: [
+    {
+      question: "When is the best time to start the process?",
+      answer:
+        "It is advisable to start early. It is better to start even before you get pregnant to enable you to prepare adequately.",
+    },
+    {
+      question: "How long does it take to process a UK medical visa?",
+      answer: "It depends on the next available date.",
+    },
+    {
+      question: "What is the duration of the visa?",
+      answer: "6 Months",
+    },
+    {
+      question: "What is the breakdown for visa application fee?",
+      answer:
+        "Processing Fee: N200,000\nVisa Fee: $195\nBirth Package: N300,000",
+    },
+    {
+      question: "What documents do I need for the Visa Processing?",
+      answer: "Bank statement, work details and hospital details.",
+    },
+    {
+      question: "What does the birth package cover for UK application?",
+      answer:
+        "N300,000 covers:\n– Hospital/Doctor full details\n– Doctor’s appointment\n– Preparation for Poe\n– Accommodation recommendation if applicable (Apartment and Hotel).\n– Flight booking if applicable.\n– Guide to Baby documentation",
+    },
+    {
+      question:
+        "Must I declare medical reasons if going for UK Visa application?",
+      answer:
+        "It is advisable to declare medical reasons to ensure smooth Port of Entry (POE) and renewal.",
+    },
+    {
+      question: "Will I go for an Interview?",
+      answer: "Yes, We will prepare you ahead for the interview.",
+    },
+    {
+      question: "When can I travel after my visa has been granted?",
+      answer:
+        "You can travel immediately if a visa is issued. This also depends on the stage of pregnancy you are.",
+    },
+    {
+      question: "How long can I stay in the UK?",
+      answer:
+        "It is recommended to stay for 8 weeks. You can however, stay longer with valid reason",
+    },
+    {
+      question: "How much do I need to have in my account?",
+      answer:
+        "Enough to cover the trip including medical bills and living expenses. We would draw up a budget sheet for you.",
+    },
+    {
+      question: "What is the estimated cost of giving birth in the UK?",
+      answer:
+        "The estimated cost of giving birth is $5000 for Vaginal Birth and $7500 for CS Birth. It includes Doctor, Hospital and pediatrician bills. It is advisable to budget higher.",
+    },
+    {
+      question: "Can I apply with my family?",
+      answer: "Yes, you can.",
+    },
+    {
+      question: "Does the bill cover processing of my baby’s documentation?",
+      answer: "No, Baby’s documentation process costs an average of $500.",
+    },
+    {
+      question: "Can I know the name of the hospital you use?",
+      answer:
+        "We will disclose the hospital details when process payment is made.",
+    },
+    {
+      question: "Can I sponsor myself or must my husband sponsor me?",
+      answer:
+        "Either one of you can sponsor your trip. You can also get a third-party sponsor.",
+    },
+    {
+      question: "Do I need to pay the hospital and doctor’s bill from Nigeria?",
+      answer:
+        "No, you only pay directly to the hospital and doctor when you travel.",
+    },
+    {
+      question: "Is your visa guaranteed?",
+      answer:
+        "We do not guarantee visas as visa issuance is at the sole discretion of the consular. We offer an 85% success rate and based on our visa knowledge and expertise, we will guide you for a better chance.",
+    },
+    {
+      question: "If I am refused a visa will there be a refund?",
+      answer:
+        "No, but you can reapply without paying the processing fee. (You will be required to pay the Visa fee only). This is only valid for 3 months after denial.",
+    },
+    {
+      question: "Do I need to have a travel history before applying?",
+      answer:
+        "No, you do not need to have travel history, but it is an added advantage.",
+    },
+    {
+      question:
+        "If I already have a visa, can I still apply for the maternity package?",
+      answer: "Yes",
+    },
+    {
+      question: "What are the benefits of giving birth in UK?",
+      answer:
+        "\nYour child gets instant citizenship by birth and social security number\nThe passport allows your child access to Schengen visa free countries.\nThe child can file for second citizenship for family members when he's of age",
+    },
+  ],
 };
 
 export default function Faqsdet() {

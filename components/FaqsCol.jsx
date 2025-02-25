@@ -115,6 +115,13 @@ export default function FaqsCol() {
         "Enjoy easy access to Thailand’s stunning beaches, vibrant nightlife, and cultural wonders with a hassle-free e-visa.",
       country: "thai",
     },
+    // {
+    // name: "BARBADOS",
+    // flag: "/flags/barb.png",
+    // description:
+    // "Give birth in a serene island paradise with excellent healthcare services and access to a Barbadian passport for your child.",
+    // country: "barb",
+    // },
   ];
 
   return (
