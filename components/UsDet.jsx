@@ -39,9 +39,9 @@ const faqSets = {
       answer: "Yes, it's. You will be required to go for biometrics.",
     },
     {
-      question:"Will I be prepared for the interview?",
-      answer:"Yes, our team of experts will prepare you adequately."
-    }
+      question: "Will I be prepared for the interview?",
+      answer: "Yes, our team of experts will prepare you adequately.",
+    },
     {
       question:
         "Will I be able to go for biometrics and submission immediately I make payment and apply?",
