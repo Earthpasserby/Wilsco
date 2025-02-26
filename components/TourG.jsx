@@ -1,4 +1,3 @@
-import React from "react";
 import kigali from "../public/images/kigali.png";
 import zanzibar from "../public/images/zanzibar.png";
 import beriut from "../public/images/beriut.png";
@@ -76,7 +75,7 @@ const TourG = () => {
                   Book now
                 </a>
               </div>
-            </div>{" "}
+            </div>
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
@@ -93,7 +92,7 @@ const TourG = () => {
                   Book now
                 </a>
               </div>
-            </div>{" "}
+            </div>
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
@@ -110,7 +109,7 @@ const TourG = () => {
                   Book now
                 </a>
               </div>
-            </div>{" "}
+            </div>
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
@@ -127,7 +126,7 @@ const TourG = () => {
                   Book now
                 </a>
               </div>
-            </div>{" "}
+            </div>
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
@@ -144,7 +143,7 @@ const TourG = () => {
                   Book now
                 </a>
               </div>
-            </div>{" "}
+            </div>
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
@@ -161,7 +160,7 @@ const TourG = () => {
                   Book now
                 </a>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
