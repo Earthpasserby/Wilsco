@@ -4,7 +4,7 @@ import beriut from "../public/images/beriut.png";
 import nami from "../public/images/nami.png";
 import qatarf from "../public/images/qatarf.png";
 import singa from "../public/images/singa.png";
-import Doha from "../public/images/Doha.jpg";
+import doha from "../public/images/doha.jpg";
 import badagry from "../public/images/badagry.jpg";
 
 // import { Link } from "react-router-dom";
@@ -130,7 +130,7 @@ const TourG = () => {
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
-                  src={Doha}
+                  src={doha}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />
