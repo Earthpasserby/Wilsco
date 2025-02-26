@@ -24,7 +24,7 @@ const TourG = () => {
           </p>
         </div>
         <div className="pt-14">
-          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-83">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="bg-white p-4 transition rounded-4xl">
               <div className="">
                 <img
