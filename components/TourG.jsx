@@ -162,7 +162,7 @@ const TourG = () => {
               </div>
             </div>
           </div>
-          r
+          re
         </div>
       </div>
       fff
