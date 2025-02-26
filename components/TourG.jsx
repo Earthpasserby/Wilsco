@@ -8,7 +8,7 @@ import singa from "../public/images/singa.png";
 import Doha from "../public/images/Doha.jpg";
 import badagry from "../public/images/badagry.jpg";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const TourG = () => {
   return (

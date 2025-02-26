@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../public/images/avatar.png";
+// import avatar from "../public/images/avatar.png";
 
 const testimonials = [
   {
