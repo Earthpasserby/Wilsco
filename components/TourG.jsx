@@ -5,6 +5,8 @@ import beriut from "../public/images/beriut.png";
 import nami from "../public/images/nami.png";
 import qatarf from "../public/images/qatarf.png";
 import singa from "../public/images/singa.png";
+import Doha from "../public/images/Doha.jpg";
+import badagry from "../public/images/badagry.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -113,6 +115,40 @@ const TourG = () => {
               <div className="">
                 <img
                   src={singa}
+                  alt="group"
+                  className="w-full h-full object-cover object-center rounded-xl"
+                />
+              </div>
+              <div className=" pt-5">
+                <a
+                  href="https://wa.me/2347058619281"
+                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
+                >
+                  Book now
+                </a>
+              </div>
+            </div>{" "}
+            <div className="bg-white p-4 transition rounded-4xl">
+              <div className="">
+                <img
+                  src={Doha}
+                  alt="group"
+                  className="w-full h-full object-cover object-center rounded-xl"
+                />
+              </div>
+              <div className=" pt-5">
+                <a
+                  href="https://wa.me/2347058619281"
+                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
+                >
+                  Book now
+                </a>
+              </div>
+            </div>{" "}
+            <div className="bg-white p-4 transition rounded-4xl">
+              <div className="">
+                <img
+                  src={badagry}
                   alt="group"
                   className="w-full h-full object-cover object-center rounded-xl"
                 />

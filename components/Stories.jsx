@@ -5,7 +5,7 @@ const testimonials = [
   {
     text: "“Willsco customer service is top notch. They are so friendly and efficient. When they say they'll guide you through the process, they keep to their word.”",
     name: "Mrs Blessing.",
-    location: "Egypt",
+    location: "United Kingdom, Study Visa",
     size: "row-span-1", // Taller card
   },
   {
@@ -29,7 +29,7 @@ const testimonials = [
   {
     text: "“Willsco Travel and Tours handled my Canada visa process and it was so swift and efficient. I am glad I found them.”",
     name: "Mr Abiodun",
-    location: "Nigeria",
+    location: "Canada",
     size: "row-span-1", // Normal height
   },
   {
@@ -40,8 +40,8 @@ const testimonials = [
   },
   {
     text: "“I wrote my IELTS for the first time with WILLSCO tutorials and I had a 7.5 score. They also assisted with helping me gain admission to study my dream course.”",
-    name: "Mrs Martha",
-    location: "Nigeria",
+    name: "Miss Martha",
+    location: "United Kingdom, Study Visa ",
     size: "row-span-1", // Taller card
   },
   {
