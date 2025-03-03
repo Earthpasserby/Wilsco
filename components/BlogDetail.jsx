@@ -1,5 +1,5 @@
-import student1 from "/images/student1.png";
-import acada1 from "/images/acada1.png";
+import guide from "/images/guide.jpg";
+import france from "/images/france.jpg";
 import calender from "/images/calender.png";
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +13,6 @@ export default function BlogDetail() {
       >
         Back
       </button>
-
       {/* Title */}
       <h1 className=" md:text-[32px] font-bold text-center text-gray-600 pt-4">
         Pack Smart, Travel Happy:
@@ -43,7 +42,7 @@ export default function BlogDetail() {
       {/* First Image */}
       <div className="pt-14">
         <img
-          src={student1}
+          src={france}
           alt="Students studying abroad"
           className="rounded-4xl w-full mb-10"
         />
@@ -57,13 +56,63 @@ export default function BlogDetail() {
         stress-free packing tips.
       </p>
       {/* Second Paragraph */}
-      <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
         <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
           1. Check the Weather
         </ul>
         Know the forecast so you can pack appropriately and avoid surprises.
         Nobody wants to be caught in the rain without an umbrella!
-      </p>
+      </div>
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+        <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
+          2. Make a Packing List
+        </ul>
+        A checklist keeps you organized and ensures you don’t leave behind the
+        important stuff (like your charger or swimsuit!).
+      </div>{" "}
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+        <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
+          3. Pack a Mini Carry-On Survival Kit
+        </ul>
+        Keep must-haves like your charger, power bank, snacks, and a book
+        handy—just in case of delays.
+      </div>{" "}
+      <div className="pt-6">
+        <img
+          src={guide}
+          alt="Student at an international university"
+          className="rounded-xl w-full pt-12"
+        />
+      </div>
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+        <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
+          4. Keep Your Documents Accessible
+        </ul>
+        Store your passport, tickets, and ID in an easy-to-reach spot to avoid
+        last-minute airport stress.
+      </div>{" "}
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+        <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
+          5. Make Copies of Important Documents
+        </ul>
+        Always have backup copies in case of emergencies. Better safe than
+        sorry!
+      </div>{" "}
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+        <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
+          6. Plan Your Outfits
+        </ul>
+        Avoid overpacking by planning daily looks in advance. Bonus: You’ll have
+        extra space for souvenirs!
+      </div>{" "}
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+        <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
+          7. Check Airline Luggage Rules
+        </ul>
+        Know weight limits and restrictions to dodge unnecessary fees or
+        surprises at check-in. With these quick tips, you’re set for a smooth,
+        stress-free trip. Now, go enjoy that vacation—you deserve it! ✈️🌴
+      </div>
       {/* Thrid Paragraph */}
       {/* <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18"> */}
       {/* Once you have chosen your destination, the next step is finding the best */}
@@ -87,13 +136,6 @@ export default function BlogDetail() {
       {/* quickly. */}
       {/* </p> */}
       {/* Second Image */}
-      <div className="pt-6">
-        <img
-          src={acada1}
-          alt="Student at an international university"
-          className="rounded-4xl w-full pt-12"
-        />
-      </div>
       {/* Third Paragraph */}
       {/* <p className="pt-6 text-gray-900 leading-relaxed text-[16px] font-normal sm:px-18"> */}
       {/* Finally, once you arrive, take time to settle in and make the most of */}
