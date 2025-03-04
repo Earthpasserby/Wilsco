@@ -41,7 +41,7 @@ const Insight = () => {
                 </span>
               </div>
               <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal pt-2">
-                Top 5 Countries with the Easiest Visa Approval Process in 2024
+                Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
               </h3>
               <div className="pt-6 px-4 mb-6">
                 <Link
@@ -72,7 +72,8 @@ const Insight = () => {
                   </span>
                 </div>
                 <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal pt-2">
-                  Top 5 Countries with the Easiest Visa Approval Process in 2025
+                  Pack Smart, Travel Happy: Your Ultimate Vacation Packing
+                  Guide!
                 </h3>
                 <div className="pt-6 px-4 mb-6 ">
                   <Link
