@@ -37,7 +37,7 @@ const Insight = () => {
               <div className="flex items-center px-4 pt-4 md:px-5">
                 <img src={calender} alt="group" className="w-[14px] h-[14px]" />
                 <span className="font-normal text-[12px] text-[#686868] px-1">
-                  Published on: January 28, 2025
+                  Published on: March 07, 2025
                 </span>
               </div>
               <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal pt-2">
@@ -68,7 +68,7 @@ const Insight = () => {
                     className="w-[14px] h-[14px]"
                   />
                   <span className="font-normal text-[12px] text-[#686868] px-1">
-                    Published on: January 28, 2025
+                    Published on: March 07, 2025
                   </span>
                 </div>
                 <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal pt-2">
