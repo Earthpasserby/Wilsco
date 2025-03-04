@@ -1,6 +1,6 @@
 import paris1 from "../public/images/paris1.png";
 import calender from "../public/images/calender.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const BlogCol = () => {
   return (
