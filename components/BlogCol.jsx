@@ -16,11 +16,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -40,11 +40,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -64,11 +64,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -88,11 +88,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -112,11 +112,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -136,11 +136,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -160,11 +160,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -184,11 +184,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -208,11 +208,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
@@ -232,11 +232,11 @@ export const BlogCol = () => {
             <div className="flex items-center px-4 pt-4">
               <img src={calender} alt="group" className="w-[14px] h-[14px]" />
               <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: January 28, 2025
+                Published on: March 07, 2025
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Top 5 Countries with the Easiest Visa Approval Process in 2024
+              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
