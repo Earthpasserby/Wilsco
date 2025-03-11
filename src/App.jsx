@@ -31,6 +31,11 @@ import { Qatar } from "../pages/Qatar";
 import { Brazil } from "../pages/Brazil";
 import { Kong } from "../pages/Kong";
 import { Thai } from "../pages/Thai";
+import { BlogDoha } from "../pages/BlogDoha";
+import { BlogTrips } from "../pages/BlogTrips";
+import { BlogTour } from "../pages/BlogTour";
+import { BlogFam } from "../pages/BlogFam";
+import { BlogBirth } from "../pages/BlogBirth";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -50,8 +55,6 @@ function App() {
             <Route path="/HolidayPack" element={<HolidayPack />} />
             <Route path="/BirthService" element={<BirthService />} />
             <Route path="/RelocateServ" element={<RelocateServ />} />
-            <Route path="/Blog" element={<Blog />} />
-            <Route path="/BlogDet" element={<BlogDet />} />
             <Route path="/Faqs" element={<Faqs />} />
             <Route path="/Uk" element={<UK />} />
             <Route path="/US" element={<US />} />
@@ -69,6 +72,13 @@ function App() {
             <Route path="/Brazil" element={<Brazil />} />
             <Route path="/Kong" element={<Kong />} />
             <Route path="/Thai" element={<Thai />} />
+            <Route path="/Blog" element={<Blog />} />
+            <Route path="/BlogDet" element={<BlogDet />} />
+            <Route path="/BlogDoha" element={<BlogDoha />} />
+            <Route path="/BlogTrips" element={<BlogTrips />} />
+            <Route path="/BlogTour" element={<BlogTour />} />
+            <Route path="/BlogFam" element={<BlogFam />} />
+            <Route path="/BlogBirth" element={<BlogBirth />} />
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

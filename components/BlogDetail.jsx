@@ -113,50 +113,6 @@ export default function BlogDetail() {
         surprises at check-in. With these quick tips, you’re set for a smooth,
         stress-free trip. Now, go enjoy that vacation—you deserve it! ✈️🌴
       </div>
-      {/* Thrid Paragraph */}
-      {/* <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18"> */}
-      {/* Once you have chosen your destination, the next step is finding the best */}
-      {/* university and program that align with your academic and career goals. */}
-      {/* Researching university rankings, available scholarships, and course */}
-      {/* structures will help you make an informed decision. Many universities */}
-      {/* require English proficiency tests such as IELTS or TOEFL, so it is */}
-      {/* essential to prepare in advance. After securing admission, you will need */}
-      {/* to apply for a student visa. Each country has different visa */}
-      {/* requirements, but most will ask for proof of admission, financial */}
-      {/* statements, a valid passport, and sometimes a medical examination. It is */}
-      {/* crucial to apply early to avoid delays in your travel plans. */}
-      {/* </p> */}
-      {/* fourth Paragraph */}
-      {/* <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18"> */}
-      {/* As your departure date approaches, planning your travel, accommodation, */}
-      {/* and financial arrangements will make your transition smoother. Booking */}
-      {/* your flight in advance, arranging student housing, and setting up a */}
-      {/* local bank account are key steps. You should also familiarize yourself */}
-      {/* with the country’s culture, weather, and student life to help you adjust */}
-      {/* quickly. */}
-      {/* </p> */}
-      {/* Second Image */}
-      {/* Third Paragraph */}
-      {/* <p className="pt-6 text-gray-900 leading-relaxed text-[16px] font-normal sm:px-18"> */}
-      {/* Finally, once you arrive, take time to settle in and make the most of */}
-      {/* your experience. Engaging with classmates, exploring your new city, and */}
-      {/* participating in student activities will enrich your journey. If your */}
-      {/* visa allows, part-time work can provide additional financial support and */}
-      {/* valuable experience. Planning for life after graduation, including */}
-      {/* post-study work permits or permanent residency options, will also help */}
-      {/* you make the most of your time abroad. */}
-      {/* </p> */}
-      {/* Fourth Paragraph */}
-      {/* <p className="pt-6 text-gray-900 leading-relaxed  text-[16px] font-normal sm:px-18  "> */}
-      {/* Studying abroad is a rewarding experience that opens doors to endless */}
-      {/* opportunities. At Wilsco Travels, we are here to guide you through every */}
-      {/* step, from consultation to arrival. Ready to start your journey?{" "} */}
-      {/* <span className="font-medium"> */}
-      {/* {" "} */}
-      {/* Book a consultation today and let’s make your study abroad dream a */}
-      {/* reality! */}
-      {/* </span> */}
-      {/* </p> */}
     </div>
   );
 }

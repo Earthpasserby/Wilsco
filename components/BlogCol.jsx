@@ -44,11 +44,11 @@ export const BlogCol = () => {
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
+              Doha vs. Dubai: Which One Is Best for Your Next Vacation?
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
-                to="/blogdet"
+                to="/blogdoha"
                 className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
@@ -68,11 +68,12 @@ export const BlogCol = () => {
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
+              My First International Trip: A Client’s Experience with Wilsco
+              Travel
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
-                to="/blogdet"
+                to="/blogtrips"
                 className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
@@ -92,11 +93,11 @@ export const BlogCol = () => {
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
+              Why Wilsco Travel & Tours Stands Out in the Travel Industry
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
-                to="/blogdet"
+                to="/blogtour"
                 className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
@@ -116,11 +117,11 @@ export const BlogCol = () => {
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
+              The Best Family-Friendly Summer Vacation Spots in 2025
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
-                to="/blogdet"
+                to="/blogfam"
                 className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
@@ -140,107 +141,12 @@ export const BlogCol = () => {
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
+              What to Expect When Traveling for Childbirth Abroad – A Guide for
+              Nigerian Mothers
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
-                to="/blogdet"
-                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
-              >
-                Read
-              </Link>
-            </div>
-          </div>
-          <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
-            <img
-              src={paris1}
-              alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
-            />
-            <div className="flex items-center px-4 pt-4">
-              <img src={calender} alt="group" className="w-[14px] h-[14px]" />
-              <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: March 07, 2025
-              </span>
-            </div>
-            <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
-            </h3>
-            <div className="pt-8 px-4 mb-8">
-              <Link
-                to="/blogdet"
-                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
-              >
-                Read
-              </Link>
-            </div>
-          </div>
-          <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
-            <img
-              src={paris1}
-              alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
-            />
-            <div className="flex items-center px-4 pt-4">
-              <img src={calender} alt="group" className="w-[14px] h-[14px]" />
-              <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: March 07, 2025
-              </span>
-            </div>
-            <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
-            </h3>
-            <div className="pt-8 px-4 mb-8">
-              <Link
-                to="/blogdet"
-                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
-              >
-                Read
-              </Link>
-            </div>
-          </div>
-          <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
-            <img
-              src={paris1}
-              alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
-            />
-            <div className="flex items-center px-4 pt-4">
-              <img src={calender} alt="group" className="w-[14px] h-[14px]" />
-              <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: March 07, 2025
-              </span>
-            </div>
-            <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
-            </h3>
-            <div className="pt-8 px-4 mb-8">
-              <Link
-                to="/blogdet"
-                className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
-              >
-                Read
-              </Link>
-            </div>
-          </div>
-          <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
-            <img
-              src={paris1}
-              alt="group"
-              className="rounded-tl-2xl rounded-tr-2xl  "
-            />
-            <div className="flex items-center px-4 pt-4">
-              <img src={calender} alt="group" className="w-[14px] h-[14px]" />
-              <span className="font-normal text-[12px] text-[#686868] px-1">
-                Published on: March 07, 2025
-              </span>
-            </div>
-            <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              Pack Smart, Travel Happy: Your Ultimate Vacation Packing Guide!
-            </h3>
-            <div className="pt-8 px-4 mb-8">
-              <Link
-                to="/blogdet"
+                to="/blogbirth"
                 className="bg-transparent  hover:text-white border-gray-100 border-1 hover:border-0 text-gray-500 px-7 py-2 rounded-4xl   hover:bg-red-700"
               >
                 Read
@@ -248,24 +154,24 @@ export const BlogCol = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-8">
-          <button className="px-4 py-2 mx-1  rounded hover:bg-red-500 hover:text-white">
-            Prev
-          </button>
-          {[...Array(4)].map((_, index) => (
-            <button
-              key={index}
-              className={`px-4 py-2 mx-1 rounded ${
-                index === 0 ? "bg-red-500 text-white" : "bg-none"
-              } hover:bg-red-500 hover:text-white`}
-            >
-              {index + 1}
-            </button>
-          ))}
-          <button className="px-4 py-2 mx-1  rounded hover:bg-red-500 hover:text-white">
-            Next
-          </button>
-        </div>
+        {/* <div className="flex justify-center mt-8"> */}
+        {/* <button className="px-4 py-2 mx-1  rounded hover:bg-red-500 hover:text-white"> */}
+        {/* Prev */}
+        {/* </button> */}
+        {/* {[...Array(4)].map((_, index) => ( */}
+        {/* <button */}
+        {/* // key={index} */}
+        {/* // className={`px-4 py-2 mx-1 rounded ${ */}
+        {/* // index === 0 ? "bg-red-500 text-white" : "bg-none" */}
+        {/* // } hover:bg-red-500 hover:text-white`} */}
+        {/* // > */}
+        {/* {index + 1} */}
+        {/* </button> */}
+        {/* ))} */}
+        {/* <button className="px-4 py-2 mx-1  rounded hover:bg-red-500 hover:text-white"> */}
+        {/* Next */}
+        {/* </button> */}
+        {/* </div> */}
       </div>
     </>
   );
