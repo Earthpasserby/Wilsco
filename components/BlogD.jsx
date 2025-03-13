@@ -1,6 +1,8 @@
 // import guide from "/images/guide.jpg";
 // import france from "/images/france.jpg";
 import calender from "/images/calender.png";
+import aus from "/images/aus.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 export default function BlogD() {
@@ -21,7 +23,7 @@ export default function BlogD() {
           Which One Is Best for Your Next Vacation?
         </span>
       </h1>
-      <div className="flex item-center justify-center gap-4">
+      <div className="flex item-center justify-center gap-4 mb-4">
         <p className="text-[#1e1e1e] text-center text-[12px] mt-2">
           <img
             src={calender}
@@ -47,6 +49,7 @@ export default function BlogD() {
       {/* // /> */}
       {/* </div> */}
       {/* First Paragraph */}
+      <img src={aus} alt="arrival Img" className="rounded-2xl" />
       <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
         When it comes to Middle Eastern travel destinations, Dubai and Doha
         stand out as two of the most exciting cities to visit. Both offer luxury

@@ -1,5 +1,5 @@
-import guide from "/images/guide.jpg";
-import france from "/images/france.jpg";
+// import guide from "/images/guide.jpg";
+import adventure from "/images/adventure.png";
 import calender from "/images/calender.png";
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +21,7 @@ export default function BlogDetail() {
           Stands Out in the Travel Industry
         </span>
       </h1>
-      <div className="flex item-center justify-center gap-4">
+      <div className="flex item-center justify-center gap-4 mb-4">
         <p className="text-[#1e1e1e] text-center text-[12px] mt-2">
           <img
             src={calender}
@@ -48,6 +48,7 @@ export default function BlogDetail() {
       {/* //    /> */}
       {/* </div> */}
       {/* First Paragraph */}
+      <img src={adventure} alt="arrival Img" className="rounded-2xl" />
       <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
         In a world where travel has become more than just moving from one place
         to another, Wilsco Travel & Tours is redefining the experience by making

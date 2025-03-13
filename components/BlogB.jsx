@@ -1,5 +1,5 @@
 // import guide from "/images/guide.jpg";
-import france from "/images/france.jpg";
+import care from "/images/care.png";
 import calender from "/images/calender.png";
 import { useNavigate } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default function BlogB() {
         <br />
         <span className="text-gray-600 "> – A Guide for Nigerian Mothers</span>
       </h1>
-      <div className="flex item-center justify-center gap-4">
+      <div className="flex item-center justify-center gap-4 mb-4">
         <p className="text-[#1e1e1e] text-center text-[12px] mt-2">
           <img
             src={calender}
@@ -46,6 +46,7 @@ export default function BlogB() {
       {/* //    /> */}
       {/* </div> */}
       {/* First Paragraph */}
+      <img src={care} alt="arrival Img" className="rounded-2xl" />
       <p className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
         Bringing a child into the world is a beautiful experience, and for many
         Nigerian families, giving birth abroad offers additional benefits, such

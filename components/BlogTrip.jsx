@@ -1,6 +1,11 @@
 // import guide from "/images/guide.jpg";
 // import france from "/images/france.jpg";
 import calender from "/images/calender.png";
+import arrival from "/images/arrival.jpg";
+import viewws from "/images/viewws.jpg";
+import pool from "/images/pool.jpg";
+import flags from "/images/flags.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 export default function BlogTrip() {
@@ -57,6 +62,7 @@ export default function BlogTrip() {
         Qatar. Here’s a glimpse into her unforgettable journey with Wilsco.
         <br />
         <br />
+        <img src={flags} alt="arrival Img" className="rounded-2xl" />
         <span className="font-bold text-[20px]">Planning the Perfect Trip</span>
         <br />
         <br />
@@ -74,6 +80,7 @@ export default function BlogTrip() {
         </span>
         <br />
         <br />
+        <img src={arrival} alt="arrival Img" className="rounded-2xl" />
         Upon arrival in Doha, our meet-and-assist team ensured a smooth airport
         experience, guiding her through immigration and baggage collection. She
         checked into the elegant Gloria Hotel and Suites, known for its comfort,
@@ -86,6 +93,7 @@ export default function BlogTrip() {
           Day 1: Exploring Doha’s Rich Culture and Heritage
         </ul>
         <br />
+        <img src={viewws} alt="arrival Img" className="rounded-2xl" />
         {/* <br /> */}
         Her first day was dedicated to discovering Doha’s vibrant culture and
         history. She embarked on a city tour, visiting some of the most iconic
@@ -184,6 +192,7 @@ export default function BlogTrip() {
         <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
           A Memorable Journey, Made Seamless by Wilsco
         </ul>
+        <img src={pool} alt="arrival Img" className="rounded-2xl" />
         Reflecting on her experience, our client couldn’t have been more
         grateful for Wilsco Travel & Tours. From securing her visa and flights
         to ensuring a luxurious and adventure-filled itinerary, our team

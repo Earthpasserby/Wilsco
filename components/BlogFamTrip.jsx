@@ -1,5 +1,5 @@
 // import guide from "/images/guide.jpg";
-import france from "/images/france.jpg";
+import view from "/images/view.png";
 import calender from "/images/calender.png";
 import { useNavigate } from "react-router-dom";
 
@@ -40,7 +40,7 @@ export default function BlogFamTrip() {
       {/* First Image */}
       <div className="pt-14">
         <img
-          src={france}
+          src={view}
           alt="Students studying abroad"
           className="rounded-4xl w-full mb-10"
         />
