@@ -1,4 +1,11 @@
-import paris1 from "../public/images/paris1.png";
+import aus from "../public/images/aus.jpg";
+import birth1 from "../public/images/birth1.png";
+import view from "../public/images/view.png";
+
+import qatar from "../public/images/qatar.jpg";
+import explore from "../public/images/explore.png";
+import adventure from "../public/images/adventure.png";
+
 import calender from "../public/images/calender.png";
 import { Link } from "react-router-dom";
 
@@ -9,7 +16,7 @@ export const BlogCol = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
             <img
-              src={paris1}
+              src={aus}
               alt="group"
               className="rounded-tl-2xl rounded-tr-2xl  "
             />
@@ -33,7 +40,7 @@ export const BlogCol = () => {
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
             <img
-              src={paris1}
+              src={qatar}
               alt="group"
               className="rounded-tl-2xl rounded-tr-2xl  "
             />
@@ -57,7 +64,7 @@ export const BlogCol = () => {
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
             <img
-              src={paris1}
+              src={explore}
               alt="group"
               className="rounded-tl-2xl rounded-tr-2xl   "
             />
@@ -82,7 +89,7 @@ export const BlogCol = () => {
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
             <img
-              src={paris1}
+              src={adventure}
               alt="group"
               className="rounded-tl-2xl rounded-tr-2xl  "
             />
@@ -106,7 +113,7 @@ export const BlogCol = () => {
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
             <img
-              src={paris1}
+              src={view}
               alt="group"
               className="rounded-tl-2xl rounded-tr-2xl  "
             />
@@ -130,7 +137,7 @@ export const BlogCol = () => {
           </div>
           <div className="bg-white rounded-bl-2xl rounded-br-2xl ">
             <img
-              src={paris1}
+              src={birth1}
               alt="group"
               className="rounded-tl-2xl rounded-tr-2xl  "
             />
@@ -141,8 +148,7 @@ export const BlogCol = () => {
               </span>
             </div>
             <h3 className="px-4 text-[#1E1E1E] text-[16px] font-normal">
-              What to Expect When Traveling for Childbirth Abroad – A Guide for
-              Nigerian Mothers
+              Childbirth Abroad – A Guide for Nigerian Mothers
             </h3>
             <div className="pt-8 px-4 mb-8">
               <Link
