@@ -13,7 +13,7 @@ const TourG = () => {
   return (
     <>
       <div className="mx-auto w-full px-4 sm:px-14  lg:px-14   bg-[#fbfbfb]">
-        <div className="justify-center text-center">
+        <div className="justify-center text-center mb-6">
           <h3 className="sm:text-[32px] font-bold text-[#1E1E1E]">
             Discover your perfect getaway
           </h3>
@@ -23,147 +23,148 @@ const TourG = () => {
             experience.
           </p>
         </div>
-        <div className="pt-14">
-          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={kigali}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
+        {/* <div className="pt-14"> */}
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {/* <div className="bg-white p-4 transition rounded-4xl"> */}
+          {/* <div className=""> */}
+          {/* <img */}
+          {/* src={kigali} */}
+          {/* alt="group" */}
+          {/* className="w-full h-full object-cover object-center rounded-xl" */}
+          {/* /> */}
+          {/* </div> */}
+          {/* <div className=" pt-5"> */}
+          {/* <a */}
+          {/* href="https://wa.me/2347058619281" */}
+          {/* className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white" */}
+          {/* > */}
+          {/* Book now */}
+          {/* </a> */}
+          {/* </div> */}
+          {/* </div> */}
+          {/* <div className="bg-white p-4 transition rounded-4xl"> */}
+          {/* <div className=""> */}
+          {/* <img */}
+          {/* src={zanzibar} */}
+          {/* alt="group" */}
+          {/* className="w-full h-full object-cover object-center rounded-xl" */}
+          {/* /> */}
+          {/* </div> */}
+          {/* <div className=" pt-5"> */}
+          {/* <a */}
+          {/* href="https://wa.me/2347058619281" */}
+          {/* className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white" */}
+          {/* > */}
+          {/* Book now */}
+          {/* </a> */}
+          {/* </div> */}
+          {/* </div> */}
+          {/* <div className="bg-white p-4 transition rounded-4xl"> */}
+          {/* <div className=""> */}
+          {/* <img */}
+          {/* src={beriut} */}
+          {/* alt="group" */}
+          {/* className="w-full h-full object-cover object-center rounded-xl" */}
+          {/* /> */}
+          {/* </div> */}
+          {/* <div className=" pt-5"> */}
+          {/* <a */}
+          {/* href="https://wa.me/2347058619281" */}
+          {/* className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white" */}
+          {/* > */}
+          {/* Book now */}
+          {/* </a> */}
+          {/* </div> */}
+          {/* </div> */}
+          {/* <div className="bg-white p-4 transition rounded-4xl"> */}
+          {/* <div className=""> */}
+          {/* <img */}
+          {/* src={nami} */}
+          {/* alt="group" */}
+          {/* className="w-full h-full object-cover object-center rounded-xl" */}
+          {/* /> */}
+          {/* </div> */}
+          {/* <div className=" pt-5"> */}
+          {/* <a */}
+          {/* href="https://wa.me/2347058619281" */}
+          {/* className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white" */}
+          {/* > */}
+          {/* Book now */}
+          {/* </a> */}
+          {/* </div> */}
+          {/* </div> */}
+          <div className="bg-white p-4 transition rounded-4xl">
+            <div className="">
+              <img
+                src={qatarf}
+                alt="group"
+                className="w-full h-full object-cover object-center rounded-xl"
+              />
             </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={zanzibar}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
-            </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={beriut}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
-            </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={nami}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
-            </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={qatarf}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
-            </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={singa}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
-            </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={doha}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
-            </div>
-            <div className="bg-white p-4 transition rounded-4xl">
-              <div className="">
-                <img
-                  src={badagry}
-                  alt="group"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
-              <div className=" pt-5">
-                <a
-                  href="https://wa.me/2347058619281"
-                  className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
-                >
-                  Book now
-                </a>
-              </div>
+            <div className=" pt-5">
+              <a
+                href="https://wa.me/2347058619281"
+                className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
+              >
+                Book now
+              </a>
             </div>
           </div>
+          {/* <div className="bg-white p-4 transition rounded-4xl"> */}
+          {/* <div className=""> */}
+          {/* <img */}
+          {/* src={singa} */}
+          {/* alt="group" */}
+          {/* className="w-full h-full object-cover object-center rounded-xl" */}
+          {/* /> */}
+          {/* </div> */}
+          {/* <div className=" pt-5"> */}
+          {/* <a */}
+          {/* href="https://wa.me/2347058619281" */}
+          {/* className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white" */}
+          {/* > */}
+          {/* Book now */}
+          {/* </a> */}
+          {/* </div> */}
+          {/* </div> */}
+          <div className="bg-white p-4 transition rounded-4xl">
+            <div className="">
+              <img
+                src={doha}
+                alt="group"
+                className="w-full h-full object-cover object-center rounded-xl"
+              />
+            </div>
+            <div className=" pt-5">
+              <a
+                href="https://wa.me/2347058619281"
+                className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white"
+              >
+                Book now
+              </a>
+            </div>
+          </div>
+          {/* <div className="bg-white p-4 transition rounded-4xl"> */}
+          {/* <div className=""> */}
+          {/* <img */}
+          {/* // src={badagry} */}
+          {/* // alt="group" */}
+          {/* // className="w-full h-full object-cover object-center rounded-xl" */}
+          {/* // /> */}
+          {/* </div> */}
+          {/* <div className=" pt-5"> */}
+          {/* <a */}
+          {/* // href="https://wa.me/2347058619281" */}
+          {/* // className="w-full block bg-transparent text-center border-1 text-red-700 p-2 border-red-700 px-8 py-2 rounded-4xl hover:bg-red-700 hover:border-0 hover:text-white" */}
+          {/* // > */}
+          {/* Book now */}
+          {/* </a> */}
+          {/* </div> */}
+          {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };
