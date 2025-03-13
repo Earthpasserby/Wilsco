@@ -4,6 +4,9 @@ import calender from "/images/calender.png";
 import arrival from "/images/arrival.jpg";
 import viewws from "/images/viewws.jpg";
 import pool from "/images/pool.jpg";
+import posee from "/images/posee.jpg";
+import pose from "/images/pose.jpg";
+
 import flags from "/images/flags.jpg";
 
 import { useNavigate } from "react-router-dom";
@@ -62,7 +65,6 @@ export default function BlogTrip() {
         Qatar. Here’s a glimpse into her unforgettable journey with Wilsco.
         <br />
         <br />
-        <img src={flags} alt="arrival Img" className="rounded-2xl" />
         <span className="font-bold text-[20px]">Planning the Perfect Trip</span>
         <br />
         <br />
@@ -80,7 +82,6 @@ export default function BlogTrip() {
         </span>
         <br />
         <br />
-        <img src={arrival} alt="arrival Img" className="rounded-2xl" />
         Upon arrival in Doha, our meet-and-assist team ensured a smooth airport
         experience, guiding her through immigration and baggage collection. She
         checked into the elegant Gloria Hotel and Suites, known for its comfort,
@@ -93,7 +94,6 @@ export default function BlogTrip() {
           Day 1: Exploring Doha’s Rich Culture and Heritage
         </ul>
         <br />
-        <img src={viewws} alt="arrival Img" className="rounded-2xl" />
         {/* <br /> */}
         Her first day was dedicated to discovering Doha’s vibrant culture and
         history. She embarked on a city tour, visiting some of the most iconic
@@ -188,11 +188,10 @@ export default function BlogTrip() {
       {/* // className="rounded-xl w-full pt-12" */}
       {/* // /> */}
       {/* </div> */}
-      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18">
+      <div className=" pt-6 text-grey-900 text-[16px] font-normal leading-relaxed sm:px-18 mb-6">
         <ul className=" pt-6 text-grey-900 text-[20px] text-black font-bold  leading-relaxed sm:px-0">
           A Memorable Journey, Made Seamless by Wilsco
         </ul>
-        <img src={pool} alt="arrival Img" className="rounded-2xl" />
         Reflecting on her experience, our client couldn’t have been more
         grateful for Wilsco Travel & Tours. From securing her visa and flights
         to ensuring a luxurious and adventure-filled itinerary, our team
@@ -205,6 +204,28 @@ export default function BlogTrip() {
         Tours handle the details while you focus on making memories! Contact us
         today to plan your next getaway. ✈️🌍
       </div>{" "}
+      <div>
+        <div className="grid grid-cols-3 gap-7 ">
+          <div className="">
+            <img src={arrival} alt="arrival Img" className="rounded-2xl" />
+          </div>
+          <div className="">
+            <img src={flags} alt="arrival Img" className="rounded-2xl" />
+          </div>
+          <div className="">
+            <img src={viewws} alt="arrival Img" className="rounded-2xl" />
+          </div>
+          <div className="">
+            <img src={pool} alt="arrival Img" className="rounded-2xl" />
+          </div>
+          <div className="">
+            <img src={pose} alt="arrival Img" className="rounded-2xl" />
+          </div>
+          <div className="">
+            <img src={posee} alt="arrival Img" className="rounded-2xl" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
